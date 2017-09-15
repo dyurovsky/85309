@@ -1,0 +1,34 @@
+markdown: kramdown
+exclude:
+  - LICENSE
+  - Makefile
+  - README
+markdown_ext: "md"
+
+layouts_dir: ./_noita
+baseurl: /psyc201
+openintro: https://www.openintro.org/stat/textbook.php?stat_book=isrs
+teams: 
+
+plugins:
+  - jemoji
+
+noita:
+  name: PSYC 20100 - Psychological Statistics (Autumn 2017)
+  description: PSYC 20100 at U Chicago - taught by Daniel Yurovsky
+  author:
+    name: Dan Yurovsky
+    url: http://callab.uchicago.edu
+    absolute: true
+  lang: en
+  topbar:
+    toggle: Menu
+    right:
+      - name: Schedule
+        url: /
+      - name: Info
+        url: /info/
+      - name: Syllabus
+        url: /syllabus/
+      - name: Learning Objectives
+        url: /los/
