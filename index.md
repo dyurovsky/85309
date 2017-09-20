@@ -3,7 +3,7 @@ layout: page
 title: Schedule
 ---
 
-| Jump to: | &nbsp;&nbsp;&nbsp; [Unit 1]({{site.baseurl}}/info/#unit1) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 2]({{ site.baseurl }}/#unit2) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 3]({{ site.baseurl }}/#unit3) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 4]({{ site.baseurl }}/#unit4) &nbsp;&nbsp;&nbsp; |
+| Jump to: | &nbsp;&nbsp;&nbsp; [Unit 1]({{site.baseurl}}/#unit1) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 2]({{ site.baseurl }}/#unit2) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 3]({{ site.baseurl }}/#unit3) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 4]({{ site.baseurl }}/#unit4) &nbsp;&nbsp;&nbsp; |
 
 * * *
 

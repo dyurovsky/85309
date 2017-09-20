@@ -1,0 +1,80 @@
+
+---
+title: "Lab 1 - Intro to R and RStudio"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load Arbuthnot data**
+```{r}
+arbuthnot <- read_csv("https://dyurovsky.github.io/psyc201/data/lab1/arbuthnot.csv")
+```
+
+#### Exercise 1: 
+
+```{r}
+# code for Exercise 1 is already entered below as an example
+arbuthnot$girls
+```
+
+#### Exercise 2:
+
+[Enter your response for Exercise 2 here.]
+
+```{r}
+# enter your code for Exercise 2 here
+```
+
+#### Exercise 3:
+
+```{r}
+# enter your code for Exercise 3 here
+```
+
+* * *
+
+### On your own:
+
+**Load present day data**
+```{r}
+present <- read_csv("https://dyurovsky.github.io/psyc201/data/lab1/present.csv")
+```
+
+#### 4:
+```{r}
+# enter your code for Exercise 4 here
+```
+
+#### 5:
+```{r}
+# enter your code for Exercise 5 here
+```
+
+
+#### 6:
+```{r}
+# enter your code for Exercise 6 here
+```
+
+
+#### 7:
+```{r}
+# enter your code for Exercise 7 here
+```
+
+
+* * *

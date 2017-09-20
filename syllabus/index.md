@@ -41,8 +41,8 @@ You will however be asked to complete the [Comprehensive Assessment of Outcomes 
 <table style="width:400px;">
 <tr> <td> CAOS Pre and Post tests   </td> <td> 5% </td></tr>
 <tr> <td> Quizzes                   </td> <td> 10% </td></tr> 
-<tr> <td> Problem sets              </td> <td> 30% </td></tr>
-<tr> <td> Labs                      </td> <td> 30% </td></tr>
+<tr> <td> Problem sets              </td> <td> 20% </td></tr>
+<tr> <td> Labs                      </td> <td> 40% </td></tr>
 <tr> <td> Project                   </td> <td> 25% </td></tr>
 </table>
 </div>
@@ -62,7 +62,7 @@ These will be assigned at the start of each unit, and will be comprised of probl
 
 You are welcomed, and encouraged, to work with each other on the problems. But, *you must turn in your own work*.
 
-**Submission instructions:** You will turn in your problem sets by submitted them through Google Classroom. We strongly recommend working in a word processor of your choice (Word, Google Docs, etc.), saving your work as PDF, and submitting the PDF. This will ensure that what we read is exactly what you intended to submit. You are also welcomed to submit your document as a Word file as well, however if we cannot open your file you will receive a 0 on the problem set 
+**Submission instructions:** You will turn in your problem sets by submitted them through Google Classroom. You are welcome to write up problem sets in a word processor of your choice (Word, Google Docs, etc.), but we strongly suggest saving the file as a PDF and submitting the PDF. This will ensure that what we read is exactly what you intended to submit. You are also welcome to do the work in a notebook and upload a picture of each notebook page. 
 
 All assignments will be time stamped and late work will be penalized based on this time stamp (see late work policy below).
 
@@ -86,13 +86,13 @@ Each week on Monday we will have a short (~15 min) quiz at the beginning of lect
 
 ### Project:
 
-The objective of the project is to give you independent applied research experience using real data and statistical methods. You will complete the semester long project in teams. There will be a mid-checkpoint where you write a proposal for your research direction and present results from exploratory data analysis. At this stage you will also describe your collaborative approach outlining each team member's past and planned contribution and a plan for how the work will come together.
+The objective of the project is to give you independent applied research experience using real data and statistical methods. You will be allowed to work on the final project either on your own, or with a partner. The goal will be to synthesize what you have learned in the labs over the course of the semester, and to show that you understand which analyses are appropriate and interesting for which kinds of data.
 
 * * *
 
 ### Email & Forum (Google Classroom):
 
-I will regularly send announcements by email, please make sure to check your email daily.
+I will regularly send announcements through the Google classroom. You should get an email for these by default, so please make sure to check your email daily to make sure that you don not miss them.
 
 Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our Google Classroom. Before posting a new question please make sure to check if your question has already been answered. The TAs and I will be answering questions in the Classroom daily and all students are expected to answer questions as well. Please use informative titles for your posts.
 
