@@ -25,14 +25,14 @@ title: Schedule
 
 ##### Due dates
 
-* CAOS Pretest: Sep 30 11:55PM 
+* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Sep 30 11:55PM 
 * Lab 1: Oct 6, Start of Lab Section 
 * Lab 2: Oct 13, Start of Lab Section 
 * Problem Set 1: Oct 9, Mon, at 12:30pm
   * End of chapter exercises from **Chp 1**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show 
   **all** work to get credit. Submit homework through Google Classroom.
-  * **Graded questions:** 1.2, 1.6, 1.12, 1.20, 1.26, 1.28, 1.30, 1.34, 1.40, 1.42, 1.48
+  * **Graded questions:** 1.2, 1.12, 1.20, 1.30, 1.34, 1.42
   * Practice questions: 
       + Part 1 – Designing studies: 1.1, 1.3, 1.9, 1.11, 1.13, 1.19
       + Part 2 – Examining Data: 1.25, 1.27, 1.29, 1.37, 1.39, 1.41, 1.47
@@ -83,7 +83,7 @@ title: Schedule
 ##### In class / lab
 
 | Oct 25, Wed | Lesson 3.1: Inference for a Single Proportion |
-| Oct 27, Fri | Lab 5: Confidence Intervals](post/labs/confidence_intervals.html |
+| Oct 27, Fri | Lab 5: Confidence Intervals |
 | Oct 30, Mon | **Quiz 5** in class |
 |             | Lesson 3.2: Difference of Two Proportions |
 | Nov 1, Wed  | Lesson 3.3: The t-distribution |
@@ -122,9 +122,9 @@ title: Schedule
 | Nov 13, Mon | **Quiz 7** in class | 
 |             | Lesson 4.1: Linear Regression |
 | Nov 15, Wed | Lesson 4.2: Residuals and Least Squares |
-| Nov 17, Fri | Lab 8: Simple Linear Regression](post/labs/simple_regression.html |
+| Nov 17, Fri | Lab 8: Simple Linear Regression|
 | Nov 20, Mon | **Quiz 8** in class | 
-|             | Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf |
+|             | Lesson 4.3: Inference for linear regression |
 | Nov 22, Wed | Lesson 4.4: Multiple regression |
 | Nov 24, Fri | *Thankgsiving Break - no class* |
 | Nov 27, Mon | **Quiz 9** in class | 
