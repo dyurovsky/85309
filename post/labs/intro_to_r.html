@@ -351,7 +351,7 @@ div.tocify {
 <p>We’ll be using this new vector to generate some plots, so we’ll want to save it as a permanent column in our data frame.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">arbuthnot &lt;-<span class="st"> </span>arbuthnot <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">total =</span> boys <span class="op">+</span><span class="st"> </span>girls)</code></pre></div>
-<p>The <code>%&gt;%</code> operator is called the <strong>piping</strong> operator. It takes the output of the previous expression and pipes it into the first argument of the function in the following one. If you’re inclined to think about mathematical functions, <code>f %&gt;% g(y)</code> is equivalent to <code>f(g(y))</code>.</p>
+<p>The <code>%&gt;%</code> operator is called the <strong>piping</strong> operator. It takes the output of the previous expression and pipes it into the first argument of the function in the following one. If you’re inclined to think about mathematical functions, <code>f %&gt;% g(x)</code> is</p>
 <div id="boxedtext">
 <p><strong>A note on piping: </strong> Note that we can read these three lines of code as the following:</p>
 <p><em>“Take the <code>arbuthnot</code> dataset and <strong>pipe</strong> it into the <code>mutate</code> function. Mutate the <code>arbuthnot</code> data set by creating a new variable called <code>total</code> that is the sum of the variables called <code>boys</code> and <code>girls</code>. Then assign the resulting dataset to the object called <code>arbuthnot</code>, i.e. overwrite the old <code>arbuthnot</code> dataset with the new one containing the new variable.”</em></p>

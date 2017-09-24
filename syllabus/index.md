@@ -58,7 +58,7 @@ Lecture and lab attendance is mandatory. Lecture slides will be posted after cla
 
 ### Problem sets:
 
-These will be assigned at the start of each unit, and will be comprised of problems from the textbook. Each assignment will list a set of problems from the book to be turned in for grading, and roughly 10 practice problems. You do not need to turn in the practice problems, and the solutions can be found in the back of the book.
+These will be assigned at the start of each unit, and will be comprised of problems from the textbook. Each assignment will list a set of problems from the book to be turned in for grading, and roughly 6 practice problems. You do not need to turn in the practice problems, and the solutions can be found in the back of the book.
 
 You are welcomed, and encouraged, to work with each other on the problems. But, *you must turn in your own work*.
 
@@ -90,11 +90,11 @@ The objective of the project is to give you independent applied research experie
 
 * * *
 
-### Email & Forum (Google Classroom):
+### Announcements & Forum (Google Classroom):
 
 I will regularly send announcements through the Google classroom. You should get an email for these by default, so please make sure to check your email daily to make sure that you don not miss them.
 
-Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our Google Classroom. Before posting a new question please make sure to check if your question has already been answered. The TAs and I will be answering questions in the Classroom daily and all students are expected to answer questions as well. Please use informative titles for your posts.
+Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our [Piazza](http://piazza.com/uchicago/fall2017/psych201). Before posting a new question please make sure to check if your question has already been answered. The TAs and I will be answering questions in Piazza daily and all students are expected to answer questions as well. Please use informative titles for your posts.
 
 Note that it is more efficient to answer most statistical questions ``in person" so make use of [Office Hours]({{site.baseurl}}/info/#oh).
 
