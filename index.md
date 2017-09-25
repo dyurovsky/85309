@@ -15,13 +15,13 @@ title: Schedule
 
 ##### Class / lab
 
-| Sep 25, Mon  | Introduction to PSYC 20100 |
-| Sep 27, Wed  | Lesson 1.1: Data--where it comes from and why it matters |
+| Sep 25, Mon  | [Introduction to PSYC 201](post/slides/intro.pdf)          |
+| Sep 27, Wed  | Lesson 1.1: Data--where it comes from and why it matters   |
 | Sep 29, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html) |
-| Oct 2, Mon   |  **Quiz 1** in class |
-|              | Lesson 1.2: Exploratory Data Analysis |
-| Oct 4, Wed   | Lesson 1.3: More Exploratory Data Analysis |
-| Oct 6, Fri   | Lab 2: Intro to Data |
+| Oct 2, Mon   |  **Quiz 1** in class                                       |
+|              | Lesson 1.2: Exploratory Data Analysis                      |
+| Oct 4, Wed   | Lesson 1.3: More Exploratory Data Analysis                 |
+| Oct 6, Fri   | Lab 2: Intro to Data                                       |
 
 ##### Due dates
 
@@ -45,7 +45,7 @@ title: Schedule
 
 | Learning objectives: LO 2 | Textbook: [Chp 2 ]({{ site.openintro}}) |
 
-##### In class / lab
+##### Class / lab
 
 | Oct 9, Mon  |  **Quiz 2** in class |
 |             | Lesson 2.1: Randomization and Sampling |
@@ -80,7 +80,7 @@ title: Schedule
 
 | Learning objectives: [L0 3]({{site.baseurl}}/los/#unit3)| Textbook: [Chp 3 and Chp 4]({{ site.openintro}}) |
 
-##### In class / lab
+##### Class / lab
 
 | Oct 25, Wed | Lesson 3.1: Inference for a Single Proportion |
 | Oct 27, Fri | Lab 5: Confidence Intervals |
@@ -117,7 +117,7 @@ title: Schedule
 
 | Learning objectives: LO 4| Textbook: [Chp 5 and 6]({{ site.openintro}}) |
 
-##### In class / lab
+##### Class / lab
 
 | Nov 13, Mon | **Quiz 7** in class | 
 |             | Lesson 4.1: Linear Regression |

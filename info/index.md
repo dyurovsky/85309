@@ -7,9 +7,9 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Daniel Yurovsky](http://psychology.uchicago.edu/directory/daniel-yurovsky) | [yurovsky@uchicago.edu](mailto:yurovsky@uchicago.edu) | Green 201 | 
-|**TAs**       | [Cristina Carrazza](https://psychology.uchicago.edu/directory/cristina-carrazza) | [cristinac@uchicago.edu](mailto:cristinac@uchicago.edu) |  Green 404 | 
-|              | [Deena Bernett](https://psychology.uchicago.edu/directory/deena-bernett) | [dbernett@uchicago.edu](mailto:dbernett@uchicago.edu) | Green 404 | 
+|**Professor** | [Daniel Yurovsky](http://psychology.uchicago.edu/directory/daniel-yurovsky)      | [yurovsky@uchicago.edu](mailto:yurovsky@uchicago.edu) | Green 201 | 
+|**TAs**       | [Deena Bernett](https://psychology.uchicago.edu/directory/deena-bernett)         | [dbernett@uchicago.edu](mailto:dbernett@uchicago.edu) | Green 404 | 
+|              | [Cristina Carrazza](https://psychology.uchicago.edu/directory/cristina-carrazza) | [cristinac@uchicago.edu](mailto:cristinac@uchicago.edu) |  Green 404 | 
 
 
 * * *
@@ -17,8 +17,8 @@ title: Course Information
 ### Class meetings:
 * Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, Harper Memorial Library 130
 * Labs: Friday
-    * 12:30pm - 1:20pm - Biological Sciences Learning Center 018 - TA: Cristina Carraza
-    * 1:30pm - 2:20pm - Biological Sciences Learning Center 018 - TA: Deena Bernett
+    * 12:30pm - 1:20pm - Biological Sciences Learning Center 018 - TA: Deena Bernett
+    * 1:30pm - 2:20pm - Biological Sciences Learning Center 018 - TA: Cristina Carraza
 
 * * *
 
