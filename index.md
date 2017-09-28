@@ -15,9 +15,9 @@ title: Schedule
 
 ##### Class / lab
 
-| Sep 25, Mon  | [Introduction to PSYC 201](post/slides/intro.pdf)          |
-| Sep 27, Wed  | Lesson 1.1: Data--where it comes from and why it matters   |
-| Sep 29, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html) |
+| Sep 25, Mon  | [Introduction to PSYC 201](post/slides/intro.pdf)                                  |
+| Sep 27, Wed  | [Lesson 1.1: Data--where it comes from and why it matters](post/slides/data.pdf)   |
+| Sep 29, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html)                         |
 |              | [R CheatSheet](post/rmd/r_cheatsheet.Rmd)                  |
 | Oct 2, Mon   |  **Quiz 1** in class                                       |
 |              | Lesson 1.2: Exploratory Data Analysis                      |
