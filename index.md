@@ -21,8 +21,9 @@ title: Schedule
 |              | [R CheatSheet](post/rmd/r_cheatsheet.Rmd)                                          |
 | Oct 2, Mon   |  **Quiz 1** in class                                                               |
 |              | [Lesson 1.2: Exploratory Data Analysis](post/slides/intro_eda.pdf)                 |
-| Oct 4, Wed   | Lesson 1.3: More Exploratory Data Analysis                 |
-| Oct 6, Fri   | Lab 2: Intro to Data                                       |
+| Oct 4, Wed   | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf)             |
+|              | [Example Exploratory Data Analysis](post/rmd/eda.Rmd)
+| Oct 6, Fri   | [Lab 2: Intro to Data](post/labs/intro_to_data.html)                               |
 
 ##### Due dates
 
