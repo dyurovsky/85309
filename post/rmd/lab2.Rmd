@@ -21,7 +21,7 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data}
-nycflights <- read_csv("https://dyurovsky.github.io/psyc20100/data/lab2/nycflights.csv")
+nycflights <- read_csv("https://dyurovsky.github.io/psyc201/data/lab2/nycflights.csv")
 ```
 
 #### Exercise 1: 
