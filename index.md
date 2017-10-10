@@ -69,7 +69,7 @@ title: Schedule
   * End of chapter exercises from **Chp 2**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show 
   **all** work to get credit. Submit homework through Google Classroom.
-  * **Graded questions:** 2.2, 2.4, 2.6, 2.10, 2.12, 2.16, 2.18, 2.20, 2.24, 2.28, 2.32, 2.36, 2.38
+  * **Graded questions:**  2.4, 2.10, 2.16, 2.18, 2.24, 2.38
   * Practice questions: 
       + Part 1 – Randomization and Hypothesis Testing: 2.1, 2.3, 2.5, 2.9, 
       + Part 2 – The Normal Distribution: 2.11, 3.13, 2.15, 2.17, 2.19, 2.23, 2.29, 2.31
