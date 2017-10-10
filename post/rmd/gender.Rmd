@@ -1,0 +1,89 @@
+---
+title: "Exploratory Data Analysis"
+output:
+  html_notebook:
+    toc: yes
+editor_options: 
+  chunk_output_type: inline
+---
+
+Load tidyverse package and set plot theme
+```{r, message = F}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 16))
+```
+
+Let's set up the discrimination example to see what a random sample would look like
+```{r one_sample}
+# 48 total employees, 24 Male and 24 Female
+employees <- c(rep("Male", 24), rep("Female", 24))
+
+# Let's randomly promote 35 employees (independent of gender)
+promoted <- sample(employees, 35) 
+
+# Compute the proportion of men and women promoted and not promoted
+promoted_men <- sum(promoted == "Male")
+promoted_women <- sum(promoted == "Female")
+not_promoted_men <- 24 - promoted_men
+not_promoted_women <- 24 - promoted_women
+
+# Make a dataframe to show the results
+data_frame(gender = c("Male", "Female", "Total"), 
+           promoted = c(promoted_men, promoted_women, 
+                        sum(promoted_men, promoted_women)),
+           not_promoted = c(not_promoted_men, not_promoted_women,  
+                            sum(not_promoted_men, not_promoted_women)),
+           total = c(24, 24, 48))
+```
+
+What if we draw a lot of random samples?
+```{r sample_function}
+#Write a function to simulate 1 draw 
+promoted_diff <- function() {
+  
+  # 48 total employees, 24 Male and 24 Female
+  employees <- c(rep("Male", 24), rep("Female", 24))
+  
+  # Let's randomly promote 35 employees (independent of gender)
+  promoted <- sample(employees, 35) 
+  
+  # Compute the difference in promoted men and women
+  promoted_male <- sum(promoted == "Male")/24
+  promoted_female <- sum(promoted == "Female")/24
+  
+  return(promoted_male - promoted_female)
+}
+
+# One function call
+promoted_diff()
+```
+
+Sample and plot
+```{r thousand_samples}
+thousand_diffs <- data_frame(diff = replicate(1000, promoted_diff()))
+
+ggplot(thousand_diffs, aes(x = diff)) + 
+  geom_histogram(bins = 50)
+```
+
+Sample and plot along with our original result
+```{r}
+#find difference in the actual data
+actual_diff <- (21/24) - (14/24)
+
+thousand_diffs <- data_frame(diff = replicate(1000, promoted_diff()))
+
+#add a vertical line to the random samples to show the empirical data
+ggplot(thousand_diffs, aes(x = diff)) + 
+  geom_histogram(bins = 50) + 
+  geom_vline(xintercept = actual_diff, color = "darkred", size = 2) 
+```
+
+Where does our difference lie?
+```{r}
+# Compute the proportion of samples that the actual difference was greater than
+mean(actual_diff >= thousand_diffs)
+```
+
+Our empirical difference in promotion probability is as big or bigger than almost all of the random samples we took! So probably something funny is going on, because this would be a really unusual result to happen by random chance.

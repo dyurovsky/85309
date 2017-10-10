@@ -3,6 +3,8 @@ title: "Exploratory Data Analysis"
 output:
   html_notebook:
     toc: yes
+editor_options: 
+  chunk_output_type: inline
 ---
 
 ```{r, message = F}
