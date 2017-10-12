@@ -52,9 +52,9 @@ title: Schedule
 | Oct 9, Mon  |  **Quiz 2** in class |
 |             | [Lesson 2.1: Randomization and Sampling](post/slides/sampling.pdf) |
 |             | [Simulating Gender Discrimination in Hiring](post/rmd/gender.Rmd) |
-| Oct 11, Wed | Lesson 2.2: Hypothesis Testing |
+| Oct 11, Wed | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf) |
 |             | [Simulating Cardiac Arrest Outcomes](post/rmd/cardiac.Rmd) |
-| Oct 13, Fri | Lab 3: Testing the Hot Hands Hypothesis |
+| Oct 13, Fri | [Lab 3: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 | Oct 16, Mon | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem |
 | Oct 18, Wed | Lesson 2.4: The Normal Distribution | 
