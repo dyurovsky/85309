@@ -56,7 +56,7 @@ title: Schedule
 |             | [Simulating Cardiac Arrest Outcomes](post/rmd/cardiac.Rmd) |
 | Oct 13, Fri | [Lab 3: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 | Oct 16, Mon | **Quiz 3** in class |
-|             | Lesson 2.3: The Central Limit Theorem |
+|             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf) |
 | Oct 18, Wed | Lesson 2.4: The Normal Distribution | 
 | Oct 20, Fri | Lab 4: Sampling Distributions |
 | Oct 23, Mon | **Quiz 4** in class |
