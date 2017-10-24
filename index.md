@@ -60,11 +60,11 @@ title: Schedule
 | Oct 18, Wed | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf) | 
 | Oct 20, Fri | [Lab 4: Sampling Distributions](post/labs/sampling_distributions.html) |
 | Oct 23, Mon | **Quiz 4** in class |
-|             | Lesson 2.5: Confidence Intervals | 
+|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) | 
 
 ##### Due dates
 
-* Lab 3: Oct 210, Start of Lab Section
+* Lab 3: Oct 21, Start of Lab Section
 * Lab 4: Oct 27, Start of Lab Section
 * PS 2: Oct 25, 1:30 PM
   * End of chapter exercises from **Chp 2**. Only turn in answers to graded questions,
