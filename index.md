@@ -86,7 +86,8 @@ title: Schedule
 
 ##### Class / lab
 
-| Oct 25, Wed | Lesson 3.1: Inference for a Single Proportion |
+| Oct 25, Wed | [Lesson 3.1: Inference for a Single Proportion](post/slides/one_prop_clt.pdf) |
+|             | [Simulating population proportion estimates](post/rmd/one_prop_clt.Rmd) |
 | Oct 27, Fri | Lab 5: Confidence Intervals |
 | Oct 30, Mon | **Quiz 5** in class |
 |             | Lesson 3.2: Difference of Two Proportions |
