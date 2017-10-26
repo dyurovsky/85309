@@ -29,7 +29,7 @@ title: Course Information
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Tuesday 4:00 - 5:30              | Green 201     |
 |Deena Bernett        | Wednesday 12:00 - 1:30           | Green 404     |
-|Cristina Carrazza    | Thursday 2:30 - 4:00             | Green 404     |
+|Cristina Carrazza    | Thursday 3:00 - 4:30             | Green 404     |
 
 
 * * *
