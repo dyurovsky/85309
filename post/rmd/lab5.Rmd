@@ -72,10 +72,3 @@ set.seed(20100)
 ```{r}
 # enter your code for Exercise 9 here
 ```
-
-#### Exercise 10:
-
-```{r}
-# enter your code for Exercise 10 here
-```
-
