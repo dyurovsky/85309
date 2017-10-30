@@ -90,7 +90,7 @@ title: Schedule
 |             | [Simulating population proportion estimates](post/rmd/one_prop_clt.Rmd) |
 | Oct 27, Fri | [Lab 5: Confidence Intervals](post/labs/confidence_intervals.html) |
 | Oct 30, Mon | **Quiz 5** in class |
-|             | Lesson 3.2: Difference of Two Proportions |
+|             | [Lesson 3.2: Difference of Two Proportions](post/slides/prop_diff.pdf)|
 | Nov 1, Wed  | Lesson 3.3: The t-distribution |
 | Nov 3, Fri  | Lab 6: Inference for Categorical Data |
 | Nov 6, Mon  | **Quiz 6** in class |
