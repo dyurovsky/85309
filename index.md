@@ -105,7 +105,7 @@ title: Schedule
 * Lab 7: Nov 17, Start of Lab Section
 * PS 3: Nov 13, 1:30 PM
   * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
-  * **Graded questions:** 3.2, 3.6, 3.12, 3.18, 3.24, 3.26, 4.2, 4.6, 4.10, 4.14, 4.16, 4.18, 4.24
+  * **Graded questions:** 3.2, 3.12, 3.24, 4.6, 4.10, 4.14, 4.18
   * Practice questions: 
       + Part 1 – Inference for a single proportion: 3.1, 3.5, 3.11, 3.19 
       + Part 2 – Difference of two proportions: 3.23, 3.25, 2.15, 2.17, 2.19, 2.23, 2.29, 2.31
