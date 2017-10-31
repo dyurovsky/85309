@@ -1,0 +1,108 @@
+
+---
+title: "Lab 6 - Inference for categorical data"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load data**
+```{r load_data}
+atheism <- read_csv("https://dyurovsky.github.io/psyc201/data/lab6/atheism.csv")
+```
+
+## Exercises:
+
+#### Exercise 1: 
+
+
+#### Exercise 2: 
+
+
+#### Exercise 3: 
+
+```{r ex3}
+
+```
+
+
+#### Exercise 4: 
+
+
+
+#### Exercise 5: 
+
+```{r ex5}
+
+```
+
+#### Exercise 6:
+
+```{r ex6}
+
+```
+
+#### Exercise 7:
+
+```{r ex7}
+
+```
+
+#### Exercise 8: 
+
+```{r ex8}
+
+```
+
+#### Exercise 9:
+
+```{r ex9}
+
+```
+
+#### Exercise 10:
+
+```{r ex10}
+
+```
+
+
+* * *
+
+### On your own:
+
+#### Exercise 11:
+
+```{r ex11}
+# enter your code for Exercise 11 here
+```
+
+#### Exercise 12:
+
+```{r ex11}
+# enter your code for Exercise 12 here
+```
+
+
+#### Exercise 13:
+
+```{r ex11}
+# enter your code for Exercise 13 here
+```
+
+#### Exercise 14:
+
+
