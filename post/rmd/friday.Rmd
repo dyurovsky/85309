@@ -1,0 +1,79 @@
+
+---
+title: "Friday the 13th"
+output:
+  html_notebook:
+    toc: yes
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r load_libraries}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 16))
+```
+
+Read in the data
+```{r read_data}
+
+friday <- read_csv("https://dyurovsky.github.io/psyc201/data/demos/friday.csv")
+
+traffic <- friday %>%
+  filter(type == "traffic")
+```
+
+Let's look at some basic descriptives
+```{r descriptives}
+
+#Plot a histogram
+ggplot(traffic, aes(x = diff)) + 
+  geom_histogram(binwidth = 1000)
+
+qplot(traffic$diff, binwidth = 1000) 
+
+# Descriptive statistics
+descriptives <- traffic %>%
+  summarise(mean = mean(diff),
+            sd = sd(diff),
+            n = n())
+
+descriptives
+```
+
+Ok let's compute t-test statistics by hand
+```{r test_statistics}
+# Get the components I need for the T-statistic formula
+test_statistics <- descriptives %>%
+  mutate(df = n - 1,
+         se = sd/sqrt(n),
+         t = (mean - 0)/se)
+
+test_statistics
+
+# Find the p-value using position in the t-distribution with the appropriate degrees of freedom
+p_val <- 2 * pt(test_statistics$t, test_statistics$df, lower.tail = FALSE)
+p_val
+```
+
+Ok now let's skip all of that and use the built-in R function
+```{r t_test}
+# Use the t.test function to ske
+friday_test <- t.test(traffic$diff, alternative = "two.sided")
+friday_test
+```
+
+Make a plot of our empirical data on the Null Hypothesis distribution
+```{r t_dist}
+t_9 <- data_frame(x = seq(-6,6,.01), #Range of t-values to look at
+                  y = dt(seq(-6,6,.01), 9)) #Density of the t-distribution with 9 df
+
+ggplot(data = t_9, aes(x = x, y = y)) +
+  geom_point(size = .25) + #plot the null distribution
+  geom_vline(aes(xintercept = test_statistics$t), size = 2, color = "darkred") + #empirical data
+  geom_vline(aes(xintercept = qt(.0275, 9)), color = "gray", size = 1.5) + #2.5th percentile
+  geom_vline(aes(xintercept = qt(.975, 9)), color = "gray", size = 1.5) +  #97.5th percentile
+  theme(panel.grid = element_blank()) +
+  ylab("") +
+  xlab("t-value")
+```
