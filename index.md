@@ -91,7 +91,7 @@ title: Schedule
 | Oct 27, Fri | [Lab 5: Confidence Intervals](post/labs/confidence_intervals.html) |
 | Oct 30, Mon | **Quiz 5** in class |
 |             | [Lesson 3.2: Difference of Two Proportions](post/slides/prop_diff.pdf)|
-| Nov 1, Wed  | Lesson 3.3: The t-distribution |
+| Nov 1, Wed  | [Lesson 3.3: The t-distribution](post/slides/one_sample_t.pdf) |
 |             | [Simulating Friday the 13th](post/rmd/friday.Rmd)|
 | Nov 3, Fri  | [Lab 6: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Nov 6, Mon  | **Quiz 6** in class |
