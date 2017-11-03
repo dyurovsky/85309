@@ -92,17 +92,20 @@ atheism <- read_csv("https://dyurovsky.github.io/psyc201/data/lab6/atheism.csv")
 
 #### Exercise 12:
 
-```{r ex11}
+```{r ex12}
 # enter your code for Exercise 12 here
 ```
 
 
 #### Exercise 13:
 
-```{r ex11}
+```{r ex13}
 # enter your code for Exercise 13 here
 ```
 
 #### Exercise 14:
 
+```{r ex14}
+# enter your code for Exercise 13 here
+```
 
