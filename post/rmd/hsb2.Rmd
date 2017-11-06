@@ -1,0 +1,109 @@
+
+---
+title: "T-tests, differences, and pooled variance"
+output:
+  html_notebook:
+    toc: yes
+editor_options: 
+  chunk_output_type: inline
+---
+
+Load tidyverse package and set plot theme
+```{r load_libraries, message = F}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 16))
+```
+
+
+Why do we use the t-distirbution? Our estimates of the standard deviation of a sample--and thus the width of a sampling distribution--are more variable with small sample sizes
+```{r normal_variance}
+sd2 <- rnorm(2) %>%
+  sd()
+
+sd2
+
+sd10 <- rnorm(10) %>%
+  sd()
+
+sd100 <- rnorm(100) %>%
+  sd()
+
+sd1000 <- rnorm(1000) %>%
+  sd()
+
+data_frame(sample = 1:1000, sd = replicate(1000, sd(rnorm(2)))) %>%
+  ggplot(aes(x = sd)) + 
+  geom_histogram(binwidth = .1)
+
+
+data_frame(sample = 1:1000, sd = replicate(1000, sd(rnorm(10)))) %>%
+  ggplot(aes(x = sd)) + 
+  geom_histogram(binwidth = .1)
+
+
+data_frame(sample = 1:1000, sd = replicate(1000, sd(rnorm(100)))) %>%
+  ggplot(aes(x = sd)) + 
+  geom_histogram(binwidth = .1)
+
+
+data_frame(sample = 1:1000, sd = replicate(1000, sd(rnorm(1000)))) %>%
+  ggplot(aes(x = sd)) + 
+  geom_histogram(binwidth = .1)
+
+```
+
+Set up data, make sure everything checks out
+```{r data}
+hsb2 <-  read_csv("https://dyurovsky.github.io/psyc201/data/demos/hsb2.csv") %>%
+  mutate(diff = read - write)
+
+head(hsb2)
+```
+
+
+```{r show_data}
+ggplot(hsb2, aes(x = read)) +
+  geom_histogram(binwidth = 10)
+
+hsb2 %>%
+  summarise(sd = sd(read),
+            mean = mean(read))
+
+
+
+ggplot(hsb2, aes(x = write)) +
+  geom_histogram(binwidth = 10)
+
+hsb2 %>%
+  summarise(sd = sd(write),
+            mean = mean(write))
+
+
+ggplot(hsb2, aes(x = diff)) +
+  geom_histogram(binwidth = 10)
+
+hsb2 %>%
+  summarise(sd = sd(diff),
+            mean = mean(diff))
+```
+
+```{r comparing t_tests}
+# Test if the reading scores's mean is drawn from a population who's mean 
+# is the mean of the writing scores samples
+t.test(hsb2$read, mu = mean(hsb2$write))
+
+
+# Test if the difference between reading and writing scores is drawn from 
+# a population with a mean of 0
+t.test(hsb2$read - hsb2$write, mu = 0)
+
+# Test if the reading scores's mean is drawn from the 
+# same poupulation as the writing scores mean
+t.test(hsb2$read - sample(hsb2$write), mu = 0)
+```
+
+
+
+
+

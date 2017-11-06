@@ -95,7 +95,8 @@ title: Schedule
 |             | [Simulating Friday the 13th](post/rmd/friday.Rmd)|
 | Nov 3, Fri  | [Lab 6: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Nov 6, Mon  | **Quiz 6** in class |
-|             | Lesson 3.4: Paired data and the t-tests |
+|             | [Lesson 3.4: Paired data and the t-tests](post/slides/paired_t.pdf) |
+|             | [Simulating reading and writing score differences](post/rmd/hsb2.Rmd) |
 | Nov 8, Wed  | Lesson 3.5: Difference of two means |
 | Nov 10, Fri | Lab 7: Inference for Numerical Data |
 
