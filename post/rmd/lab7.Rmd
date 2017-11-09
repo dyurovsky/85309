@@ -88,14 +88,14 @@ acs <- read_csv("https://dyurovsky.github.io/psyc201/data/lab7/acs.csv")
 ```
 
 
-#### Exercise 8: 
+#### Exercise 10: 
 
 ```{r ex10}
 
 ```
 
 
-#### Exercise 8:
+#### Exercise 11:
 
 ```{r ex11}
 
