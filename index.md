@@ -127,8 +127,8 @@ title: Schedule
 ##### Class / lab
 
 | Nov 13, Mon | **Quiz 7** in class | 
-|             | Lesson 4.1: Linear Regression |
-| Nov 15, Wed | Lesson 4.2: Residuals and Least Squares |
+|             | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
+| Nov 15, Wed | [Lesson 4.2: Residuals and Least Squares](post/slides/least_squares.pdf) |
 | Nov 17, Fri | Lab 8: Simple Linear Regression|
 | Nov 20, Mon | **Quiz 8** in class | 
 |             | Lesson 4.3: Inference for linear regression |
