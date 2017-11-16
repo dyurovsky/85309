@@ -140,10 +140,10 @@ title: Schedule
 | Dec 1, Fri  | Lab: Work on project (Optional)|
 
 ##### Due dates
-* Lab 8: Nov 24, Start of Lab Section
+* Lab 8: Dec 1, Start of Lab Section
 * PS 4: Dec 4 Mon, 12:30 PM
    * End of chapter exercises from **Chp 5 and 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
-  * **Graded questions:** 5.2, 5.4, 5.10, 5.18, 5.20, 5.26, 5.28, 6.2, 6.8, 6.10, 6.12
+  * **Graded questions:** 5.4, 5.10, 5.20, 5.28, 6.2, 6.8,
   * Practice questions: 
       + Part 1 – Line fitting, residuals, and correlation: 5.1, 5.3, 5.9
       + Part 2 – Fitting a line by least squares: 5.17, 5.19
