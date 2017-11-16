@@ -129,7 +129,7 @@ title: Schedule
 | Nov 13, Mon | **Quiz 7** in class | 
 |             | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
 | Nov 15, Wed | [Lesson 4.2: Residuals and Least Squares](post/slides/least_squares.pdf) |
-| Nov 17, Fri | Lab 8: Simple Linear Regression|
+| Nov 17, Fri | [Lab 8: Simple Linear Regression](post/labs/simple_regression.html)|
 | Nov 20, Mon | **Quiz 8** in class | 
 |             | Lesson 4.3: Inference for linear regression |
 | Nov 22, Wed | Lesson 4.4: Multiple regression |
@@ -143,14 +143,13 @@ title: Schedule
 * Lab 8: Nov 24, Start of Lab Section
 * PS 4: Dec 4 Mon, 12:30 PM
    * End of chapter exercises from **Chp 5 and 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
-  * **Graded questions:** 5.2, 5.4, 5.10, 5.18, 5.20, 5.26, 5.28, 6.2, 6.8, 6.10, 6.12, (6.14 for extra credit)
+  * **Graded questions:** 5.2, 5.4, 5.10, 5.18, 5.20, 5.26, 5.28, 6.2, 6.8, 6.10, 6.12
   * Practice questions: 
       + Part 1 – Line fitting, residuals, and correlation: 5.1, 5.3, 5.9
       + Part 2 – Fitting a line by least squares: 5.17, 5.19
       + Part 3 - Inference for linear regression: 5.27, 5.29
       + Part 4 - Introduction to multiple regression: 6.1, 6.3
       + Part 5 - Model selection: 6.7, 6.9, 6.11
-      + Part 6 - Logistic Regression: 6.13
 * Final Project : Dec 7 11:55PM 
 * [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Dec 7 11:55PM 
 
