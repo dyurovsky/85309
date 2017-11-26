@@ -132,7 +132,8 @@ title: Schedule
 | Nov 17, Fri | [Lab 8: Simple Linear Regression](post/labs/simple_regression.html)|
 | Nov 20, Mon | **Quiz 8** in class | 
 |             | [Lesson 4.3: Inference for linear regression](post/slides/inf_for_regression.pdf) |
-| Nov 22, Wed | Lesson 4.4: Multiple regression |
+| Nov 22, Wed | [Lesson 4.4: Multiple regression](post/slides/multiple_regression.pdf) |
+|             | [Understanding correlation and simple regression](post/rmd/twins.Rmd) |
 | Nov 24, Fri | *Thankgsiving Break - no class* |
 | Nov 27, Mon | **Quiz 9** in class | 
 |             | Lesson 4.5: Model Selection |
