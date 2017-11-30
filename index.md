@@ -136,8 +136,9 @@ title: Schedule
 |             | [Understanding correlation and simple regression](post/rmd/twins.Rmd) |
 | Nov 24, Fri | *Thankgsiving Break - no class* |
 | Nov 27, Mon | **Quiz 9** in class | 
-|             | Lesson 4.5: Model Selection |
-| Nov 29, Wed | Lesson 3.6 Multiple Regression and ANOVA |
+|             | [Lesson 4.5: Model Selection](post/slides/model_selection.pdf) |
+| Nov 29, Wed | [Lesson 4.6 Multiple Regression and ANOVA](post/slides/anova.pdf) |
+|             | [Regression and ANOVA](post/rmd/prof_analysis.Rmd) |
 | Dec 1, Fri  | Lab: Work on project (Optional)|
 
 ##### Due dates
