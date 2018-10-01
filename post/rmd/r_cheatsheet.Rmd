@@ -1,0 +1,219 @@
+---
+title: "A brief intro to R"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r load_tidyverse}
+library(tidyverse)
+```
+
+R can do math!
+```{r}
+4 + 3
+
+2*6
+
+20/4
+
+3^2
+```
+
+You can store a certain number in a variable name
+
+```{r}
+x <- 5
+
+x
+
+x + 2
+
+x + 1
+
+x * 6
+
+```
+
+After you do math with your variable, you can store the answer in a new variable name
+```{r}
+a <- x + 5
+
+a
+
+b <- a * 3
+
+b
+```
+
+
+If you store a new number in the variable name, it erases the old number and takes it’s place
+```{r}
+b <- 3
+
+b
+
+b <- b + 1
+
+b
+```
+
+
+The name of your variable doesn’t have to just be a single letter. It can be any string of characters you want. (It has to start with a letter and can’t contain spaces. Some other characters also not allowed.)
+```{r}
+Pizza_Slice <- 2
+
+4 * Pizza_Slice
+
+cs <- 3
+
+ps <- 2.5
+
+ss <- 2.75
+
+2*cs + ps
+```
+
+
+NOTE: Variable names are case sensitive!
+```{r}  
+ps
+
+PS
+```
+
+You can store a whole list of numbers (a “vector”) in a single variable name. Easiest to think of this as a column of numbers in a spreadsheet and of the variable name as the heading of the column.
+```{r}
+x <- c(1,2,3)
+
+x
+```
+
+You can do math with vectors in R
+```{r}
+x + 5
+```
+
+
+Again, you can store the answer in a new variable name if you’d like
+```{r}
+My_Answer <- x + 3
+
+My_Answer
+```
+
+
+Here’s some more math you can do with vectors
+```{r}
+x <- c(1,2,3)
+
+y <- c(100,200,300)
+
+x + y
+
+z <- x + y
+
+z
+
+```
+
+R has tons of built in functions that you can apply to your data. Here are just a few examples..
+
+```{r}
+sum(3,4,2)
+
+x <- c(3,4,2)
+
+sum(x)
+
+length(x)
+
+mean(x)
+```
+
+
+You can put multiple vectors (columns of numbers) together to make a complete spreadsheet of data (a “data frame”). Most of the data we’ll work with will be organized in data frames.
+```{r}
+rat_number <- c(1,2,3)
+weight <- c(8, 7, 12)
+
+#You can store other things besides just numbers in variables in R.
+rat_name <- factor(c("Joe", "Moe", "Doe"))
+
+some_rat_weights <- data_frame(number = rat_number,
+                              name = rat_name, weight = weight)
+
+some_rat_weights 
+
+#You can see your data frame in a really nice viewer by double clicking its name in the right side or by typing
+View(some_rat_weights)
+```
+
+R can make graphs!
+```{r}  
+ggplot(data = some_rat_weights, aes(x = number, y = weight)) + 
+  geom_point()
+
+ggplot(data = some_rat_weights, aes(x = name, y = weight)) + 
+  geom_point()
+```
+
+#You can pull out individual vectors (columns) from your data frame.
+```{r}
+some_rat_weights$number
+
+some_rat_weights$weight
+```
+
+You can add new columns to your data frame simply by making up a new column name and storing something in it
+```{r}
+some_rat_weights$age <- c(12,14,17)
+
+some_rat_weights
+
+some_rat_weights$male <- factor(c("Y","Y","N"))
+
+some_rat_weights
+```
+
+You can still do math on and apply functions to the vectors in a data frame (like you would on separate vectors).
+```{r}
+srw$age + 1
+
+srw$weight / srw$age
+
+mean(srw$age)
+```
+
+Just like a single variable, you can "overwrite" the data in a data frame column name simply by storing a new value in it
+```{r}
+some_rat_weights$male <- c(1,1,0)
+
+some_rat_weights
+
+srw <- some_rat_weights
+
+some_rat_weights$age <- some_rat_weights$age + 1
+
+some_rat_weights
+
+srw <- some_rat_weights
+
+srw
+```
+
+
+You can build a data frame from scratch (like above). OR you can import data from another source (for example, a .csv file)
+```{r}
+setwd("~/Desktop")
+
+mnrd <- read_csv("Rat_Weights.csv")
+
+mnrd
+
+mnrd$Weight
+```
+
+FYI - in R studio you can run multiple lines of code at once by highlighting them and then clicking "Run" or "command + enter".
+
+Other R studio features: Scroll back through past plots, erase all plots, erase all variables, save all varaibles for next session

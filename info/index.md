@@ -17,8 +17,8 @@ title: Course Information
 ### Class meetings:
 * Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, Harper Memorial Library 130
 * Labs: Friday
-    * 12:30pm - 1:20pm - TBA - TA: Haerin Chung
-    * 1:30pm - 2:20pm - TBA - TA: Colin Quirk
+    * 12:30pm - 1:20pm - Walker Museum 303 - TA: Haerin Chung
+    * 1:30pm - 2:20pm - BioSci Learning Center 018 - TA: Colin Quirk
 
 * * *
 
