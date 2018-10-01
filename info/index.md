@@ -40,7 +40,7 @@ title: Course Information
    CreateSpace, 1st Edition, 2014 (ISBN: 978-1500576691) \\
 The textbook is freely [available online](https://www.openintro.org/download.php?file=isrs1&referrer=/stat/textbook.php). You're welcomed to read on screen or print it out. If you prefer a paperback version you can buy it at the cost of printing ($8.49) [on Amazon](https://www.amazon.com/gp/product/1500576697/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1500576697&linkCode=as2&tag=open084-20&linkId=UWWPUCGZGLFC2PHW). The textbook store will not carry copies of this text.
 
-* Software: The [R](https://www.r-project.org/) programming language, and [RStudio](https://www.rstudio.com/products/RStudio/) -- a development environment for the R language. \\
+* Software: The [R](https://cloud.r-project.org/) programming language, and [RStudio](https://www.rstudio.com/products/RStudio/) -- a development environment for the R language. \\
 	Both are free and open source.
 
 * * *

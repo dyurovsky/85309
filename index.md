@@ -15,7 +15,7 @@ title: Schedule
 
 ##### Class / lab
 
-| Oct 1, Mon  | Introduction to PSYC 201                                  |
+| Oct 1, Mon  | [Introduction to PSYC 201](post/slides/intro.pdf)                                 |
 | Oct 3, Wed  | Lesson 1.1: Data--where it comes from and why it matters   |
 | Oct 5, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html)                          |
 |              | [R CheatSheet](post/rmd/r_cheatsheet.Rmd)                                          |
