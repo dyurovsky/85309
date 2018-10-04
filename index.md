@@ -29,7 +29,7 @@ title: Schedule
 * [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Oct 6 11:55PM
 * Lab 1: Oct 12, Start of Lab Section
 * Lab 2: Oct 19, Start of Lab Section
-* Problem Set 1: Oct 9, Mon, at 12:30pm
+* Problem Set 1: Oct 8, Mon, at 12:30pm
   * End of chapter exercises from **Chp 1**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Google Classroom.
