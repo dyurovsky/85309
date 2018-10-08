@@ -20,13 +20,13 @@ title: Schedule
 | Oct 5, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html)                          |
 |              | [R CheatSheet](post/rmd/r_cheatsheet.Rmd)                                          |
 | Oct 8, Mon   |  **Quiz 1** in class                                                               |
-|              | Lesson 1.2: Exploratory Data Analysis                 |
+|              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf)                 |
 | Oct 10, Wed   | Lesson 1.3: More Exploratory Data Analysis            |
 | Oct 12, Fri   | Lab 2: Intro to Data                               |
 
 ##### Due dates
 
-* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Oct 6 11:55PM
+* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Oct 9 11:55PM
 * Lab 1: Oct 12, Start of Lab Section
 * Lab 2: Oct 19, Start of Lab Section
 * Problem Set 1: Oct 15, Mon, at 12:30pm
