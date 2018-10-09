@@ -22,7 +22,7 @@ title: Schedule
 | Oct 8, Mon   |  **Quiz 1** in class                                                               |
 |              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf)                 |
 | Oct 10, Wed   | Lesson 1.3: More Exploratory Data Analysis            |
-| Oct 12, Fri   | Lab 2: Intro to Data                               |
+| Oct 12, Fri   | [Lab 2: Intro to Data](post/labs/intro_to_data.html)                               |
 
 ##### Due dates
 
