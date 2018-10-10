@@ -1,0 +1,97 @@
+
+---
+title: "Exploratory Data Analysis"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+  html_notebook:
+    toc: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r, message = F}
+library(tidyverse)
+```
+
+Read in the data
+```{r read_csv, message = F}
+#read data from the course site
+class_data <- read_csv("https://dyurovsky.github.io/psyc201/data/demos/psyc201_data.csv")
+```
+
+```{r head_data}
+# show the first few rows of the data
+head(class_data)
+```
+
+Use `ggplot` to make a separate histogram for each of the three things we measured. 
+```{r, fig.width = 4, fig.height = 4}
+# use the classic plot theme--a little cleaner than the default
+theme_set(theme_classic(base_size = 16))
+
+# plot height
+ggplot(class_data, aes(x = height)) + 
+  geom_histogram(binwidth = 3) +
+  scale_x_continuous(limits = range(class_data$height))
+  
+# plot month
+ggplot(class_data, aes(x = birth_month)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(breaks = 1:12)
+  
+# plot siblings
+ggplot(class_data, aes(x = siblings)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(limits = range(class_data$siblings))
+```
+
+
+The current `class_data` data frame is in what's called *wide format* -- each row has multiple observations for a single person. To analyze it, I want it in *long format*, where each row has only a single data point.
+
+Munge the data (process it to get it into a tidy format). I'm going to use the `gather` function from the `tidyverse` package. Right now, a single row has a value for `siblings`, `height`, and `birth_month`. I want it to only have a single `value` column and another column `measurement` that indicates which of three variables the value corresponds to. 
+
+So what I do is I make a new column called `person` which just gives a unique number to each row of the dataset (from 1 to the number of rows in the dataframe). Then I `gather` together all of the other measures.
+
+```{r munge_data}
+class_data_long <- class_data %>%
+  mutate(person = 1:n()) %>% #make a unique identifier for each row
+  gather(measure, value, -person) #gather all of the columns except for person
+  
+# now it's in long form!
+head(class_data_long)
+```
+
+
+Now I want to compute some descriptive statistics--the mean and median. I'll use the `group_by` function from the `tidyverse` package to let `R` know that I want to call these functions separately for each `measure` in my dataset. Then I'll use `summarize`, which takes in all of the data for each group, and reduces it down to a single number using the functions I ask for. Here, `mean` and `median`.
+
+```{r compute_descriptives}
+descriptives <- class_data_long %>%
+  group_by(measure) %>%
+  summarize(mean = mean(value),
+            median = median(value))
+
+#let's print out these descriptives
+descriptives
+```
+
+
+Ok, let's plot all of the histograms together! And let's also put a line on each indicating the position of the mean (in red), and the median (in blue). That way, we can see how skew in our distributions changes the relationship between them.
+
+```{r facet_plot, fig.width = 8, fig.height = 4}
+ggplot(class_data_long, aes(x = value)) +
+  facet_wrap(~ measure, scales = "free_x") + #make a separate panel for each measure
+  geom_histogram(fill = 'gray', color = 'black') + 
+  geom_vline(aes(xintercept = mean), data = descriptives, color = "red") + 
+  geom_vline(aes(xintercept = median), data = descriptives, color = "blue") 
+```
+
+
+Now lets make boxplots so we can see how they compare to the histograms. They still show a lot of the same information--skew, variability, center--but they also compress a lot of data about exactly how many people had exactly what height.
+
+```{r boxplot, fig.width = 6, fig.height = 4}
+ggplot(class_data_long, aes(x = measure, y = value)) +
+  geom_boxplot() 
+```
+

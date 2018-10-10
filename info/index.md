@@ -29,7 +29,7 @@ title: Course Information
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Wednesday 4:00 - 5:30            | Green 201     |
 |Colin Quirk        | Tuesday 3:00 - 4:30           | Green 101   |
-|Haerin Chung    | Thursday 3:00 - 4:30             | Green 501     |
+|Haerin Chung    | Thursday 10:00 - 11:30             | Green 501     |
 
 
 * * *
