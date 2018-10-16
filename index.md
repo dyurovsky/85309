@@ -50,7 +50,8 @@ title: Schedule
 ##### Class / lab
 
 | Oct 15, Mon  |  **Quiz 2** in class |
-|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) | |              | [Simulating Bias in Hiring ](post/rmd/gender.Rmd) |
+|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
+|             | [Simulating Bias in Hiring ](post/rmd/gender.Rmd) |
 | Oct 17, Wed | Lesson 2.2: Hypothesis Testing |
 | Oct 19, Fri | Lab 3: Testing the Hot Hands Hypothesis |
 | Oct 22, Mon | **Quiz 3** in class |
