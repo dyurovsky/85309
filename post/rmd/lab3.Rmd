@@ -1,0 +1,62 @@
+
+---
+title: "Lab 3 - Hypothesis Testing"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load data**
+```{r load_data}
+curry_data <- read_csv("https://dyurovsky.github.io/psyc201/data/lab3/curry_data.csv")
+```
+
+
+#### Exercise 1: 
+```{r}
+# enter your code for Exercise 1 here
+
+```
+
+#### Exercise 2:
+
+
+#### Exercise 3:
+
+
+#### Exercise 4:
+```{r}
+# enter your code for Exercise 4 here
+```
+
+### On your own:
+
+#### Exercise 5:
+```{r}
+# enter your code for Exercise 5 here
+```
+
+#### Exercise 6:
+
+
+#### Exercise 7:
+
+```{r}
+# enter your code for Exercise 7 here
+```
+
+#### Exercise 8:
+
