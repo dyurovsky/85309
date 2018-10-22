@@ -57,7 +57,7 @@ title: Schedule
 |             | [Hypothesis Testing Lab Primer ](post/slides/lab_primer.pdf) |
 | Oct 19, Fri | [Lab 3: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 | Oct 22, Mon | **Quiz 3** in class |
-|             | Lesson 2.3: The Central Limit Theorem |
+|             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf) |
 | Oct 24, Wed | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem|
 | Oct 26, Fri | Lab 4: Sampling Distributions|
 | Oct 29, Mon | **Quiz 4** in class |
