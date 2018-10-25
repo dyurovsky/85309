@@ -1,0 +1,119 @@
+
+---
+title: "The Central Limit Theorem"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+  html_notebook:
+    toc: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r, message = F}
+library(tidyverse)
+theme_set(theme_classic(base_size = 16))
+```
+
+Read in the data
+```{r read_csv, message = F}
+# read class data
+class_data <- read_csv("https://dyurovsky.github.io/psyc201/data/demos/psyc201_data.csv")
+
+# read in Data from GSS 2016
+sibs_data <- read_csv("https://dyurovsky.github.io/psyc201/data/demos/siblings.csv")
+```
+
+Number of siblings reported in the General Social Survey in 2016
+```{r gss_sibs}
+# plot gss siblings
+ggplot(sibs_data, aes(x = siblings)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(limits = range(sibs_data$siblings))
+```
+
+Number of siblings reported PsychStats in 2018
+```{r class_sibs}
+# plot class siblings
+ggplot(class_data, aes(x = siblings)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(limits = range(class_data$siblings))
+```
+
+Why isn't the class data normally distributed? Maybe it's not a representative sample? Let's take a sample
+
+```{r sample_sibs} 
+class_size_sample <- sibs_data %>%
+  sample_n(nrow(class_data))
+
+
+ggplot(class_size_sample, aes(x = siblings)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(limits = range(class_size_sample$siblings))
+
+```
+
+Maybe that sample is too small?
+```{r sample_sibs_bigger} 
+big_sample <- sibs_data %>%
+  sample_n(400)
+
+
+ggplot(big_sample, aes(x = siblings)) + 
+  geom_histogram(binwidth = 1)  +
+  scale_x_continuous(limits = range(class_size_sample$siblings))
+
+```
+
+This can't be the problem, right? Because, as we keep increasing sample size, in the limit the sample becomes the population.
+
+```{r sample_mean_function}
+sample_mean <- function(size) {
+  sibs_data %>%
+    sample_n(size) %>%
+    summarise(mean = mean(siblings)) %>%
+    pull()
+}
+ 
+
+sample_mean(100)   
+```
+
+
+```{r distribution_of_sample_means_10}
+sample_10 <- data_frame(sample = 1:1000, siblings = replicate(1000, sample_mean(10)))
+  
+ggplot(sample_10, aes(x = siblings)) + 
+  geom_histogram(bins = 30)  +
+  scale_x_continuous(limits = range(sample_10$siblings))
+```
+
+```{r distribution_of_sample_means_20}
+sample_20 <- data_frame(sample = 1:1000, siblings = replicate(1000, sample_mean(20)))
+  
+ggplot(sample_20, aes(x = siblings)) + 
+  geom_histogram(bins = 30)  +
+  scale_x_continuous(limits = range(sample_20$siblings))
+```
+
+
+```{r distribution_of_sample_means_100}
+sample_100 <- data_frame(sample = 1:1000, siblings = replicate(1000, sample_mean(100)))
+  
+ggplot(sample_100, aes(x = siblings)) + 
+  geom_histogram(bins = 30)  +
+  scale_x_continuous(limits = range(sample_100$siblings))
+```
+
+Let's see if the number of average siblings in the class is surprising given the GSS surver
+
+
+```{r distribution_of_sample_means_nclass}
+sample_nclass <- data_frame(sample = 1:1000, siblings = replicate(1000, sample_mean(nrow(class_data))))
+  
+ggplot(sample_nclass, aes(x = siblings)) + 
+  geom_histogram(bins = 30)  +
+  scale_x_continuous(limits = c(0, 6)) + 
+  geom_vline(aes(xintercept = mean(class_data$siblings)), color = "darkred")
+```
