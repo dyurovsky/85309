@@ -59,7 +59,7 @@ title: Schedule
 | Oct 22, Mon | **Quiz 3** in class |
 |             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf) |
 | Oct 24, Wed | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf)|
-|             | [Demonstrating CLT with siblings](post/rmd/sliblings.Rmd)    |
+|             | [Demonstrating CLT with siblings](post/rmd/siblings.Rmd)    |
 | Oct 26, Fri | [Lab 4: Sampling Distributions](post/labs/sampling_distributions.html)|
 | Oct 29, Mon | **Quiz 4** in class |
 |             | Lesson 2.5: Confidence Intervals|
