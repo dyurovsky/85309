@@ -62,7 +62,8 @@ title: Schedule
 |             | [Demonstrating CLT with siblings](post/rmd/siblings.Rmd)    |
 | Oct 26, Fri | [Lab 4: Sampling Distributions](post/labs/sampling_distributions.html)|
 | Oct 29, Mon | **Quiz 4** in class |
-|             | Lesson 2.5: Confidence Intervals|
+|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf)|
+|             | [Inferring Distribution Shapes from QQPlots](post/rmd/qqplots.Rmd)|
 
 ##### Due dates
 
