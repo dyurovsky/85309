@@ -89,8 +89,9 @@ title: Schedule
 
 ##### Class / lab
 
-| Oct 31, Wed | Lesson 3.1: Inference for a Single Proportion |
-| Nov 2, Fri | Lab 5: Confidence Intervals|
+| Oct 31, Wed | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
+|             | [Confidence intervals for a proportion](post/rmd/one_prop_clt.Rmd) |
+| Nov 2, Fri | [Lab 5: Confidence Intervals](post/labs/confidence_intervals.html)|
 | Nov 5, Mon | **Quiz 5** in class |
 | Nov 7, Wed  | Lesson 3.3: The t-distribution |
 | Nov 9, Fri  | Lab 6: Inference for Categorical Data |
