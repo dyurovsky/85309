@@ -93,11 +93,13 @@ title: Schedule
 |             | [Confidence intervals for a proportion](post/rmd/one_prop_clt.Rmd) |
 | Nov 2, Fri | [Lab 5: Confidence Intervals](post/labs/confidence_intervals.html)|
 | Nov 5, Mon | **Quiz 5** in class |
-| Nov 7, Wed  | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
+|            | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
+| Nov 7, Wed | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
+|            | [Enrollment and t-tests](post/rmd/enrollment.Rmd) |
 | Nov 9, Fri  | Lab 6: Inference for Categorical Data |
-| Nov 12, Mon  | **Quiz 6** in class |
-|             | Lesson 3.4: The t distribution |
-| Nov 14, Wed  | Lesson 3.5: Difference of two means|
+| Nov 12, Mon | **Quiz 6** in class |
+|             | Lesson 3.5: Difference of two means |
+| Nov 14, Wed | Lesson 4.1: Linear Regression|
 | Nov 16, Fri | Lab 7: Inference for Numerical Data |
 
 ##### Due dates
@@ -127,8 +129,8 @@ title: Schedule
 ##### Class / lab
 
 | Nov 19, Mon | **Quiz 7** in class |
-|             | Lesson 4.1: Linear Regression|
-| Nov 21, Wed | Lesson 4.2: Residuals and Least Squares |
+|             | Lesson 4.2: Residuals and Least Squares|
+| Nov 21, Wed | Review |
 | Nov 23, Fri | *Thanksgiving Break - no class* |
 | Nov 26, Mon | **Quiz 8** in class |
 |             | Lesson 4.3: Inference for linear regression |

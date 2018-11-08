@@ -1,0 +1,205 @@
+
+---
+title: "PSYC201 enrollment and the t-distribution"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+  html_notebook:
+    toc: yes
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r load_libraries}
+library(tidyverse)
+library(knitr)
+theme_set(theme_classic(base_size = 16))
+```
+
+Why do we use the t-distribution? Our estimates of the standard deviation of a sample--and thus the width of a sampling distribution--are more variable with small sample sizes.
+
+Let's compare the standard deviations of samples from the Normal distribution as we increase the sample size
+```{r normal_size2}
+rnorm(n = 2, mean = 0, sd = 1) %>% 
+  sd()
+```
+
+```{r normal_size10}
+rnorm(10) %>% sd()
+```
+
+```{r normal_size100}
+rnorm(100) %>% sd()
+```
+
+```{r normal_size1000}
+rnorm(1000) %>% sd()
+```
+
+
+```{r replications}
+
+samples_2 <- data_frame(sample = 1:1000, 
+                        sd = replicate(1000, sd(rnorm(2))),
+                        size = 2) 
+
+samples_10 <- data_frame(sample = 1:1000, 
+                        sd = replicate(1000, sd(rnorm(10))),
+                        size = 10) 
+
+samples_100 <- data_frame(sample = 1:1000, 
+                        sd = replicate(1000, sd(rnorm(100))),
+                        size = 100) 
+
+samples_1000 <- data_frame(sample = 1:1000, 
+                        sd = replicate(1000, sd(rnorm(1000))),
+                        size = 1000) 
+
+
+all_samples <- bind_rows(samples_2, samples_10, samples_100, samples_1000)
+```
+
+```{r plot_sds}
+ggplot(all_samples, aes(x = sd)) + 
+  facet_grid(size ~ .) +
+  geom_histogram(binwidth = .1)
+```
+
+Let's look at PSYC201 enrollment to see why we should use the t-distribution
+```{r read_data}
+psyc201_enrollment <-read_csv("https://dyurovsky.github.io/psyc201/data/demos/psyc201_enrollment.csv")
+
+psyc201_enrollment
+```
+
+
+Let's look at some basic descriptives
+```{r descriptives}
+#Plot a histogram
+ggplot(psyc201_enrollment, aes(x = enrollment)) + 
+  geom_histogram(binwidth = 2.5)
+
+# Descriptive statistics
+descriptives <- psyc201_enrollment %>%
+  summarise(mean = mean(enrollment),
+            sd = sd(enrollment),
+            n = n())
+
+descriptives
+```
+
+Ok let's compute t-test statistics by hand
+```{r test_statistics}
+# Get the components I need for the T-statistic formula
+test_statistics <- descriptives %>%
+  mutate(df = n - 1,
+         se = sd/sqrt(n),
+         t = (mean - 52)/se)
+
+test_statistics
+
+# Find the p-value using position in the t-distribution with the appropriate degrees of freedom
+p_val_t <- 2 * pt(test_statistics$t, test_statistics$df)
+p_val_t
+```
+
+Ok now let's skip all of that and use the built-in R function
+```{r t_test}
+# Use the t.test function to compute the probability of observing data this extreme
+t.test(psyc201_enrollment$enrollment, mu = 52, alternative = "two.sided")
+```
+
+Make a plot of our empirical data on the Null Hypothesis distribution
+```{r t_dist}
+t_8 <- data_frame(x = seq(-6, 6, .01), #Range of t-values to look at
+                  y = dt(seq(-6, 6, .01), df = 8)) #Density of the t-distribution with 8 df
+
+
+ggplot(data = t_8, aes(x = x, y = y)) +
+  geom_point(size = .25) + #plot the null distribution
+  geom_vline(aes(xintercept = test_statistics$t), size = 2, color = "darkred") + #empirical data
+  geom_vline(aes(xintercept = qt(.0275, 8)), color = "gray", size = 2) + #2.5th percentile
+  geom_vline(aes(xintercept = qt(.975, 8)), color = "gray", size = 2) +  #97.5th percentile
+  labs(x = "t-value", y = "density")
+```
+
+What if we assume the normal?
+```{r normal_p}
+p_val_norm <- 2 * pnorm(test_statistics$t)
+p_val_norm
+```
+
+```{r normal_plot}
+normal <- data_frame(x = seq(-6, 6, .01), #Range of z-values to look at
+                  y = dnorm(seq(-6, 6, .01))) #Density of the normal distribution
+
+ggplot(normal, aes(x = x, y = y)) +
+  geom_point(size = .25) + #plot the null distribution
+  geom_vline(aes(xintercept = test_statistics$t), size = 1, color = "darkred") + #empirical data
+  geom_vline(aes(xintercept = qnorm(.0275)), color = "gray", size = 1) + #2.5th percentile
+  geom_vline(aes(xintercept = qnorm(.975)), color = "gray", size = 1) +  #97.5th percentile
+  labs(x = "z-value", y = "density")
+```
+
+
+Now let's look at paired data
+```{r data}
+hsb2 <-  read_csv("https://dyurovsky.github.io/psyc201/data/demos/hsb2.csv") %>%
+  select(id, read, write) %>%
+  mutate(diff = read - write)
+
+head(hsb2)
+```
+
+
+```{r plot_data_read}
+ggplot(hsb2, aes(x = read)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show_data_read}
+hsb2 %>%
+  summarise(mean = mean(read),
+            sd = sd(read))
+```
+
+```{r plot_data_write}
+ggplot(hsb2, aes(x = write)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show_data_write}
+hsb2 %>%
+  summarise(mean = mean(write),
+            sd = sd(write))
+```
+
+
+```{r plot_data_diff}
+ggplot(hsb2, aes(x = diff)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show_data_diff}
+hsb2 %>%
+  summarise(mean = mean(diff),
+            sd = sd(diff))
+```
+
+```{r comparing t_tests}
+# Test if the reading scores's mean is drawn from a population who's mean 
+# is the mean of the writing scores samples
+t.test(hsb2$read, mu = mean(hsb2$write))
+
+
+# Test if the difference between reading and writing scores is drawn from 
+# a population with a mean of 0
+t.test(hsb2$read - hsb2$write, mu = 0)
+
+# Test if the reading scores's mean is drawn from the 
+# same poupulation as the writing scores mean
+t.test(hsb2$read - sample(hsb2$write), mu = 0)
+```
+
+
