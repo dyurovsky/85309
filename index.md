@@ -96,7 +96,7 @@ title: Schedule
 |            | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
 | Nov 7, Wed | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
 |            | [Enrollment and t-tests](post/rmd/enrollment.Rmd) |
-| Nov 9, Fri  | Lab 6: Inference for Categorical Data |
+| Nov 9, Fri  | [Lab 6: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Nov 12, Mon | **Quiz 6** in class |
 |             | Lesson 3.5: Difference of two means |
 | Nov 14, Wed | Lesson 4.1: Linear Regression|
