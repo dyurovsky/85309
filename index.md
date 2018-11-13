@@ -100,7 +100,7 @@ title: Schedule
 | Nov 12, Mon | **Quiz 6** in class |
 |             | Lesson 3.5: Difference of two means |
 | Nov 14, Wed | Lesson 4.1: Linear Regression|
-| Nov 16, Fri | Lab 7: Inference for Numerical Data |
+| Nov 16, Fri |  [Lab 7: Inference for Numerical Data](post/labs/inf_for_categorical_data.html) |
 
 ##### Due dates
 
