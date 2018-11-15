@@ -98,8 +98,8 @@ title: Schedule
 |            | [Enrollment and t-tests](post/rmd/enrollment.Rmd) |
 | Nov 9, Fri  | [Lab 6: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Nov 12, Mon | **Quiz 6** in class |
-|             | Lesson 3.5: Difference of two means |
-| Nov 14, Wed | Lesson 4.1: Linear Regression|
+|             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
+| Nov 14, Wed | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
 | Nov 16, Fri |  [Lab 7: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
 
 ##### Due dates
