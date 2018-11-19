@@ -129,7 +129,7 @@ title: Schedule
 ##### Class / lab
 
 | Nov 19, Mon | **Quiz 7** in class |
-|             | Lesson 4.2: Residuals and Least Squares|
+|             | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf)|
 | Nov 21, Wed | Review |
 | Nov 23, Fri | *Thanksgiving Break - no class* |
 | Nov 26, Mon | **Quiz 8** in class |
