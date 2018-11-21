@@ -152,5 +152,5 @@ title: Schedule
       + Part 3 - Inference for linear regression: 5.27, 5.29
       + Part 4 - Introduction to multiple regression: 6.1, 6.3
       + Part 5 - Model selection: 6.7, 6.9, 6.11
-* Final Project : Dec 13 11:55PM
+* [Final Project](post/labs/project.html) : Dec 13 11:55PM
 * [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Dec 13 11:55PM
