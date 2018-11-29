@@ -133,9 +133,10 @@ title: Schedule
 | Nov 21, Wed | Review |
 | Nov 23, Fri | *Thanksgiving Break - no class* |
 | Nov 26, Mon | **Quiz 8** in class |
-|             | Lesson 4.3: Inference for linear regression |
-| Nov 28, Wed | Lesson 4.4: Multiple regression|
-| Nov 30, Fri | Lab 8: Simple Linear Regression |
+|             | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
+|             | [Correlation of twin IQs](post/rmd/twins.Rmd) |
+| Nov 28, Wed | [Lesson 4.4: Multiple regression](post/slides/multiple_regression.pdf)|
+| Nov 30, Fri | [Lab 8: Simple Linear Regression](post/labs/simple_regression.html) |
 | Dec 3, Mon | **Quiz 9** in class |
 |             | Lesson 4.5: Model Selection|
 | Dec 5, Wed | Lesson 4.6 Multiple Regression and ANOVA|
