@@ -1,0 +1,104 @@
+
+---
+title: "Lab 8 - Introduction to Linear Regression"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load data**
+
+```{r load-data}
+load(url("https://dyurovsky.github.io/psyc201/data/lab8/mlb11.RData"))
+```
+
+## Exercises:
+
+#### Exercise 1: 
+```{r ex1}
+
+```
+
+
+#### Exercise 2: 
+
+
+
+#### Exercise 3: 
+
+
+
+#### Exercise 4: 
+```{r ex4}
+
+```
+
+
+
+#### Exercise 5: 
+```{r ex5}
+
+```
+
+
+#### Exercise 6:
+```{r ex6}
+
+```
+
+
+#### Exercise 7:
+```{r ex7}
+
+```
+
+
+#### Exercise 8:
+
+
+
+* * *
+
+## On your own:
+
+#### Exercise 9: 
+```{r ex9}
+
+```
+
+
+#### Exercise 10: 
+```{r ex10}
+
+```
+
+
+#### Exercise 11:
+```{r ex11}
+
+```
+
+
+#### Exercise 12:
+```{r ex12}
+
+```
+
+
+#### Exercise 13:
+```{r ex13}
+
+```
