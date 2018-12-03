@@ -138,7 +138,7 @@ title: Schedule
 | Nov 28, Wed | [Lesson 4.4: Multiple regression](post/slides/multiple_regression.pdf)|
 | Nov 30, Fri | [Lab 8: Simple Linear Regression](post/labs/simple_regression.html) |
 | Dec 3, Mon | **Quiz 9** in class |
-|             | Lesson 4.5: Model Selection|
+|             | [Lesson 4.5: Model Selection](post/slides/model_selection.pdf)|
 | Dec 5, Wed | Lesson 4.6 Multiple Regression and ANOVA|
 | Dec 7, Fri  | Lab: Work on project (Optional)|
 
