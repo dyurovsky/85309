@@ -15,7 +15,7 @@ title: Schedule
 
 ##### Class / lab
 
-| Jan 13, Mon  | Introduction to 85-309 |
+| Jan 13, Mon  | [Introduction to 85-309](post/slides/intro.pdf) |
 | Jan 15, Wed  | Lesson 1.1: Data--where it comes from and why it matters |
 | Jan 17, Fri  | Lab 1: Intro to R and RStudio |
 | Jan 20, Mon  | **Martin Luther King Day -- no class** |
