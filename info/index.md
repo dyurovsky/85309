@@ -7,18 +7,15 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@uchicago.edu](mailto:yurovsky@uchicago.edu) | Green 201 |
-|**TAs**       | [Haerin Chung](http://woodwardlab.uchicago.edu/staff-item/haerin-chung/)         | [haerinchung@uchicago.edu](haerinchung@uchicago.edu) | Green 501 |
-|              | [Colin Quirk](http://colinquirk.com/) | [cquirk@uchicago.edu](mailto: cquirk@uchicago.edu) |  Green 101 |
+|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@uchicago.edu](mailto:yurovsky@cmu.edu) | Green 201 |
+|**TAs**       | [Roderick Seow](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [yseow@andrew.cmu.edu](yseow@andrew.cmu.edu) | Baker 342F |
 
 
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, Harper Memorial Library 130
-* Labs: Friday
-    * 12:30pm - 1:20pm - Walker Museum 303 - TA: Haerin Chung
-    * 1:30pm - 2:20pm - BioSci Learning Center 018 - TA: Colin Quirk
+* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, 	Baker Hall 336B
+* Labs: Friday, 1:30pm - 2:20pm, Baker Hall 332P
 
 * * *
 
@@ -27,9 +24,8 @@ title: Course Information
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
-|Professor Yurovsky   | Wednesday 4:00 - 5:30            | Green 201     |
-|Colin Quirk        | Tuesday 3:00 - 4:30           | Green 101   |
-|Haerin Chung    | Thursday 10:00 - 11:30             | Green 501     |
+|Professor Yurovsky   | Wednesday 4:30 - 5:30            | Baker 335C    |
+|Roderick Seow        | Mondau 5:00 - 6:00               | Baker 342F    |
 
 
 * * *
@@ -38,16 +34,20 @@ title: Course Information
 
 * Textbook: [OpenIntro Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs) - Diez, Barr, Çetinkaya-Rundel \\
    CreateSpace, 1st Edition, 2014 (ISBN: 978-1500576691) \\
-The textbook is freely [available online](https://www.openintro.org/download.php?file=isrs1&referrer=/stat/textbook.php). You're welcomed to read on screen or print it out. If you prefer a paperback version you can buy it at the cost of printing ($8.49) [on Amazon](https://www.amazon.com/gp/product/1500576697/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1500576697&linkCode=as2&tag=open084-20&linkId=UWWPUCGZGLFC2PHW). The textbook store will not carry copies of this text.
+The textbook is freely [available online](https://drive.google.com/file/d/0B-DHaDEbiOGkRHNndUlBaHVmaGM/edit). You're welcomed to read on screen or print it out. If you prefer a paperback version you can buy it at the cost of printing ($8.07) [on Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=as_li_ss_tl?keywords=openintro&qid=1577830278&sr=8-6&linkCode=sl1&tag=openintroorg-20&linkId=f2909ec3dacccff4bb1b7a55bf27de5c&language=en_US). The textbook store will not carry copies of this text.
 
 * Software: The [R](https://cloud.r-project.org/) programming language, and [RStudio](https://www.rstudio.com/products/RStudio/) -- a development environment for the R language. \\
-	Both are free and open source.
+	Both are free and open source. \\
+  We will [RStudio Cloud](https://rstudio.cloud/) -- a web-based interface to Rstudio.
 
 * * *
 
 ### Holidays:
 
-* Nov 24, Fri - Thanksgiving break
+* January 20, Mon: Martin Luther King Day
+* March 6, Fri: Mid-Semester Break
+* March 9-13, Mon-Fri: Spring Break
+* April 17, Fri: Carnival
 
 ***
 

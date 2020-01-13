@@ -6,19 +6,20 @@ exclude:
 markdown_ext: "md"
 
 layouts_dir: ./_noita
-baseurl: /psyc201
+baseurl: /85309
+piazza: https://piazza.com/class/k59zqdq4g542os
 openintro: https://www.openintro.org/stat/textbook.php?stat_book=isrs
-teams: 
+teams:
 
 plugins:
   - jemoji
 
 noita:
-  name: PSYC 20100 - Psychological Statistics (Autumn 2018)
-  description: PSYC 20100 at U Chicago - taught by Daniel Yurovsky
+  name: 85-309 - Statistical Methods and Concepts for Social and Behavioral Sciences
+  description: 85-309 - Statistical Methods and Concepts
   author:
     name: Dan Yurovsky
-    url: http://callab.uchicago.edu
+    url: http://callab.github.io
     absolute: true
   lang: en
   topbar:
@@ -32,3 +33,9 @@ noita:
         url: /syllabus/
       - name: Learning Objectives
         url: /los/
+      - name: RStudio
+        url: https://rstudio.cloud/spaces/41255/projects
+        absolute: true
+      - name: Piazza
+        url: https://piazza.com/class/k59zqdq4g542os
+        absolute: true

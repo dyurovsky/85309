@@ -7,7 +7,7 @@ title: Syllabus
 
 Statistics, at its core, is a set of mathematical tools for reasoning about uncertainty. These tools are invaluable for making sense of data and making predictions about the future. The language of statistics allows us to connect our scientific theories to the phenomena we observe in the world.
 
-This course is designed to introduce you to some of the key ideas in the discipline of statistics, and to make you comfortable with tools for applying them to data that you will encounter in your future courses and outside of class in the future. 
+This course is designed to introduce you to some of the key ideas in the discipline of statistics, and to make you comfortable with tools for applying them to data that you will encounter in your future courses and outside of class in the future.
 
 By the end of the semester, you should be able to:
 
@@ -23,13 +23,13 @@ By the end of the semester, you should be able to:
 
 ### Course structure:
 
-The course is divided into four learning units. For each unit a set of learning objectives and required and suggested readings, videos, etc. which will be posted on the course website. You are expected to complete the readings and/or watch the videos familiarize yourselves with the learning objectives. 
+The course is divided into four learning units. For each unit a set of learning objectives and required and suggested readings, videos, etc. which will be posted on the course website. You are expected to complete the readings and/or watch the videos familiarize yourselves with the learning objectives.
 
-Lectures and the textbook will cover the bulk of the theoretical ideas, and lab sessions will give you practice applying these ideas to real data. These are deeply intertwined, and it's important to make sure you understand both the theoretical and practical parts of doing statistics. 
+Lectures and the textbook will cover the bulk of the theoretical ideas, and lab sessions will give you practice applying these ideas to real data. These are deeply intertwined, and it's important to make sure you understand both the theoretical and practical parts of doing statistics.
 
-Your understanding of the theoretical ideas will be assessed with short weekly quizzes, as well as problem sets that will be due at the end of each unit. Your understanding of the practice of statistics will be assessed by your work on the lab assignments. 
+Your understanding of the theoretical ideas will be assessed with short weekly quizzes, as well as problem sets that will be due at the end of each unit. Your understanding of the practice of statistics will be assessed by your work on the lab assignments.
 
-The primary goal of this class is to teach you how to apply the ideas and tools of statistics to real-world data. For that that reason, the capstone assessment of the class is a *Project* in which you will apply these skills to an interesting real-world dataset. There will be *No Graded Exams*. 
+The primary goal of this class is to teach you how to apply the ideas and tools of statistics to real-world data. For that that reason, the capstone assessment of the class is a *Project* in which you will apply these skills to an interesting real-world dataset. There will be *No Graded Exams*.
 
 You will however be asked to complete the [Comprehensive Assessment of Outcomes in a first Statistics class (CAOS)](https://apps3.cehd.umn.edu/artist/caos.html) twice: At the start of the course and again at the end. Your responses at the beginning of the class will help us to know what to focus on, and your answers at the end of the quarter will help us to revise the class for the next cohort of students. These assessments will be graded for *completion* and not for *correctness*; you will receive full credit independent of your score.
 
@@ -40,7 +40,7 @@ You will however be asked to complete the [Comprehensive Assessment of Outcomes 
 <div style="padding-left:16em;padding-top:1em;">
 <table style="width:400px;">
 <tr> <td> CAOS Pre and Post tests   </td> <td> 5% </td></tr>
-<tr> <td> Quizzes                   </td> <td> 10% </td></tr> 
+<tr> <td> Quizzes                   </td> <td> 10% </td></tr>
 <tr> <td> Problem sets              </td> <td> 20% </td></tr>
 <tr> <td> Labs                      </td> <td> 40% </td></tr>
 <tr> <td> Project                   </td> <td> 25% </td></tr>
@@ -62,7 +62,7 @@ These will be assigned at the start of each unit, and will be comprised of probl
 
 You are welcomed, and encouraged, to work with each other on the problems. But, *you must turn in your own work*.
 
-**Submission instructions:** You will turn in your problem sets by submitted them through Google Classroom. You are welcome to write up problem sets in a word processor of your choice (Word, Google Docs, etc.), but we strongly suggest saving the file as a PDF and submitting the PDF. This will ensure that what we read is exactly what you intended to submit. You are also welcome to do the work in a notebook and upload a picture of each notebook page. 
+**Submission instructions:** You will turn in your problem sets by submitted them through Google Classroom. You are welcome to write up problem sets in a word processor of your choice (Word, Google Docs, etc.), but we strongly suggest saving the file as a PDF and submitting the PDF. This will ensure that what we read is exactly what you intended to submit. You are also welcome to do the work in a notebook and upload a picture of each notebook page.
 
 All assignments will be time stamped and late work will be penalized based on this time stamp (see late work policy below).
 
@@ -72,7 +72,7 @@ All assignments will be time stamped and late work will be penalized based on th
 
 The objective of the labs is to give you hands on experience with data analysis using modern statistical software. The labs will also provide you with tools that you will need to complete the project successfully. We will use a statistical analysis program called [RStudio](https://www.rstudio.com/), which is a front end for the [R](https://www.r-project.org/) statistical language.
 
-In class your TAs will give a brief overview of the lab and learning goals, and guide you through some of the exercises. You will start working on the lab during the class session, but note that the labs are designed to take more than just the class time, so you will probably need to continue working on them in order to submit labs before the due date (which will be the following lab session). 
+In class your TAs will give a brief overview of the lab and learning goals, and guide you through some of the exercises. You will start working on the lab during the class session, but note that the labs are designed to take more than just the class time, so you will probably need to continue working on them in order to submit labs before the due date (which will be the following lab session).
 
 **Submission instructions:** Always submit the .Rmd and .HTML files via Google Classroom.
 
