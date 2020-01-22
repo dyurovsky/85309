@@ -20,7 +20,7 @@ title: Schedule
 | Jan 17, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html) |
 | Jan 20, Mon  | **Martin Luther King Day -- no class** |
 | Jan 22, Wed  | **Quiz 1** in class |
-|              | Lesson 1.2: Exploratory Data Analysis |
+|              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
 | Jan 24, Fri  | Lab 2: Intro to the Tidyverse and Functions |
 | Jan 27, Mon  | Lesson 1.3: More Exploratory Data Analysis |
 
