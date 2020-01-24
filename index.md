@@ -32,7 +32,7 @@ title: Schedule
 * Problem Set 1: Jan 29, Wed, at 1:30pm
   * End of chapter exercises from **Chp 1**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
-  **all** work to get credit. Submit homework through Google Classroom.
+  **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 1.2, 1.12, 1.20, 1.30, 1.34, 1.42
   * Practice questions:
       + Part 1 – Designing studies: 1.1, 1.3, 1.9, 1.11, 1.13, 1.19
@@ -102,7 +102,7 @@ title: Schedule
 * Lab 6: Feb 28, Fri, at 1:30 PM
 * Lab 7: Mar 6, Fri, at 1:30 PM
 * PS 3: Mar 16, Mon, at 1:30 PM
-  * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
+  * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 3.2, 3.12, 3.24, 4.6, 4.10, 4.14, 4.18
   * Practice questions:
       + Part 1 – Inference for a single proportion: 3.1, 3.5, 3.11, 3.19
@@ -143,7 +143,7 @@ title: Schedule
 * Lab 8: Mar 27, Fri, at 1:30 PM
 * Lab 9: Apr 3, Fri, at 1:30 PM
 * PS 4: Mar 30 Mon, at 1:30 PM
-   * End of chapter exercises from **Chp 5** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
+   * End of chapter exercises from **Chp 5** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 5.4, 5.10, 5.20, 5.22, 5.28, 5.34
   * Practice questions:
       + Part 1 – Line fitting, residuals, and correlation: 5.1, 5.3, 5.9
@@ -173,7 +173,7 @@ title: Schedule
 * Lab 9: Apr 10, Fri, at 1:30 PM
 * Lab 10: Apr 23, Fri, at 1:30 PM
 * PS 4: Apr 15 Wed, at 1:30 PM
-   * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Google Classroom.
+   * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
    * **Graded questions:**  6.2, 6.4, 6.8, 6.12, 6.14
    * Practice questions:
        + Part 1 - Introduction to multiple regression: 6.1, 6.3
