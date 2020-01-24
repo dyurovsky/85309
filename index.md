@@ -21,7 +21,7 @@ title: Schedule
 | Jan 20, Mon  | **Martin Luther King Day -- no class** |
 | Jan 22, Wed  | **Quiz 1** in class |
 |              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
-| Jan 24, Fri  | Lab 2: Intro to the Tidyverse and Functions |
+| Jan 24, Fri  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
 | Jan 27, Mon  | Lesson 1.3: More Exploratory Data Analysis |
 
 ##### Due dates
@@ -50,7 +50,7 @@ title: Schedule
 
 | Jan 29, Wed |  **Quiz 2** in class |
 |             | Lesson 2.1: Randomization and Sampling |
-| Jan 31, Fri | Lab 3: Intro to Data |
+| Jan 31, Fri | Lab 3: Lab 3: Intro to the Tidyverse and Functions  |
 | Feb 3, Mon | Lesson 2.2: Hypothesis Testing |
 | Feb 5, Wed | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem|

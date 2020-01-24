@@ -1,4 +1,3 @@
-
 ---
 title: "Lab 2 - Intro to Data"
 author: "Your name"
@@ -21,7 +20,7 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data}
-nycflights <- read_csv("https://dyurovsky.github.io/psyc201/data/lab2/nycflights.csv")
+nycflights <- read_csv("data/nycflights.csv")
 ```
 
 #### Exercise 1: 
