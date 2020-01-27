@@ -3,7 +3,7 @@ layout: page
 title: Schedule
 ---
 
-| Jump to: | &nbsp;&nbsp;&nbsp; [Unit 1]({{site.baseurl}}/#unit1) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 2]({{ site.baseurl }}/#unit2) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 3]({{ site.baseurl }}/#unit3) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 4]({{ site.baseurl }}/#unit4) &nbsp;&nbsp;&nbsp; |
+| Jump to: | &nbsp;&nbsp;&nbsp; [Unit 1]({{site.baseurl}}/#unit1) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 2]({{ site.baseurl }}/#unit2) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 3]({{ site.baseurl }}/#unit3) &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; [Unit 4]({{ site.baseurl }}/#unit4) &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; [Unit 5]({{ site.baseurl }}/#unit5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Unit 6]({{ site.baseurl }}/#unit6) |
 
 * * *
 
@@ -151,7 +151,7 @@ title: Schedule
       + Part 3 - Types of Outliers in linear regression: 5.23, 5.25
       + Part 4 - Inference for linear regression: 5.27, 5.29, 5.33
 
-### <a name="unit4"></a> Unit 4 - The General Linear Model
+### <a name="unit5"></a> Unit 5 - The General Linear Model
 
 ##### Resources
 
@@ -181,7 +181,7 @@ title: Schedule
        + Part 3 - Checking Model Assumptions: 6.11
        + Part 4 - Logistic Regression: 6.13, 6.15
 
-### <a name="unit4"></a> Unit 5 - Beyond Hypothesis Testing
+### <a name="unit6"></a> Unit 6 - Beyond Hypothesis Testing
 
 ##### Resources
 
