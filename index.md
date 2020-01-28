@@ -22,7 +22,8 @@ title: Schedule
 | Jan 22, Wed  | **Quiz 1** in class |
 |              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
 | Jan 24, Fri  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
-| Jan 27, Mon  | Lesson 1.3: More Exploratory Data Analysis |
+| Jan 27, Mon  | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf)  |
+|              | [Exploring class data](https://rstudio.cloud/spaces/41255/project/847018) 
 
 ##### Due dates
 
