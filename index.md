@@ -52,7 +52,7 @@ title: Schedule
 | Jan 29, Wed |  **Quiz 2** in class |
 |             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
 |             | [Discrimination in Hiring](https://rstudio.cloud/spaces/41255/project/871570)
-| Jan 31, Fri | [Lab 3: Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
+| Jan 31, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
 | Feb 3, Mon | Lesson 2.2: Hypothesis Testing |
 | Feb 5, Wed | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem|
