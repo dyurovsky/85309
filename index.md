@@ -53,7 +53,8 @@ title: Schedule
 |             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
 |             | [Discrimination in Hiring](https://rstudio.cloud/spaces/41255/project/871570)
 | Jan 31, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
-| Feb 3, Mon | Lesson 2.2: Hypothesis Testing |
+| Feb 3, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf) |
+|             | [Cardiac Arrest](https://rstudio.cloud/spaces/41255/project/903140)
 | Feb 5, Wed | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem|
 | Feb 7, Fri | Lab 4: Testing the Hot Hands Hypothesis |
