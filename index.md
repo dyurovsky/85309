@@ -62,7 +62,7 @@ title: Schedule
 |             | [QQ Plots](https://rstudio.cloud/spaces/41255/project/929867) |
 | Feb 12, Wed | **Quiz 4** in class |
 |             | Lesson 2.5: [Confidence Intervals](post/slides/confidence_intervals.pdf) |
-| Feb 14, Fri | Lab 5: Sampling Distributions |
+| Feb 14, Fri | [Lab 5: Sampling Distributions](post/labs/sampling_distributions.html) |
 
 ##### Due dates
 
