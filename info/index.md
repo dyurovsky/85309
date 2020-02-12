@@ -7,7 +7,7 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@uchicago.edu](mailto:yurovsky@cmu.edu) | Green 201 |
+|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | Green 201 |
 |**TAs**       | [Roderick Seow](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [yseow@andrew.cmu.edu](yseow@andrew.cmu.edu) | Baker 342F |
 
 
