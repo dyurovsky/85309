@@ -63,6 +63,7 @@ title: Schedule
 | Feb 12, Wed | **Quiz 4** in class |
 |             | Lesson 2.5: [Confidence Intervals](post/slides/confidence_intervals.pdf) |
 | Feb 14, Fri | [Lab 5: Sampling Distributions](post/labs/sampling_distributions.html) |
+|             | [Eberly Center Early Course Feedback Form](https://forms.gle/uyy9YDaKuESWduXg8) |
 
 ##### Due dates
 
