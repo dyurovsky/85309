@@ -90,7 +90,8 @@ title: Schedule
 
 ##### Class / lab
 
-| Feb 17, Mon | Lesson 3.1: Inference for a Single Proportion |
+| Feb 17, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
+|             | [Scientific Literacy](https://rstudio.cloud/spaces/41255/project/949984)
 | Feb 19, Wed | **Quiz 5** in class |
 |            | Lesson 3.2: Inference for the difference of two proportions |
 | Feb 21, Fri  | Lab 6: Confidence Intervals |
