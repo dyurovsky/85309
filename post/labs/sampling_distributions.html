@@ -1757,7 +1757,7 @@ div.tocify {
 </div>
 <div id="interlude-the-replicate-function" class="section level2">
 <h2>Interlude: The <code>replicate</code> function</h2>
-<p>Let’s take a break from the statistics for a moment to let that last block of code sink in. The idea behind the replicate function is <em>repetition</em>: it allows you to execute a line of code as many times as you want and put the results in an array. In the case above, we wanted to repeatedly take a random sample of size 50 from <code>area</code> and then save the mean of that sample into the <code>sample_means50</code> vector.</p>
+<p>Let’s take a break from the statistics for a moment to let that last block of code sink in. The idea behind the replicate function is <em>repetition</em>: it allows you to execute a line of code as many times as you want and put the results in an array. In the case above, we wanted to repeatedly take a random sample of size 50 from <code>area</code> and then save the mean of that sample into the the <code>sample_means50</code> tibble.</p>
 <p>With the <code>replicate</code> function, we can do all of this one line of code. To make things more modular, we wrote the <code>sample_50</code> function to draw a conceptual distinction between what happens for each sample, and the process of drawing many samples. But, we could have written this all in one command:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">sample_means50 &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">sample =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">1000</span>,</a>
 <a class="sourceLine" id="cb8-2" data-line-number="2">                         <span class="dt">mean =</span> <span class="kw">replicate</span>(<span class="dv">1000</span>, ames <span class="op">%&gt;%</span><span class="st"> </span></a>
@@ -1784,7 +1784,7 @@ div.tocify {
 <a class="sourceLine" id="cb10-6" data-line-number="6">}</a>
 <a class="sourceLine" id="cb10-7" data-line-number="7"></a>
 <a class="sourceLine" id="cb10-8" data-line-number="8"><span class="kw">sample_varying</span>(<span class="dv">50</span>)</a></code></pre></div>
-<pre><code>## [1] 1417.98</code></pre>
+<pre><code>## [1] 1561.76</code></pre>
 <ol start="6" style="list-style-type: decimal">
 <li>Try using <code>replicate</code> to see what happens to the sampling distribution when you try these three different values. Use 1000 replications. What does each observation in the sampling distribution represent? How does the mean, standard error, and shape of the sampling distribution change as the sample size increases? How (if at all) do these values change if you increase the number of simulations? (You do not need to include plots in your answer.)</li>
 </ol>
@@ -1797,7 +1797,7 @@ div.tocify {
 <li><p>Take a sample of size 15 from the population and calculate the mean <code>price</code> of the homes in this sample. Using this sample, what is your best point estimate of the population mean of prices of homes?</p></li>
 <li><p>Since you have access to the population, simulate the sampling distribution for <span class="math inline">\(\bar{x}_{price}\)</span> by taking 1000 samples from the population of size 15 and computing 1000 sample means. Store these means in a vector called <code>sample_means15</code>. Plot the data, then describe the shape of this sampling distribution. Based on this sampling distribution, what would you guess the mean home price of the population to be? Finally, calculate and report the population mean.</p></li>
 <li><p>Change your sample size from 15 to 150, then compute the sampling distribution using the same method as above, and store these means in a new vector called <code>sample_means150</code>. Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample size of 15. Based on this sampling distribution, what would you guess to be the mean sale price of homes in Ames?</p></li>
-<li><p>Of the sampling distributions from 2 and 3, which has a smaller spread? If we’re concerned with making estimates that are more often close to the true value, would we prefer a sampling distribution with a large or small spread?</p></li>
+<li><p>Of the sampling distributions from Exercises 8 and 9, which has a smaller spread? If we’re concerned with making estimates that are more often close to the true value, would we prefer a sampling distribution with a large or small spread?</p></li>
 </ol>
 </div>
 <div id="license">
