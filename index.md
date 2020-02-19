@@ -93,7 +93,7 @@ title: Schedule
 | Feb 17, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
 |             | [Scientific Literacy](https://rstudio.cloud/spaces/41255/project/949984)
 | Feb 19, Wed | **Quiz 5** in class |
-|            | Lesson 3.2: Inference for the difference of two proportions |
+|            | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
 | Feb 21, Fri  | Lab 6: Confidence Intervals |
 | Feb 24, Mon | Lesson 3.3: The t-distribution |
 | Feb 26, Wed | **Quiz 6** in class |
