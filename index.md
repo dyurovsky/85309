@@ -61,7 +61,7 @@ title: Schedule
 | Feb 10, Mon | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf)|
 |             | [QQ Plots](https://rstudio.cloud/spaces/41255/project/929867) |
 | Feb 12, Wed | **Quiz 4** in class |
-|             | Lesson 2.5: [Confidence Intervals](post/slides/confidence_intervals.pdf) |
+|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) |
 | Feb 14, Fri | [Lab 5: Sampling Distributions](post/labs/sampling_distributions.html) |
 |             | [Eberly Center Early Course Feedback Form](https://forms.gle/uyy9YDaKuESWduXg8) |
 
@@ -94,7 +94,7 @@ title: Schedule
 |             | [Scientific Literacy](https://rstudio.cloud/spaces/41255/project/949984)
 | Feb 19, Wed | **Quiz 5** in class |
 |            | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
-| Feb 21, Fri  | Lab 6: Confidence Intervals |
+| Feb 21, Fri  | [Lab 6: Confidence Intervals](post/labs/confidence_intervals.html) |
 | Feb 24, Mon | Lesson 3.3: The t-distribution |
 | Feb 26, Wed | **Quiz 6** in class |
 |             | Lesson 3.4: Paired Data and the t-test |
