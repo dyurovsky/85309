@@ -25,7 +25,7 @@ title: Course Information
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Wednesday 4:30 - 6:30            | Baker 335C    |
-|Roderick Seow        | Tuesday 2:00 - 3:00              | Baker 336A    |
+|Roderick Seow        | Thursday 2:00 - 3:00             | Baker 336A    |
 
 
 * * *
