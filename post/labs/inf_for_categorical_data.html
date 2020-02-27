@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -67,8 +67,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -96,9 +94,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -502,13 +505,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1262,7 +1265,7 @@ window.buildTabsets = function(tocID) {
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
+<style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -1324,7 +1327,29 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -1365,19 +1390,22 @@ counter-reset: li;
 h1 {
 
 font-weight:bold;
-color: rgb(128,0,0)
+color: rgb(187,0,0)
 }
 h2 {
 
 font-weight:bold;
 margin-top: 24px;
-color: rgb(128,0,0);
+color: rgb(187,0,0);
 }
 h3 {
 
 font-weight:bold;
 margin-top: 12px;
-color: rgb(128,0,0);
+color: rgb(187,0,0);
+}
+a {
+color: rgb(34, 68, 119);
 }
 ol {
 margin-left:0; 
@@ -1388,8 +1416,8 @@ position:relative;
 margin:0 0 10px 2em; 
 padding:10px 80px; 
 list-style:none; 
-border-top:2px solid rgb(128,0,0);
-background:rgba(128, 0, 0, 0.1);
+border-top:2px solid rgb(187,0,0);
+background:rgba(187, 0, 0, 0.1);
 }
 ol > li:before {
 content:"Exercise " counter(li); 
@@ -1405,11 +1433,11 @@ width:7em;
 
 margin-right:8px;
 padding:4px;
-border-top:2px solid rgb(128,0,0);
+border-top:2px solid rgb(187,0,0);
 color:#fff;
-background:rgb(128,0,0);
+background:rgb(187,0,0);
 font-weight:bold;
-font-family:"Helvetica Neue", Arial, sans-serif;
+font-family:"Open Sans", Arial, sans-serif;
 text-align:center;
 }
 li ol,
@@ -1419,10 +1447,10 @@ ol ol li:last-child {margin-bottom:0;}
 list-style-type:decimal;
 }
 hr {
-border: 1px solid #800000;
+border: 1px solid #bb0000;
 }
 div#boxedtext {
-background-color: rgba(128, 0, 0, 0.2);
+background-color: rgba(187, 0, 0, 0.2);
 padding: 20px;
 padding-bottom: 10px;
 margin-bottom: 20px;
@@ -1431,27 +1459,27 @@ font-size: 10pt;
 div#template {
 margin-top: 30px;
 margin-bottom: 30px;
-color: #800000;
-border:1px solid #767676;
+color: #bb0000;
+border:1px solid #666666;
 padding: 10px 10px;
-background-color: rgba(128, 128, 128, 0.2);
+background-color: rgba(102, 102, 102, 0.2);
 border-radius: 5px;
 }
-div#license { margin-top: 30px;
+div#license {
+margin-top: 30px;
 margin-bottom: 30px;
-color: #767676;
-border:1px solid #767676;
+color: #666666;
+border:1px solid #666666;
 padding: 10px 10px;
-background-color: #D6D6CE;
+background-color: #e0e0e0;
 border-radius: 5px;
 }
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-background-color: rgb(128, 0, 0);
-}</style>
+background-color: rgb(187, 0, 0);
+}
+</style>
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1465,7 +1493,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1476,50 +1503,73 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -1533,6 +1583,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -1568,8 +1624,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1578,6 +1632,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1601,9 +1665,7 @@ div.tocify {
 
 
 <div id="template">
-<p><strong>Your reproducible lab report:</strong> Before you get started, download the R Markdown template for this lab. Remember all of your code and answers go in this document:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">download.file</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/post/rmd/lab6.Rmd&quot;</span>, </a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">              <span class="dt">destfile =</span> <span class="st">&quot;lab6.Rmd&quot;</span>)</a></code></pre></div>
+<p><strong>Your reproducible lab report: </strong> You can find the template for this lab in your RStudio Cloud space: <a href="https://rstudio.cloud/spaces/41255/project/990777">Lab 7 - Inference for Categorical Data</a>. Remember all of your code and answers go in this document:</p>
 </div>
 <div id="atheism" class="section level2">
 <h2>Atheism</h2>
@@ -1612,7 +1674,7 @@ div.tocify {
 <div id="the-survey" class="section level2">
 <h2>The survey</h2>
 <p>To access the press release for the poll, conducted by WIN-Gallup International, click on the following link:</p>
-<p><em><a href="https://dyurovsky.github.io/psyc201/post/slides/gallup_atheism.pdf" class="uri">https://dyurovsky.github.io/psyc201/post/slides/gallup_atheism.pdf</a></em></p>
+<p><a href="https://dyurovsky.github.io/85309/post/slides/gallup_atheism.pdf" class="uri">https://dyurovsky.github.io/85309/post/slides/gallup_atheism.pdf</a></p>
 <p>Take a moment to review the report then address the following questions.</p>
 <ol style="list-style-type: decimal">
 <li>In the first paragraph, several key findings are reported. Do these percentages appear to be <em>sample statistics</em> (derived from the data sample) or <em>population parameters</em>? Explain your reasoning.</li>
@@ -1621,13 +1683,13 @@ div.tocify {
 <div id="the-data" class="section level2">
 <h2>The data</h2>
 <p>Turn your attention to Table 6 (pages 15 and 16), which reports the sample size and response percentages for all 57 countries. While this is a useful format to summarize the data, we will base our analysis on the original data set of individual responses to the survey. Load this data set into R with the following command.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">atheism &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/data/lab6/atheism.csv&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">atheism &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;data/atheism.csv&quot;</span>)</a></code></pre></div>
 <p>To investigate the link between these two ways of organizing this data, take a look at the estimated proportion of atheists in the United States. Towards the bottom of Table 6, we see that this is 5%. We should be able to come to the same number using the <code>atheism</code> data.</p>
 <ol start="2" style="list-style-type: decimal">
-<li>Using the command below, create a new dataframe called <code>us12</code> that contains only the rows in <code>atheism</code> associated with respondents to the 2012 survey from the United States. Next, calculate the proportion of atheist responses. Does it agree with the percentage in Table 6? If not, why?</li>
+<li>Using the command below, create a new tibble called <code>us12</code> that contains only the rows in <code>atheism</code> associated with respondents to the 2012 survey from the United States. Next, calculate the proportion of atheist responses. Does it agree with the percentage in Table 6? If not, why?</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">us12 &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span>, year <span class="op">==</span><span class="st"> &quot;2012&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">us12 &lt;-<span class="st"> </span>atheism <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(nationality <span class="op">==</span><span class="st"> &quot;United States&quot;</span> <span class="op">&amp;</span><span class="st"> </span>year <span class="op">==</span><span class="st"> &quot;2012&quot;</span>)</a></code></pre></div>
 </div>
 <div id="inference-on-proportions" class="section level2">
 <h2>Inference on proportions</h2>
@@ -1637,16 +1699,17 @@ div.tocify {
 <li>Write out the conditions for inference to construct a 95% confidence interval for the proportion of atheists in the United States in 2012. Are you confident all conditions are met?</li>
 </ol>
 <p>If the conditions for inference are reasonable, we can go ahead and compute the 95% confidence interval. Remember what we need: a point estimate of the mean, a critical value, and a standard error.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">mean &lt;-<span class="st"> </span><span class="kw">mean</span>(us12<span class="op">$</span>response <span class="op">==</span><span class="st"> &quot;atheist&quot;</span>) <span class="co"># the mean of the sample</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">z_star &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">975</span>) <span class="co">#The 97.5% percentile of the normal distribution</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5">se &lt;-<span class="st"> </span><span class="kw">sqrt</span>( (mean <span class="op">*</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>mean)) <span class="op">/</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="st">             </span><span class="kw">length</span>(us12<span class="op">$</span>response)) <span class="co">#the formula for the standard error</span></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8">me &lt;-<span class="st"> </span>se <span class="op">*</span><span class="st"> </span>z_star <span class="co"># margin of error is standard error times critical value</span></a>
-<a class="sourceLine" id="cb4-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb4-10" data-line-number="10">ci_<span class="dv">95</span> &lt;-<span class="st"> </span><span class="kw">c</span>(mean <span class="op">-</span><span class="st"> </span>me, mean <span class="op">+</span><span class="st"> </span>me)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">mean &lt;-<span class="st"> </span>us12 <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">atheist =</span> <span class="kw">mean</span>(response <span class="op">==</span><span class="st"> &quot;atheist&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># the mean of the sample</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">pull</span>()</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">z_star &lt;-<span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">975</span>) <span class="co">#The 97.5% percentile of the normal distribution</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">se &lt;-<span class="st"> </span><span class="kw">sqrt</span>((mean <span class="op">*</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>mean)) <span class="op">/</span><span class="st"> </span><span class="kw">nrow</span>(us12)) <span class="co">#the formula for the standard error</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">me &lt;-<span class="st"> </span>se <span class="op">*</span><span class="st"> </span>z_star <span class="co"># margin of error is standard error times critical value</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">ci_<span class="dv">95</span> &lt;-<span class="st"> </span><span class="kw">c</span>(mean <span class="op">-</span><span class="st"> </span>me, mean <span class="op">+</span><span class="st"> </span>me)</a></code></pre></div>
 <p>Note that since the goal is to construct an interval estimate for a proportion, it’s necessary to specify what constitutes a “success”, which here is a response of <code>&quot;atheist&quot;</code>.</p>
 <p>Although formal confidence intervals and hypothesis tests don’t show up in the report, suggestions of inference appear at the bottom of page 7: “In general, the error margin for surveys of this kind is <span class="math inline">\(\pm\)</span> 3-5% at 95% confidence”.</p>
 <ol start="4" style="list-style-type: decimal">
@@ -1656,18 +1719,18 @@ div.tocify {
 </div>
 <div id="how-does-the-proportion-affect-the-margin-of-error" class="section level2">
 <h2>How does the proportion affect the margin of error?</h2>
-<p>Imagine you’ve set out to survey 1000 people on two questions: are you female? and are you left-handed? Since both of these sample proportions were calculated from the same sample size, they should have the same margin of error, right? Wrong! While the margin of error does change with sample size, it is also affected by the proportion.</p>
+<p>Imagine you’ve set out to survey 1000 people on two questions: are you a morning person? and are you left-handed? Since both of these sample proportions were calculated from the same sample size, they should have the same margin of error, right? Wrong! While the margin of error does change with sample size, it is also affected by the proportion.</p>
 <p>Think back to the formula for the standard error: <span class="math inline">\(SE = \sqrt{p(1-p)/n}\)</span>. This is then used in the formula for the margin of error for a 95% confidence interval: <span class="math inline">\(ME = 1.96\times SE = 1.96\times\sqrt{p(1-p)/n}\)</span>. Since the population proportion <span class="math inline">\(p\)</span> is in this <span class="math inline">\(ME\)</span> formula, it should make sense that the margin of error is in some way dependent on the population proportion. We can visualize this relationship by creating a plot of <span class="math inline">\(ME\)</span> vs. <span class="math inline">\(p\)</span>.</p>
 <p>Since sample size is irrelevant to this discussion, let’s just set it to some value (<span class="math inline">\(n = 1000\)</span>) and use this value in the following calculations:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">n &lt;-<span class="st"> </span><span class="dv">1000</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">n &lt;-<span class="st"> </span><span class="dv">1000</span></a></code></pre></div>
 <p>The first step is to make a variable <code>p</code> that is a sequence from 0 to 1 with each number incremented by 0.01. We can then create a vector of the margin of error (<code>me</code>) associated with each of these values of <code>p</code> using the familiar approximate formula (<span class="math inline">\(ME = 1.96 \times SE\)</span>).</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2">me &lt;-<span class="st"> </span><span class="fl">1.96</span> <span class="op">*</span><span class="st"> </span><span class="kw">sqrt</span>(p <span class="op">*</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>p) <span class="op">/</span><span class="st"> </span>n)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">me &lt;-<span class="st"> </span><span class="fl">1.96</span> <span class="op">*</span><span class="st"> </span><span class="kw">sqrt</span>(p <span class="op">*</span><span class="st"> </span>(<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>p) <span class="op">/</span><span class="st"> </span>n)</a></code></pre></div>
 <p>Lastly, we plot the two vectors against each other to reveal their relationship. To do so, we need to first put these variables in a data frame that we can call in the <code>ggplot</code> function.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">dd &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">p =</span> p, <span class="dt">me =</span> me)</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">ggplot</span>(dd, <span class="kw">aes</span>(<span class="dt">x =</span> p, <span class="dt">y =</span> me)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Margin of Error&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Population Proportion&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">me_tibble &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">p =</span> p, <span class="dt">me =</span> me)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">ggplot</span>(me_tibble, <span class="kw">aes</span>(<span class="dt">x =</span> p, <span class="dt">y =</span> me)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Margin of Error&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Population Proportion&quot;</span>)</a></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>Describe the relationship between <code>p</code> and <code>me</code>. Include the margin of error vs. population proportion plot you constructed in your answer. For a given sample size, for which value of <code>p</code> is margin of error maximized?</li>
 </ol>
@@ -1677,46 +1740,47 @@ div.tocify {
 <p>We emphasized over and over that you must always check conditions before making inference. For inference on proportions, the sample proportion can be assumed to be nearly normal if it is based upon a random sample of independent observations and if both <span class="math inline">\(np \geq 10\)</span> and <span class="math inline">\(n(1 - p) \geq 10\)</span>. This rule of thumb is easy enough to follow, but it makes one wonder: what’s so special about the number 10?</p>
 <p>The short answer is: nothing. You could argue that we would be fine with 9 or that we really should be using 11. What is the “best” value for such a rule of thumb is, at least to some degree, arbitrary. However, when <span class="math inline">\(np\)</span> and <span class="math inline">\(n(1-p)\)</span> reaches 10 the sampling distribution is sufficiently normal to use confidence intervals and hypothesis tests that are based on that approximation.</p>
 <p>We can investigate the interplay between <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span> and the shape of the sampling distribution by using simulations. Play around with the following code by changing the <code>n</code> and <code>p</code> parameters to investigate how the shape, center, and spread of the distribution of <span class="math inline">\(\hat{p}\)</span> changes as <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span> change.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="co"># Set parameters. </span></a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co"># If you change these, all of the sampling will change because we pass these into</span></a>
-<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co"># the sampling function</span></a>
-<a class="sourceLine" id="cb8-4" data-line-number="4">n &lt;-<span class="st"> </span><span class="dv">300</span></a>
-<a class="sourceLine" id="cb8-5" data-line-number="5">p =<span class="st"> </span><span class="fl">.1</span></a>
-<a class="sourceLine" id="cb8-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co"># A function that takes a number of samples(n) and a true success probability(p), </span></a>
-<a class="sourceLine" id="cb8-8" data-line-number="8"><span class="co"># and returns the proportion of success in a random sample of n trials.</span></a>
-<a class="sourceLine" id="cb8-9" data-line-number="9">one_sample &lt;-<span class="st"> </span><span class="cf">function</span>(n, p) {</a>
-<a class="sourceLine" id="cb8-10" data-line-number="10">  </a>
-<a class="sourceLine" id="cb8-11" data-line-number="11">  <span class="co"># We're again going to use the sample function, but this time we're going to make things a little   </span></a>
-<a class="sourceLine" id="cb8-12" data-line-number="12">  <span class="co"># bit simpler by using the prob parameters. This lets us say use p to assign a probability of </span></a>
-<a class="sourceLine" id="cb8-13" data-line-number="13">  <span class="co"># sampling each of the values in x, instead of just making an array with lots of copies of the </span></a>
-<a class="sourceLine" id="cb8-14" data-line-number="14">  <span class="co"># values like we did before.</span></a>
-<a class="sourceLine" id="cb8-15" data-line-number="15">  sampled_values &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dt">x =</span> <span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>), n, </a>
-<a class="sourceLine" id="cb8-16" data-line-number="16">                           <span class="dt">prob =</span> <span class="kw">c</span>(p, <span class="dv">1</span><span class="op">-</span>p),</a>
-<a class="sourceLine" id="cb8-17" data-line-number="17">                           <span class="dt">replace =</span> <span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb8-18" data-line-number="18">  </a>
-<a class="sourceLine" id="cb8-19" data-line-number="19">  <span class="co"># return the proportion of successes</span></a>
-<a class="sourceLine" id="cb8-20" data-line-number="20">  <span class="kw">mean</span>(sampled_values)</a>
-<a class="sourceLine" id="cb8-21" data-line-number="21">}</a>
-<a class="sourceLine" id="cb8-22" data-line-number="22"></a>
-<a class="sourceLine" id="cb8-23" data-line-number="23"><span class="co"># Take 5000 samples and look at the distribution</span></a>
-<a class="sourceLine" id="cb8-24" data-line-number="24">replicates &lt;-<span class="st"> </span><span class="kw">data_frame</span>(<span class="dt">sample =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>,</a>
-<a class="sourceLine" id="cb8-25" data-line-number="25">                         <span class="dt">value =</span> <span class="kw">replicate</span>(<span class="dv">5000</span>, <span class="kw">one_sample</span>(n, p)))</a>
-<a class="sourceLine" id="cb8-26" data-line-number="26"></a>
-<a class="sourceLine" id="cb8-27" data-line-number="27"><span class="kw">ggplot</span>(replicates, <span class="kw">aes</span>(<span class="dt">x =</span> value)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb8-28" data-line-number="28"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">.01</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-29" data-line-number="29"><span class="st">  </span><span class="kw">xlim</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="op">+</span><span class="st"> </span><span class="co"># set x-axis limits so we can see the whole 0-1 range</span></a>
-<a class="sourceLine" id="cb8-30" data-line-number="30"><span class="st">  </span><span class="kw">ylim</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="kw">nrow</span>(replicates)))  <span class="co"># set y-axis limits so we can see the whole 0-#replicates range</span></a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># Set parameters. </span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co"># If you change these, all of the sampling will change because we pass these into</span></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co"># the sampling function</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">n &lt;-<span class="st"> </span><span class="dv">300</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5">p &lt;-<span class="st"> </span><span class="fl">.1</span></a>
+<a class="sourceLine" id="cb7-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="co"># A function that takes a number of samples(n) and a true success probability(p), </span></a>
+<a class="sourceLine" id="cb7-8" data-line-number="8"><span class="co"># and returns the proportion of success in a random sample of n trials.</span></a>
+<a class="sourceLine" id="cb7-9" data-line-number="9">one_sample &lt;-<span class="st"> </span><span class="cf">function</span>(n, p) {</a>
+<a class="sourceLine" id="cb7-10" data-line-number="10">  </a>
+<a class="sourceLine" id="cb7-11" data-line-number="11">  <span class="co"># We're again going to use the sample function, but this time we're going to make things a little </span></a>
+<a class="sourceLine" id="cb7-12" data-line-number="12">  <span class="co"># bit simpler by using the prob parameters. This lets us say use p to assign a probability of </span></a>
+<a class="sourceLine" id="cb7-13" data-line-number="13">  <span class="co"># sampling each of the values in x, instead of just making an array with lots of copies of the </span></a>
+<a class="sourceLine" id="cb7-14" data-line-number="14">  <span class="co"># values like we did before.</span></a>
+<a class="sourceLine" id="cb7-15" data-line-number="15">  sampled_values &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dt">x =</span> <span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>), n, </a>
+<a class="sourceLine" id="cb7-16" data-line-number="16">                           <span class="dt">prob =</span> <span class="kw">c</span>(p, <span class="dv">1</span><span class="op">-</span>p),</a>
+<a class="sourceLine" id="cb7-17" data-line-number="17">                           <span class="dt">replace =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb7-18" data-line-number="18">  </a>
+<a class="sourceLine" id="cb7-19" data-line-number="19">  <span class="co"># return the proportion of successes</span></a>
+<a class="sourceLine" id="cb7-20" data-line-number="20">  <span class="kw">mean</span>(sampled_values)</a>
+<a class="sourceLine" id="cb7-21" data-line-number="21">}</a>
+<a class="sourceLine" id="cb7-22" data-line-number="22"></a>
+<a class="sourceLine" id="cb7-23" data-line-number="23"><span class="co"># Take 5000 samples and look at the distribution</span></a>
+<a class="sourceLine" id="cb7-24" data-line-number="24">replicates &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">sample =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5000</span>,</a>
+<a class="sourceLine" id="cb7-25" data-line-number="25">                     <span class="dt">value =</span> <span class="kw">replicate</span>(<span class="dv">5000</span>, <span class="kw">one_sample</span>(n, p)))</a>
+<a class="sourceLine" id="cb7-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb7-27" data-line-number="27"><span class="kw">ggplot</span>(replicates, <span class="kw">aes</span>(<span class="dt">x =</span> value)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb7-28" data-line-number="28"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">.01</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb7-29" data-line-number="29"><span class="st">  </span><span class="kw">xlim</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)) <span class="op">+</span><span class="st"> </span><span class="co"># set x-axis limits so we can see the whole 0-1 range</span></a>
+<a class="sourceLine" id="cb7-30" data-line-number="30"><span class="st">  </span><span class="kw">ylim</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="kw">nrow</span>(replicates)))  <span class="co"># set y-axis limits so we can see the whole 0-#replicates range</span></a></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li><p>Describe the sampling distribution of sample proportions at <span class="math inline">\(n = 300\)</span> and <span class="math inline">\(p = 0.1\)</span>. Be sure to note the center, spread, and shape.</p>
 <p>Now, Keep <span class="math inline">\(n\)</span> constant and change <span class="math inline">\(p\)</span>. How does the shape, center, and spread of the sampling distribution vary as <span class="math inline">\(p\)</span> changes.</p>
 <p>Now also change <span class="math inline">\(n\)</span>.How does <span class="math inline">\(n\)</span> appear to affect the distribution of <span class="math inline">\(\hat{p}\)</span>?</p></li>
 </ol>
 <hr />
-<div class="oyo">
-<h2 id="on-your-own">On your own</h2>
+</div>
+<div id="more-practice" class="section level2">
+<h2>More Practice</h2>
 <p>The question of atheism was asked by WIN-Gallup International in a similar survey that was conducted in 2005. (We assume here that sample sizes have remained the same.) Table 4 on page 13 of the report summarizes survey results from 2005 and 2012 for 39 countries.</p>
-<ul>
+<ol start="8" style="list-style-type: decimal">
 <li><p>Is there convincing evidence that Spain has seen a change in its atheism index between 2005 and 2012? As always, write out the hypotheses for any tests you conduct and outline the status of the conditions for inference. If you find a significant difference, also quantify this difference with a condfidence interval.<br />
 <em>Hint:</em> First create a new data set for respondents from Spain.</p></li>
 <li><p>Is there convincing evidence that the US has seen a change in its atheism index between 2005 and 2012? As always, write out the hypotheses for any tests you conduct and outline the status of the conditions for inference. If you find a significant difference, also quantify this difference with a condfidence interval.</p></li>
@@ -1724,8 +1788,7 @@ div.tocify {
 <em>Hint:</em> Review the definition of the Type 1 error.</p></li>
 <li><p>Suppose you’re hired by the local government to estimate the proportion of residents that attend a religious service on a weekly basis. According to the guidelines, the estimate must have a margin of error no greater than 1% with 95% confidence. You have no idea what to expect for <span class="math inline">\(p\)</span>. How many people would you have to sample to ensure that you are within the guidelines?<br />
 <em>Hint:</em> Refer to your plot of the relationship between <span class="math inline">\(p\)</span> and margin of error. This question does not require using the dataset.</p></li>
-</ul>
-</div>
+</ol>
 <div id="license">
 <p>This lab is created and released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This lab is adapted from a lab created for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
 </div>
@@ -1749,6 +1812,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

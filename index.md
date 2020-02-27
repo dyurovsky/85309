@@ -99,7 +99,7 @@ title: Schedule
 |             | [t-tests](https://rstudio.cloud/spaces/41255/project/974547) |
 | Feb 26, Wed | **Quiz 6** in class |
 |             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
-| Feb 28, Fri | Lab 7: Inference for Categorical Data |
+| Feb 28, Fri | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Mar 2, Mon  | Difference of two means |
 | Mar 4, Wed  | **Quiz 7** in class  |
 |             | Difference of many means |
