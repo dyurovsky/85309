@@ -103,7 +103,8 @@ title: Schedule
 | Mar 2, Mon  | [Difference of many means](post/slides/anova.pdf) |
 |             | [Dictator game](https://rstudio.cloud/spaces/41255/project/1000370)
 | Mar 4, Wed  | **Quiz 7** in class  |
-|             | Difference of many means |
+|             | [Mid-semester Review](post/slides/midsemester.pdf) |
+|             | [ANOVA example](https://rstudio.cloud/spaces/41255/project/1010110) |
 
 ##### Due dates
 
