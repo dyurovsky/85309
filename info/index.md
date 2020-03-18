@@ -7,15 +7,15 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | Green 201 |
+|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
 |**TAs**       | [Roderick Seow](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [yseow@andrew.cmu.edu](yseow@andrew.cmu.edu) | Baker 342F |
 
 
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, 	Baker Hall 336B
-* Labs: Friday, 1:30pm - 2:20pm, Baker Hall 332P
+* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, Zoom Classroom
+* Labs: Friday, 1:30pm - 2:20pm, Zoom Classroom
 
 * * *
 
@@ -24,7 +24,7 @@ title: Course Information
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
-|Professor Yurovsky   | Wednesday 4:30 - 6:30            | Baker 335C    |
+|Professor Yurovsky   | Wednesday 4:30 - 6:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
 |Roderick Seow        | Thursday 2:00 - 3:00             | Baker 342F    |
 
 

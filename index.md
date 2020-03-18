@@ -100,7 +100,7 @@ title: Schedule
 | Feb 26, Wed | **Quiz 6** in class |
 |             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Feb 28, Fri | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
-| Mar 2, Mon  | [Difference of many means](post/slides/anova.pdf) |
+| Mar 2, Mon  | [3.5: Difference of many means](post/slides/anova.pdf) |
 |             | [Dictator game](https://rstudio.cloud/spaces/41255/project/1000370)
 | Mar 4, Wed  | **Quiz 7** in class  |
 |             | [Mid-semester Review](post/slides/midsemester.pdf) |
@@ -110,7 +110,7 @@ title: Schedule
 
 * Lab 6: Feb 28, Fri, at 1:30 PM
 * Lab 7: Mar 6, Fri, at 1:30 PM
-* PS 3: Mar 16, Mon, at 1:30 PM
+* PS 3: Mar 23, Mon, at 1:30 PM
   * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 3.2, 3.12, 3.24, 4.6, 4.10, 4.14, 4.18
   * Practice questions:
@@ -139,19 +139,19 @@ title: Schedule
 
 ##### Class / lab
 
-| Mar 16, Mon | Lesson 4.1: Linear Regression |
-| Mar 18, Wed | **Quiz 7** in class |
-|             | Lesson 4.2: Residuals and Least Squares|
+| Mar 16, Mon | *Class Canceled* |
+| Mar 18, Wed | Lesson 4.1: Linear Regression |
 | Mar 20, Fri | Lab 8: Inference for Numerical Data |
-| Mar 23, Mon | Lesson 4.3: Inference for linear regression |
+| Mar 23, Mon | Lesson 4.2: Residuals and Least Squares |
 | Mar 25, Wed | **Quiz 8** in class |
-|             | Lesson 4.4: Contrasts |
+|             | Lesson 4.3: Inference for linear regression |
 | Mar 27, Fri | Lab 9: Simple Linear Regression |
+| Mar 30, Mon | Lesson 4.4: Contrasts |
 
 ##### Due dates
 * Lab 8: Mar 27, Fri, at 1:30 PM
 * Lab 9: Apr 3, Fri, at 1:30 PM
-* PS 4: Mar 30 Mon, at 1:30 PM
+* PS 4: Apr 1 Wed, at 1:30 PM
    * End of chapter exercises from **Chp 5** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 5.4, 5.10, 5.20, 5.22, 5.28, 5.34
   * Practice questions:
@@ -167,21 +167,22 @@ title: Schedule
 | Learning objectives: LO 5| Textbook: [Chp 6 ]({{ site.openintro}}) |
 
 ##### Class / lab
-
-| Mar 30, Mon   | Lesson 5.1: Model Selection |
 | April 1, Wed  | **Quiz 9** in class |
-|               | Lesson 5.2 Multiple Regression and ANOVA |
-| April 3, Fri  | Lab 9 : Multiple Regression|
-| April 6, Mon  | Lesson 5.3 Logistic Regression |
+|               | Lesson 5.1: Model Selection |
+| April 3, Fri  | Lab 9: Multiple Regression|
+| April 6, Mon  | Lesson 5.2 Multiple Regression and ANOVA |
 | April 8, Wed  | **Quiz 10** in class |
-|               | Lesson 5.4 The General Linear Model |
+|               | Lesson 5.3 Logistic Regression |
 | April 10, Fri | Lab 10: Choosing the right model |
-| April 13, Mon | Lesson 5.5 Hierarchical Models and Mixed effects |
+| April 13, Mon | Lesson 5.4 The General Linear Model |
+| April 15, Wed | **Quiz 11** in class |
+|               | Lesson 5.5 Hierarchical Models and Mixed effects |
+| April 17, Fri | **Carnival - no class** / Review |
 
 ##### Due dates
 * Lab 9: Apr 10, Fri, at 1:30 PM
-* Lab 10: Apr 23, Fri, at 1:30 PM
-* PS 4: Apr 15 Wed, at 1:30 PM
+* Lab 10: Apr 17, Fri, at 1:30 PM
+* PS 4: Apr 20 Mon, at 1:30 PM
    * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
    * **Graded questions:**  6.2, 6.4, 6.8, 6.12, 6.14
    * Practice questions:
@@ -197,10 +198,6 @@ title: Schedule
 | Learning objectives: LO 6|
 
 ##### Class / lab
-
-| April 15, Wed |  **Quiz 10** in class |
-|               |  Review |
-| April 17, Fri | **Carnival - no class**|
 | April 20, Mon | Statistical Power and Effect Sizes |
 | April 22, Wed | **Quiz 10** in class|
 |               | Effect Sizes |
