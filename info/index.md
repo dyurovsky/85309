@@ -8,7 +8,7 @@ title: Course Information
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
 |**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|**TAs**       | [Roderick Seow](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [yseow@andrew.cmu.edu](yseow@andrew.cmu.edu) | Baker 342F |
+|**TAs**       | [Roderick Seow](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [yseow@andrew.cmu.edu](yseow@andrew.cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/996308191) |
 
 
 * * *
@@ -21,11 +21,13 @@ title: Course Information
 
 ### <a name="oh"></a>Office Hours:
 
+[Signup sheet](https://docs.google.com/spreadsheets/d/1OiNiDs5e8ilx0CFNhZKBBedy7rPDqadwxWtr-uHg_54/edit?usp=sharing)
+
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Wednesday 4:30 - 6:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|Roderick Seow        | Thursday 2:00 - 3:00             | Baker 342F    |
+|Roderick Seow        | Thursday 2:00 - 3:00             | [Zoom Office](https://cmu.zoom.us/j/996308191)    |
 
 
 * * *

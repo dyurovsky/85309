@@ -140,7 +140,8 @@ title: Schedule
 ##### Class / lab
 
 | Mar 16, Mon | *Class Canceled* |
-| Mar 18, Wed | Lesson 4.1: Linear Regression |
+| Mar 18, Wed | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
+|             | [Correlation](https://rstudio.cloud/spaces/41255/project/1048165) |
 | Mar 20, Fri | Lab 8: Inference for Numerical Data |
 | Mar 23, Mon | Lesson 4.2: Residuals and Least Squares |
 | Mar 25, Wed | **Quiz 8** in class |
