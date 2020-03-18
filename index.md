@@ -199,6 +199,7 @@ title: Schedule
 | Learning objectives: LO 6|
 
 ##### Class / lab
+
 | April 20, Mon | Statistical Power and Effect Sizes |
 | April 22, Wed | **Quiz 10** in class|
 |               | Effect Sizes |
