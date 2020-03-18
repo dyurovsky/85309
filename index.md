@@ -167,9 +167,10 @@ title: Schedule
 | Learning objectives: LO 5| Textbook: [Chp 6 ]({{ site.openintro}}) |
 
 ##### Class / lab
+
 | April 1, Wed  | **Quiz 9** in class |
 |               | Lesson 5.1: Model Selection |
-| April 3, Fri  | Lab 9: Multiple Regression|
+| April 3, Fri  | Lab 9: Multiple Regression |
 | April 6, Mon  | Lesson 5.2 Multiple Regression and ANOVA |
 | April 8, Wed  | **Quiz 10** in class |
 |               | Lesson 5.3 Logistic Regression |
