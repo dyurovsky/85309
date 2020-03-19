@@ -14,8 +14,8 @@ title: Course Information
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, Zoom Classroom
-* Labs: Friday, 1:30pm - 2:20pm, Zoom Classroom
+* Lectures: Mondays and Wednesdays, 1:30pm - 2:20pm, [Zoom Classroom](https://cmu.zoom.us/j/8407296466)
+* Labs: Friday, 1:30pm - 2:20pm, [Zoom Classroom](https://cmu.zoom.us/j/8407296466)
 
 * * *
 
@@ -27,7 +27,7 @@ title: Course Information
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Wednesday 4:30 - 6:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|Roderick Seow        | Thursday 2:00 - 3:00             | [Zoom Office](https://cmu.zoom.us/j/996308191)    |
+|Roderick Seow        | Thursday 2:00 - 3:00             | [Zoom Office](https://cmu.zoom.us/j/996308191)  |
 
 
 * * *

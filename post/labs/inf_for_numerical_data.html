@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -85,8 +85,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -114,9 +112,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -520,13 +523,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1280,7 +1283,7 @@ window.buildTabsets = function(tocID) {
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
+<style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -1345,7 +1348,29 @@ code span.st { color: #bf0303; } /* String */
 code span.va { color: #0057ae; } /* Variable */
 code span.vs { color: #bf0303; } /* VerbatimString */
 code span.wa { color: #bf0303; } /* Warning */
+
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -1386,19 +1411,22 @@ counter-reset: li;
 h1 {
 
 font-weight:bold;
-color: rgb(128,0,0)
+color: rgb(187,0,0)
 }
 h2 {
 
 font-weight:bold;
 margin-top: 24px;
-color: rgb(128,0,0);
+color: rgb(187,0,0);
 }
 h3 {
 
 font-weight:bold;
 margin-top: 12px;
-color: rgb(128,0,0);
+color: rgb(187,0,0);
+}
+a {
+color: rgb(34, 68, 119);
 }
 ol {
 margin-left:0; 
@@ -1409,8 +1437,8 @@ position:relative;
 margin:0 0 10px 2em; 
 padding:10px 80px; 
 list-style:none; 
-border-top:2px solid rgb(128,0,0);
-background:rgba(128, 0, 0, 0.1);
+border-top:2px solid rgb(187,0,0);
+background:rgba(187, 0, 0, 0.1);
 }
 ol > li:before {
 content:"Exercise " counter(li); 
@@ -1426,11 +1454,11 @@ width:7em;
 
 margin-right:8px;
 padding:4px;
-border-top:2px solid rgb(128,0,0);
+border-top:2px solid rgb(187,0,0);
 color:#fff;
-background:rgb(128,0,0);
+background:rgb(187,0,0);
 font-weight:bold;
-font-family:"Helvetica Neue", Arial, sans-serif;
+font-family:"Open Sans", Arial, sans-serif;
 text-align:center;
 }
 li ol,
@@ -1440,10 +1468,10 @@ ol ol li:last-child {margin-bottom:0;}
 list-style-type:decimal;
 }
 hr {
-border: 1px solid #800000;
+border: 1px solid #bb0000;
 }
 div#boxedtext {
-background-color: rgba(128, 0, 0, 0.2);
+background-color: rgba(187, 0, 0, 0.2);
 padding: 20px;
 padding-bottom: 10px;
 margin-bottom: 20px;
@@ -1452,27 +1480,27 @@ font-size: 10pt;
 div#template {
 margin-top: 30px;
 margin-bottom: 30px;
-color: #800000;
-border:1px solid #767676;
+color: #bb0000;
+border:1px solid #666666;
 padding: 10px 10px;
-background-color: rgba(128, 128, 128, 0.2);
+background-color: rgba(102, 102, 102, 0.2);
 border-radius: 5px;
 }
-div#license { margin-top: 30px;
+div#license {
+margin-top: 30px;
 margin-bottom: 30px;
-color: #767676;
-border:1px solid #767676;
+color: #666666;
+border:1px solid #666666;
 padding: 10px 10px;
-background-color: #D6D6CE;
+background-color: #e0e0e0;
 border-radius: 5px;
 }
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
-background-color: rgb(128, 0, 0);
-}</style>
+background-color: rgb(187, 0, 0);
+}
+</style>
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1486,7 +1514,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1497,50 +1524,73 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -1554,6 +1604,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -1589,8 +1645,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1599,6 +1653,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1622,18 +1686,7 @@ div.tocify {
 
 
 <div id="template">
-<p><strong>Your reproducible lab report:</strong> Before you get started, download the R Markdown template for this lab. Remember all of your code and answers go in this document:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">download.file</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/post/rmd/lab7.Rmd&quot;</span>, </a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">              <span class="dt">destfile =</span> <span class="st">&quot;lab7.Rmd&quot;</span>)</a></code></pre></div>
-</div>
-<div id="getting-started" class="section level2">
-<h2>Getting Started</h2>
-<div id="load-packages" class="section level3">
-<h3>Load packages</h3>
-<p>As always, we will use the packages in the <code>tidyverse</code> in this lab. We will explore the data using the <code>dplyr</code> package and visualize it using the <code>ggplot2</code> package for data visualization.</p>
-<p>Let’s load the <code>tidyverse</code> package.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a></code></pre></div>
-</div>
+<p><strong>Your reproducible lab report: </strong> You can find the template for this lab in your RStudio Cloud space: <a href="https://rstudio.cloud/spaces/41255/project/1051381">Lab 7 - Inference for Numerical Data</a>. Remember all of your code and answers go in this document:</p>
 </div>
 <div id="american-salaries" class="section level2">
 <h2>American salaries</h2>
@@ -1641,7 +1694,7 @@ div.tocify {
 <div id="the-data" class="section level3">
 <h3>The data</h3>
 <p>As always, let’s get the data from the course website</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">acs &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/data/lab7/acs.csv&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">acs &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;data/acs.csv&quot;</span>)</a></code></pre></div>
 <p>Below is the <em>codebook</em> for this dataset:</p>
 <ul>
 <li><code>income</code>: Yearly income (wages and salaries)</li>
@@ -1659,20 +1712,20 @@ div.tocify {
 <li><code>birth_qrtr</code>: Quarter in which respondent is born, jan thru mar, apr thru jun, jul thru sep, or oct thru dec</li>
 </ul>
 <p>Note that this dataset contains some people who are not in the labor force or not employed. First, let’s subset the dataset for those who are employed. We will call this new dataset <code>acs_emp</code>, short for “employed”. Remember that we use the <code>filter</code> function for subsetting the data based on attributes stored in a variable.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">acs_emp &lt;-<span class="st"> </span>acs <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(employment <span class="op">==</span><span class="st"> &quot;employed&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">acs_emp &lt;-<span class="st"> </span>acs <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(employment <span class="op">==</span><span class="st"> &quot;employed&quot;</span>)</a></code></pre></div>
 <ol style="list-style-type: decimal">
 <li>What percent of the original sample (<code>acs</code>) are employed?</li>
 </ol>
 <p>Next let’s take a look at the income distribution by gender. The first step would be to create a visualization:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">ggplot</span>(acs_emp, <span class="kw">aes</span>(<span class="dt">x =</span> gender, <span class="dt">y =</span> income)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(acs_emp, <span class="kw">aes</span>(<span class="dt">x =</span> gender, <span class="dt">y =</span> income)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>()</a></code></pre></div>
 <p>We can also obtain summary statistics such as means and standard deviations and sample sizes.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">acs_emp <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(gender) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">xbar =</span> <span class="kw">mean</span>(income),</a>
-<a class="sourceLine" id="cb6-4" data-line-number="4">            <span class="dt">s =</span> <span class="kw">sd</span>(income), </a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">            <span class="dt">n =</span> <span class="kw">n</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">acs_emp <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(gender) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">xbar =</span> <span class="kw">mean</span>(income),</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">            <span class="dt">s =</span> <span class="kw">sd</span>(income), </a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">            <span class="dt">n =</span> <span class="kw">n</span>())</a></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>At a first glance how do the average incomes of males and females compare? Make sure to include the visualization and the summary statistics in your answer, and discuss/interpret them.</li>
 </ol>
@@ -1684,41 +1737,41 @@ div.tocify {
 </div>
 <div id="confounding-variables" class="section level3">
 <h3>Confounding variables</h3>
-<p>There is a clear difference between the average salaries of men and women, but could some,or all, of this difference be attributed to a variable other than gender? Remember that we call such variables confounding variables. We will evaluate whether <code>hrs_work</code> is a confounder for the relationship between gender and income.</p>
+<p>There is a clear difference between the average salaries of men and women, but could some, or all, of this difference be attributed to a variable other than gender? Remember that we call such variables confounding variables. We will evaluate whether <code>hrs_work</code> is a confounder for the relationship between gender and income.</p>
 <p>Let’s start by just looking at the how many hours the average employee works.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">ggplot</span>(acs_emp, <span class="kw">aes</span>(<span class="dt">x =</span> hrs_work)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">ggplot</span>(acs_emp, <span class="kw">aes</span>(<span class="dt">x =</span> hrs_work)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>)</a></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li><p>Well it sure looks like many of the employees work 40 hours. But not all. Describe the shape and spread of this distribution.</p></li>
-<li><p>Do we have a reason to think that the people in our sample come from a population of workers that isn’t just full time employees? Perform a one-sample <code>t-test</code> to determine if the mean number of hours worked is different from what you would expect if everyone were a full time employee. HINT: Think about what your Null Hypothesis should be when you call <code>t.test</code>!</p></li>
+<li><p>Do we have a reason to think that the people in our sample come from a population of workers that isn’t just full time employees? Perform a one-sample <code>t-test</code> to determine if the mean number of hours worked is different from what you would expect if everyone were a full time employee. <em>Hint:</em> Think about what your Null Hypothesis should be when you call <code>t.test</code>!</p></li>
 </ol>
 <p>Ok, since it looks like we might have some part time workers, let’s see if this matters for the conclusion we drew earlier. First convert the <code>hrs_work</code> variable to a categorical variable (with levels <code>&quot;full time&quot;</code> or <code>&quot;part time&quot;</code>) so that we can use methods we have learned so far in the course to run the analysis. (Later in the course we will learn how to work with numerical explanatory variables in a regression model setting.)</p>
 </div>
 <div id="recoding-variables" class="section level3">
 <h3>Recoding variables</h3>
 <p>We want to create a new variable, say <code>emp_type</code>, with levels <code>&quot;full time&quot;</code> or <code>&quot;part time&quot;</code> depending on whether the employee works 40 hours or more per week or less than 40 hours, respectively. Remember, we create a new variable with the mutate function.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">acs_type &lt;-<span class="st"> </span>acs_emp <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">emp_type =</span> <span class="kw">if_else</span>(hrs_work <span class="op">&gt;=</span><span class="st"> </span><span class="dv">40</span>, <span class="st">&quot;full time&quot;</span>, <span class="st">&quot;part time&quot;</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">acs_type &lt;-<span class="st"> </span>acs_emp <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">emp_type =</span> <span class="kw">if_else</span>(hrs_work <span class="op">&gt;=</span><span class="st"> </span><span class="dv">40</span>, <span class="st">&quot;full time&quot;</span>, <span class="st">&quot;part time&quot;</span>))</a></code></pre></div>
 <p>The <code>if_else()</code> function has three arguments: a logical test, return values for TRUE elements of test, and return values for FALSE elements of test. In this case, <code>emp_type</code> will be coded as <code>&quot;full time&quot;</code> for observations where <code>hrs_work</code> is greater than or equal to 40, and as <code>&quot;part time&quot;</code> otherwise.</p>
 <p>To find out what percent of the sample is full vs. part time, we turn to summary statistics:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">acs_type <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(emp_type) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">total_type =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-4" data-line-number="4"><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb9-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">prop_type =</span> total_type<span class="op">/</span><span class="kw">sum</span>(total_type))</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">acs_type <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(emp_type) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">total_type =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">prop_type =</span> total_type<span class="op">/</span><span class="kw">sum</span>(total_type))</a></code></pre></div>
 <p>Here we first grouped the data by the new <code>emp_type</code> variable, and then we calculated proportions of full and part time employees by first counting how many there are in each group (<code>n()</code>), and then <code>ungroup</code>ing the data and dividing the total in each group by the total in all groups.</p>
 <ol start="7" style="list-style-type: decimal">
 <li><p>Create a bar plot of the distribution of the <code>emp_type</code> variable, and also include the summary statistics you calculated above in your answer. What percent of the sample are full time and what percent are part time employees?</p></li>
-<li><p>Are females more heavily represented among full time employees or part time employees? Answer this question using summary statistics (code provided below) and a visualization.</p></li>
+<li><p>Are women more heavily represented among full time employees or part time employees? Answer this question using summary statistics (code provided below) and a visualization.</p></li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">acs_type <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(emp_type, gender) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">acs_type <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">group_by</span>(emp_type, gender) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">n =</span> <span class="kw">n</span>())</a></code></pre></div>
 <hr />
 </div>
 </div>
-<div id="on-your-own" class="section level2">
-<h2>On your own</h2>
+<div id="more-practice" class="section level2">
+<h2>More Practice</h2>
 <ol start="9" style="list-style-type: decimal">
 <li><p>Create two subsets of the <code>acs_emp</code> dataset: one for full time employees and one for part time employees. No interpretation is needed for this question, just the code is sufficient.</p></li>
 <li><p>Use a hypothesis test to evaluate whether there is a difference in average incomes of <strong>full time</strong> male and female employees, and also include a confidence interval (at the equivalent confidence level) estimating the magnitude of the average income difference.</p></li>
@@ -1749,6 +1802,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
