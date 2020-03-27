@@ -146,7 +146,7 @@ title: Schedule
 | Mar 23, Mon | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
 | Mar 25, Wed | **Quiz 8** in class |
 |             | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
-| Mar 27, Fri | Lab 9: Simple Linear Regression |
+| Mar 27, Fri | [Lab 9: Introduction to Linear Regression](post/labs/simple_regression.html) |
 | Mar 30, Mon | Lesson 4.4: Contrasts |
 
 ##### Due dates
