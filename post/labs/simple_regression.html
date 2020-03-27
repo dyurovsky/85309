@@ -1690,8 +1690,8 @@ div.tocify {
 </div>
 <p>The movie <a href="http://en.wikipedia.org/wiki/Moneyball_(film)"><em>Moneyball</em></a> focuses on the “quest for the secret of success in baseball”. It follows a low-budget team, the Oakland Athletics, who believed that underused statistics, such as a player’sability to get on base, better predict the ability to score runs than typical statistics like home runs, RBIs (runs batted in), and batting average. Obtaining players who excelled in these underused statistics turned out to be much more affordable for the team.</p>
 <p>In this lab we’ll be looking at data from all 30 Major League Baseball teams and examining the linear relationship between runs scored in a season and a number of other player statistics. Our aim will be to summarize these relationships both graphically and numerically in order to find which variable, if any, helps us best predict a team’s runs scored in a season.</p>
-<div id="getting-started" class="section level1">
-<h1>Getting started</h1>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
 <p>As usual, we’re going to load the <code>tidyverse</code> package for data manipulation. We’ll also be reading in a dataset to work with just like we usually do. This time, the data won’t just be a comma separated value file so we’ll use the <code>load</code> function to load the <code>mlb11.Rdata</code> file in the data folder.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"></a>
@@ -1707,6 +1707,7 @@ div.tocify {
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">mlb11 <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">cor =</span> <span class="kw">cor</span>(runs, at_bats)) <span class="op">%&gt;%</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw">pull</span>()</a></code></pre></div>
+</div>
 </div>
 <div id="sum-of-squared-residuals" class="section level2">
 <h2>Sum of squared residuals</h2>
@@ -1803,7 +1804,6 @@ div.tocify {
 </div>
 <div id="license">
 <p>This lab is created and released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. This lab is adapted from a lab created for OpenIntro by Andrew Bray and Mine Çetinkaya-Rundel.</p>
-</div>
 </div>
 </div>
 
