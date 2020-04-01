@@ -167,6 +167,7 @@ title: Schedule
 | Learning objectives: LO 5| Textbook: [Chp 6 ]({{ site.openintro}}) |
 
 ##### Class / lab
+
 | Mar 30, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 1, Wed  | **Quiz 9** in class |
 |               | Lesson 5.2: Model Selection |
