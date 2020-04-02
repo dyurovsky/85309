@@ -170,15 +170,14 @@ title: Schedule
 
 | Mar 30, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 1, Wed  | **Quiz 9** in class |
-|               | Lesson 5.2: Model Selection |
-| April 3, Fri  | Lab 9: Multiple Regression |
-| April 6, Mon  | Lesson 5.3 Multiple Regression and ANOVA |
+| April 3, Fri  | [Lab 9: Multiple Linear Regression](post/labs/multiple_regression.html) |
+| April 6, Mon  | Lesson 5.2: Model Selection |
 | April 8, Wed  | **Quiz 10** in class |
-|               | Lesson 5.4 Logistic Regression |
+|               | Lesson 5.3 Logistic Regression|
 | April 10, Fri | Lab 10: Choosing the right model |
-| April 13, Mon | Lesson 5.5 The General Linear Model |
+| April 13, Mon | Lesson 5.4 The General Linear Model |
 | April 15, Wed | **Quiz 11** in class |
-|               | Lesson 5.6 Hierarchical Models and Mixed effects |
+|               | Lesson 5.5 Hierarchical Models and Mixed effects |
 | April 17, Fri | **Carnival - no class** / Review |
 
 ##### Due dates
