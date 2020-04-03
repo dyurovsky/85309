@@ -170,7 +170,7 @@ title: Schedule
 
 | Mar 30, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 1, Wed  | **Quiz 9** in class |
-| April 3, Fri  | [Lab 9: Multiple Linear Regression](post/labs/multiple_regression.html) |
+| April 3, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
 | April 6, Mon  | Lesson 5.2: Model Selection |
 | April 8, Wed  | **Quiz 10** in class |
 |               | Lesson 5.3 Logistic Regression|
