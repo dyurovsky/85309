@@ -174,7 +174,8 @@ title: Schedule
 | April 6, Mon  | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
 |               | [Stepwise Regression](https://rstudio.cloud/spaces/41255/project/1116831)|
 | April 8, Wed  | **Quiz 10** in class |
-|               | Lesson 5.3 Logistic Regression|
+|               | [Lesson 5.3 Transformations](post/slides/transformations.pdf)|
+|               | [Transformations](https://rstudio.cloud/spaces/41255/project/1127058) |
 | April 10, Fri | Lab 10: Choosing the right model |
 | April 13, Mon | Lesson 5.4 The General Linear Model |
 | April 15, Wed | **Quiz 11** in class |
