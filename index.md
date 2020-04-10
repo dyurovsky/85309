@@ -176,15 +176,15 @@ title: Schedule
 | April 8, Wed  | **Quiz 10** in class |
 |               | [Lesson 5.3 Transformations](post/slides/transformations.pdf)|
 |               | [Transformations](https://rstudio.cloud/spaces/41255/project/1127058) |
-| April 10, Fri | Lab 10: Choosing the right model |
+| April 10, Fri | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
 | April 13, Mon | Lesson 5.4 The General Linear Model |
 | April 15, Wed | **Quiz 11** in class |
 |               | Lesson 5.5 Hierarchical Models and Mixed effects |
 | April 17, Fri | **Carnival - no class** / Review |
 
 ##### Due dates
-* Lab 9: Apr 10, Fri, at 1:30 PM
-* Lab 10: Apr 17, Fri, at 1:30 PM
+* Lab 10: Apr 10, Fri, at 1:30 PM
+* Lab 11: Apr 24, Fri, at 1:30 PM
 * PS 4: Apr 20 Mon, at 1:30 PM
    * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
    * **Graded questions:**  6.2, 6.4, 6.8, 6.12, 6.14
