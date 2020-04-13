@@ -177,10 +177,11 @@ title: Schedule
 |               | [Lesson 5.3 Transformations](post/slides/transformations.pdf)|
 |               | [Transformations](https://rstudio.cloud/spaces/41255/project/1127058) |
 | April 10, Fri | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
-| April 13, Mon | Lesson 5.4 The General Linear Model |
+| April 13, Mon | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
+|               | [Logistic Regression](https://rstudio.cloud/spaces/41255/project/1147633) |
 | April 15, Wed | **Quiz 11** in class |
 |               | Lesson 5.5 Hierarchical Models and Mixed effects |
-| April 17, Fri | **Carnival - no class** / Review |
+| April 17, Fri | **Optional Review** |
 
 ##### Due dates
 * Lab 10: Apr 10, Fri, at 1:30 PM
