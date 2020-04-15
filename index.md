@@ -180,7 +180,7 @@ title: Schedule
 | April 13, Mon | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |               | [Logistic Regression](https://rstudio.cloud/spaces/41255/project/1147633) |
 | April 15, Wed | **Quiz 11** in class |
-|               | Lesson 5.5 Hierarchical Models and Mixed effects |
+|               | [Lesson 5.5 Hierarchical Models and Mixed effects](post/slides/mixed_effects.pdf) |
 | April 17, Fri | **Optional Review** |
 
 ##### Due dates
