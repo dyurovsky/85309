@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -85,8 +85,6 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
-webkit-border-radius: 6px;
-moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -114,9 +112,14 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
-
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 50px;
+}
+.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
+text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -520,13 +523,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "text": self.text()
+            "html": self.html()
 
           }));
 
         } else {
 
-          item.text(self.text());
+          item.html(self.html());
 
         }
 
@@ -1280,7 +1283,7 @@ window.buildTabsets = function(tocID) {
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
+<style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
 a.sourceLine:empty { height: 1.2em; }
@@ -1345,7 +1348,29 @@ code span.st { color: #bf0303; } /* String */
 code span.va { color: #0057ae; } /* Variable */
 code span.vs { color: #bf0303; } /* VerbatimString */
 code span.wa { color: #bf0303; } /* Warning */
+
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -1380,11 +1405,9 @@ h6 {
 }
 </style>
 
-<style type="text/css">body {counter-reset: li; }h1 {font-weight:bold;color: rgb(128,0,0)}h2 {font-weight:bold;margin-top: 24px;color: rgb(128,0,0);}h3 {font-weight:bold;margin-top: 12px;color: rgb(128,0,0);}div#template {margin-top: 30px;margin-bottom: 30px;color: #800000;border:1px solid #767676;padding: 10px 10px;background-color: rgba(128, 128, 128, 0.2);border-radius: 5px;}div#boxedtext {background-color: rgba(128, 0, 0, 0.2);padding: 20px;padding-bottom: 10px;margin-bottom: 20px;font-size: 10pt;}hr {border: 1px solid #800000;}.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {background-color: rgb(128, 0, 0);}</style>
+<style type="text/css">body {counter-reset: li; }h1 {font-weight:bold;color: rgb(187,0,0)}h2 {font-weight:bold;margin-top: 24px;color: rgb(187,0,0);}h3 {font-weight:bold;margin-top: 12px;color: rgb(187,0,0);}a {color: rgb(34, 68, 119);}div#template {margin-top: 30px;margin-bottom: 30px;color: #bb0000;border:1px solid #666666;padding: 10px 10px;background-color: rgba(102, 102, 102, 0.2);border-radius: 5px;}div#boxedtext {background-color: rgba(187, 0, 0, 0.2);padding: 20px;padding-bottom: 10px;margin-bottom: 20px;font-size: 10pt;}hr {border: 1px solid #bb0000;}.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {background-color: rgb(187,0,0);}</style>
 
-</head>
 
-<body>
 
 <style type="text/css">
 .main-container {
@@ -1398,7 +1421,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1409,50 +1431,73 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -1466,6 +1511,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -1501,8 +1552,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1511,6 +1560,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1534,16 +1593,11 @@ div.tocify {
 
 
 <p>Language is one of the most distinctive and important abilities that marks us as uniquely human: Language is learned by every typically developing human child learns language, and no member of any other species on the planet. What’s more, children appear to be uniquely adept at learning language–effortlessly acquiring complex linguistic structures that elude frustrated adults in language courses around the world. But are children really better at learning language than adults? Decades of research in language acquisition have attempted to discover whether (and why) there may be a critical period in language acquisition: An age after which the ability to learn declines dramatically.</p>
-<p>A recent paper from <a href="https://dyurovsky.github.io/psyc201/post/slides/hartshorne_etal.pdf">Hartshorne, Tenenbaum, &amp; Pinker (2018)</a> attmpted to address this paper with a large-scale study of over 600,000 second language learners across the world. They developed a <a href="http://archive.gameswithwords.org/WhichEnglish/">language game</a> that uses grammatical questions to determine which dialect of English people who play the game speak. They used the results of this game–in conjunction with demographic information about the people who played it to study how level of English proficiency changes with both the amount of time people have spent speaking English and the age at which they started learning.</p>
+<p>A recent paper from <a href="https://dyurovsky.github.io/85309/post/slides/hartshorne_etal.pdf">Hartshorne, Tenenbaum, &amp; Pinker (2018)</a> attmpted to address this paper with a large-scale study of over 600,000 second language learners across the world. They developed a <a href="http://archive.gameswithwords.org/WhichEnglish/">language game</a> that uses grammatical questions to determine which dialect of English people who play the game speak. They used the results of this game–in conjunction with demographic information about the people who played it to study how level of English proficiency changes with both the amount of time people have spent speaking English and the age at which they started learning.</p>
 <p>In your project, you will do your own investigation of their data, answering questions that you find compelling about the process of language acquisition. You might be interested in understanding how people in different countries learn differently, how difficult American versus British English is to learn, how different features of language (e.g. noun identification vs. tense agreement) vary in their ease of learning, etc. Any question that you can pose as a statistical inference is fair game.</p>
 <p>As part of this project you will complete exploratory data analysis (EDA), inference, and modeling. You’ve had a chance to explore each of these methods individually, and now you’ll be asked to put them all together and apply them to say something interesting about a new dataset.</p>
-<p>The data can be downloaded here:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">download.file</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/data/project/language_data.feather&quot;</span>, </a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">              <span class="dt">destfile =</span> <span class="st">&quot;language_data.feather&quot;</span>)</a></code></pre></div>
-<p>This data is stored in the <code>feather</code> format–a format that is faster to read in than comma seperated value (.csv), and also maintains information about the type of each column in the dataset. To read it, you will need to install the <code>feather</code> package.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;feather&quot;</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(feather)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">language_data &lt;-<span class="st"> </span><span class="kw">read_feather</span>(<span class="st">&quot;language_data.feather&quot;</span>)</a></code></pre></div>
+<p>This data is stored in the <code>feather</code> format–a format that is faster to read in than comma seperated value (.csv), and also maintains information about the type of each column in the dataset. To read it, you will need to load the <code>feather</code> package.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">language_data &lt;-<span class="st"> </span><span class="kw">read_feather</span>(<span class="st">&quot;data/language_data.feather&quot;</span>)</a></code></pre></div>
 <hr />
 <div id="data" class="section level2">
 <h2>Data</h2>
@@ -1588,7 +1642,7 @@ div.tocify {
 <div id="english-proficiency" class="section level5">
 <h5>English Proficiency:</h5>
 <ol style="list-style-type: decimal">
-<li><code>q1</code>–<code>q35_5</code>: Questions from the online language test. <code>TRUE</code> if the participant answered them correctly. Full descriptions of the questions can be found <a href="https://dyurovsky.github.io/psyc201/post/slides/hartshorne_questions.pdf">here</a>. Grouping together subsets of these (e.g. <code>q1</code>-<code>q8</code>) might be interesting for your analysis.</li>
+<li><code>q1</code>–<code>q35_5</code>: Questions from the online language test. <code>TRUE</code> if the participant answered them correctly. Full descriptions of the questions can be found <a href="https://dyurovsky.github.io/85309/post/slides/hartshorne_questions.pdf">here</a>. Grouping together subsets of these (e.g. <code>q1</code>-<code>q8</code>) might be interesting for your analysis.</li>
 <li><code>correct</code>: The proportion of questions the participant answered correctly</li>
 <li><code>logit</code>: An empirical logit transformation of the <code>correct</code> column. This makes the data more amenable for analyses that require approximately Normally distributed data.</li>
 </ol>
@@ -1611,9 +1665,7 @@ For full credit, you need to make an argument for each variable you include, and
 <div id="report-format" class="section level4">
 <h4>Report format</h4>
 <p><strong>R Markdown:</strong> All code used to generate the statistics and plots should be organized and submitted in an R Markdown document.</p>
-<p>Download the template for the project:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">download.file</span>(<span class="st">&quot;https://dyurovsky.github.io/psyc201/post/rmd/psyc201_project.Rmd&quot;</span>, </a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">              <span class="dt">destfile =</span> <span class="st">&quot;psyc201_project.Rmd&quot;</span>)</a></code></pre></div>
+<p>You can find the template for the project in Course RStudio Cloud Space here: <a href="https://rstudio.cloud/spaces/41255/project/1164943">Final Project</a>. Remember all of your code and answers go in this document</p>
 </div>
 </div>
 </div>
@@ -1625,7 +1677,7 @@ For full credit, you need to make an argument for each variable you include, and
 </div>
 <div id="honor-code" class="section level2">
 <h2>Honor code</h2>
-<p>You may not discuss this project in any way with anyone outside your team, besides the professor and TAs. Failure to abide by this policy will result in a 0 for all teams involved.</p>
+<p>You may not discuss this project in any way with anyone outside your team, besides the professor and TA. Failure to abide by this policy will result in a 0 for all teams involved.</p>
 <p>You can still of course ask general coding questions on Piazza. But please don’t post a large block of code and then ask “why doesn’t this knit?”</p>
 <hr />
 </div>
@@ -1654,6 +1706,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

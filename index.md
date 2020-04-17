@@ -206,7 +206,7 @@ title: Schedule
 | April 20, Mon | Statistical Power and Effect Sizes |
 | April 22, Wed | **Quiz 10** in class|
 |               | Effect Sizes |
-| April 24, Fri | Introducing the final project |
+| April 24, Fri | [Introducing the final project](post/labs/project.html) |
 | April 27, Mon | Bayesian Statistics |
 | April 29, Wed | **Quiz 11** in class
 |               | Generative Models |
@@ -214,4 +214,4 @@ title: Schedule
 
 ##### Due dates
 * [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): May 1 11:55PM
-* Final Project : May 8 11:55PM
+* [Final Project](post/labs/project.html) : May 8 11:55PM
