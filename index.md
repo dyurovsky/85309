@@ -203,13 +203,12 @@ title: Schedule
 
 ##### Class / lab
 
-| April 20, Mon | Statistical Power and Effect Sizes |
-| April 22, Wed | **Quiz 10** in class|
-|               | Effect Sizes |
+| April 20, Mon | [What is Probability?](post/slides/what_is_prob.html) |
+| April 22, Wed | Bayesian Inference  |
+|               | Generative Models|
 | April 24, Fri | [Introducing the final project](post/labs/project.html) |
-| April 27, Mon | Bayesian Statistics |
-| April 29, Wed | **Quiz 11** in class
-|               | Generative Models |
+| April 27, Mon | Cognition as Bayesian Inference |
+| April 29, Wed | Cognition as Bayesian Inference |
 | May 1, Fri | **Work on final projects--optional** |
 
 ##### Due dates
