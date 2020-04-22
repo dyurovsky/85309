@@ -204,10 +204,9 @@ title: Schedule
 ##### Class / lab
 
 | April 20, Mon | [What is Probability?](post/slides/what_is_prob.html) |
-| April 22, Wed | Bayesian Inference  |
-|               | Generative Models|
+| April 22, Wed | [Bayesian inference](post/slides/bayesian_inference.html)  |
 | April 24, Fri | [Introducing the final project](post/labs/project.html) |
-| April 27, Mon | Cognition as Bayesian Inference |
+| April 27, Mon | Generative models |
 | April 29, Wed | Cognition as Bayesian Inference |
 | May 1, Fri | **Work on final projects--optional** |
 
