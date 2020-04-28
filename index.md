@@ -206,7 +206,7 @@ title: Schedule
 | April 20, Mon | [What is Probability?](post/slides/what_is_prob.html) |
 | April 22, Wed | [Bayesian inference](post/slides/bayesian_inference.html)  |
 | April 24, Fri | [Introducing the final project](post/labs/project.html) |
-| April 27, Mon | Generative models |
+| April 27, Mon | [Graphical models](post/slides/graphical_models.html) |
 | April 29, Wed | Cognition as Bayesian Inference |
 | May 1, Fri | **Work on final projects--optional** |
 
