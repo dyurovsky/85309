@@ -208,7 +208,7 @@ title: Schedule
 | April 24, Fri | [Introducing the final project](post/labs/project.html) |
 | April 27, Mon | [Graphical models](post/slides/graphical_models.html) |
 |               | [Bayesian linear regression](https://rstudio.cloud/spaces/41255/project/1206956) |
-| April 29, Wed | Cognition as Bayesian Inference |
+| April 29, Wed | [Language learning as Bayesian inference |(post/slides/bayesian_learning.html)
 | May 1, Fri | **Work on final projects--optional** |
 
 ##### Due dates
