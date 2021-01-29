@@ -186,7 +186,7 @@ title: Schedule
 
 | May 3, Mon | [What is Probability?](#) |
 | May 5, Wed | [Bayesian inference](#)  |
-| May 7, Fri | [Language learning as Bayesian inference |(#)|
+| May 7, Fri | [Language learning as Bayesian inference](#)|
 
 ##### Due dates
 * [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): May 7 11:55PM

@@ -8,7 +8,7 @@ title: Course Information
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
 |**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|**TAs**       | [Hugh Cheon](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [hcheon@andrew.cmu.edu](hcheom@andrew.cmu.edu) | [Zoom Office](#) |
+|**TAs**       | [Hugh Cheon](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [hcheon@andrew.cmu.edu](hcheon@andrew.cmu.edu) | [Zoom Office](#) |
 
 
 * * *
@@ -26,7 +26,7 @@ title: Course Information
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
 |Professor Yurovsky   | Wednesday 4:30 - 6:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|Hugh Cheon        | Thursday 2:00 - 3:00             | [Zoom Office](#)  |
+|Hugh Cheon        | Tuesday 2:00 - 3:00             | [Zoom Office](https://cmu.zoom.us/j/91681053618?pwd=RGZwZGY4NmcyZGFQbVhVMG1Yb3UwUT09)  |
 
 
 * * *
