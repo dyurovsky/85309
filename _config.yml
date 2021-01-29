@@ -7,7 +7,7 @@ markdown_ext: "md"
 
 layouts_dir: ./_noita
 baseurl: /85309
-piazza: https://piazza.com/class/k59zqdq4g542os
+piazza: https://piazza.com/class/kkg1qfrkf6w2ta
 openintro: https://www.openintro.org/stat/textbook.php?stat_book=isrs
 teams:
 
@@ -31,11 +31,6 @@ noita:
         url: /info/
       - name: Syllabus
         url: /syllabus/
-      - name: Learning Objectives
-        url: /los/
-      - name: RStudio
-        url: https://rstudio.cloud/spaces/41255/projects
-        absolute: true
       - name: Piazza
         url: https://piazza.com/class/k59zqdq4g542os
         absolute: true

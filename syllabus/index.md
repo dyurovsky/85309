@@ -23,7 +23,7 @@ By the end of the semester, you should be able to:
 
 ### Course structure:
 
-The course is divided into six learning units. For each unit a set of learning objectives and required and suggested readings, videos, etc. which will be posted on the course website. You are expected to complete the readings and/or watch the videos familiarize yourselves with the learning objectives.
+The course is divided into six learning units. For each unit, a set of required and suggested readings, videos, etc. which will be posted on the course website. You are expected to complete the readings and/or watch the videos familiarize yourselves with the learning objectives.
 
 Lectures and the textbook will cover the bulk of the theoretical ideas, and lab sessions will give you practice applying these ideas to real data. These are deeply intertwined, and it's important to make sure you understand both the theoretical and practical parts of doing statistics.
 
@@ -35,7 +35,7 @@ You will however be asked to complete the [Comprehensive Assessment of Outcomes 
 
 ### Attendance and participation
 
-Lecture and lab attendance is mandatory. Lecture slides will be posted after class each day, but reading these slides is only a partial substitute for attendance – they will often be terse and difficult to interpret without having heard the actual lecture. Similarly, lab assignments will be posted at the start of lab, but your TAs will present additional useful information for successfully completing the assignments.
+Lecture and lab attendance is mandatory unless you have talked to me about logistical issues that make attendance impossible for you. Slides and lecture recordings will be posted after class each day, but even watching these recordings is only a partial substitute for attendance – you'll get much more out of the class if you engage actively with the material and ask lots of questions! Similarly, lab assignments will be posted at the start of lab, but your TA and I will present additional useful information for successfully completing the assignments.
 
 All of the lectures are designed to elicit active learning through participation, and in general the best way to learn is to ask questions! In addition, to helping yourself and your classmates learn, you will be making it a lot easier for your instructors to view grades on the edge of two categories more favorably.
 
@@ -59,7 +59,7 @@ In class, your TA and I will give a brief overview of the lab and learning goals
 
 ### Quizzes:
 
-Each week on Wednesday we will have a short (~15 min) quiz at the beginning of lecture. You will do these in-class on paper and hand them in. Quizzes are designed to give both you and your instructors rapid feedback about your understanding of the theoretical ideas covered the previous week. We understand that sometimes things come up and you will be late or absent. For this reason, *your lowest score will be dropped.*
+Each week on Wednesday we will have a short (~15 min) quiz at the beginning of lecture. You will do these at the start of class on canvas. Quizzes are designed to give both you and your instructors rapid feedback about your understanding of the theoretical ideas covered the previous week. We understand that sometimes things come up and you will be late or absent. For this reason, *your lowest score will be dropped.* If you believe you will need extra time for quizzes please let me know! They are not designed to make you feel pressured for time, and I want you to have the time you need to complete them.
 
 
 ### Project:
@@ -88,7 +88,7 @@ Final grades will be determined as: [90,100] = A, [80,89] = B, [70,79] = C, [60,
 
 * Late work policy for the project: 10% off for each day late.
 
-* Regrade requests must be made **within one week** of when the assignment is returned, and must be submitted in writing. These will be honored if points were tallied incorrectly, or if you feel your answer is correct but it was marked wrong. No regrade will be made to alter the number of points deducted for a mistake.
+* Regrade requests must be made **within one week** of when the assignment is returned, and must be submitted in a format that can be logged (like email). These will be honored if points were tallied incorrectly, or if you feel your answer is correct but it was marked wrong.
 
 * * *
 
@@ -96,7 +96,7 @@ Final grades will be determined as: [90,100] = A, [80,89] = B, [70,79] = C, [60,
 
 I will regularly send announcements through Canvas. You should get an email for these by default, so please make sure to check your email daily to make sure that you don not miss them.
 
-Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our [Piazza](piazza.com/cmu/spring2020/85309/home). Before posting a new question please make sure to check if your question has already been answered. Your TA and I will be answering questions in Piazza daily and all students are expected to answer questions as well. Please use informative titles for your posts.
+Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our [Piazza](piazza.com/cmu/spring2021/85309/home). Before posting a new question please make sure to check if your question has already been answered. Your TA and I will be answering questions in Piazza daily and all students are expected to answer questions as well. Please use informative titles for your posts.
 
 Note that it is more efficient to answer most statistical questions "in person" so make use of [Office Hours]({{site.baseurl}}/info/#oh).
 
@@ -106,7 +106,7 @@ If you have a disability and are registered with the Office of Disability Resour
 
 ### Respect in the Classroom:
 
-It is my intent to present materials and activities that are respectful to the diverse backgrounds and perspectives of students in the classroom. You may feel free to let me know ways to improve the effectiveness of the course for you personally or for other students or student groups. If you feel uncomfortable discussing this with me or your TA, you may voice your concerns to the Chair of the Department of Psychology Diversity and Inclusion Committee, Timothy Verstynen ([timothyv@andrew.cmu.edu](mailto:timothyv@andrew.cmu.edu)). Dr. Verstynen is available to hear your concerns related to respect for diversity for any psychology class you are taking.
+It is my intent to present materials and activities that are respectful to the diverse backgrounds and perspectives of students in the classroom. You may feel free to let me know ways to improve the effectiveness of the course for you personally or for other students or student groups. If you feel uncomfortable discussing this with me or your TA, you may voice your concerns to the Chair of the Department of Psychology Diversity and Inclusion Committee, Jessica Cantlon ([jcantlon@andrew.cmu.edu](mailto:jcantlon@andrew.cmu.edu)). Dr. Cantlon is available to hear your concerns related to respect for diversity for any psychology class you are taking.
 
 ### Take care of yourself:
 

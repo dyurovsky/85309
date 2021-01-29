@@ -11,26 +11,25 @@ title: Schedule
 
 ##### Resources
 
-| Learning objectives: [L0 1]({{site.baseurl}}/los/#unit1)| Textbook: [Chp 1]({{ site.openintro}}) | Videos: [Videos 1](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=nEHFF1ADpWE)
+| Textbook: [Chp 1]({{ site.openintro}}) | Videos: [Videos 1](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=nEHFF1ADpWE) |
 
 ##### Class / lab
 
-| Jan 13, Mon  | [Introduction to 85-309](post/slides/intro.pdf) |
-| Jan 15, Wed  | [Lesson 1.1: Data--where it comes from and why it matters](post/slides/sampling.pdf) |
-| Jan 17, Fri  | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html) |
-| Jan 20, Mon  | **Martin Luther King Day -- no class** |
-| Jan 22, Wed  | **Quiz 1** in class |
-|              | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
-| Jan 24, Fri  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
-| Jan 27, Mon  | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf)  |
-|              | [Exploring class data](https://rstudio.cloud/spaces/41255/project/847018)
+| Feb 1, Mon   | [Introduction to 85-309](#) |
+| Feb 3, Wed   | [Lesson 1.1: Data--where it comes from and why it matters](#) |
+| Feb 5, Fri   | [Lab 1: Intro to R and RStudio](#) |
+| Feb 8, Mon   | [Lesson 1.2: Exploratory Data Analysis](#) |
+| Feb 10, Wed  | **Quiz 1** in class |
+|              | [Lesson 1.3: More Exploratory Data Analysis](#) |
+| Feb 12, Fri  | [Lab 2: Intro to Data](#) |
+| Feb 15, Mon  | [Lesson 1.4 Using the Tidyverse](#) |
 
 ##### Due dates
 
-* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Jan 18 11:55PM
-* Lab 1: Jan 24, Fri, at 1:30pm
-* Lab 2: Jan 31, Fri, at 1:30pm
-* Problem Set 1: Jan 29, Wed, at 1:30pm
+* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Feb 5 11:55PM
+* Lab 1: Feb 12, Fri, at 2:10pm
+* Lab 2: Feb 19, Fri, at 2:10pm
+* Problem Set 1: Feb 17, Wed, at 2:10pm
   * End of chapter exercises from **Chp 1**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Canvas.
@@ -45,32 +44,28 @@ title: Schedule
 
 ##### Resources
 
-| Learning objectives: LO 2 | Textbook: [Chp 2 ]({{ site.openintro}}) |
+| Textbook: [Chp 2 ]({{ site.openintro}}) | Videos: [Videos 2](https://www.youtube.com/watch?v=DNIauUrRIEM&list=PLkIselvEzpM7Pjo94m1e7J5jkIZkbQAl4) |
 
 ##### Class / lab
 
-| Jan 29, Wed |  **Quiz 2** in class |
-|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
-|             | [Discrimination in Hiring](https://rstudio.cloud/spaces/41255/project/871570)
-| Jan 31, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
-| Feb 3, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf) |
-|             | [Cardiac Arrest](https://rstudio.cloud/spaces/41255/project/903140)
-| Feb 5, Wed | **Quiz 3** in class |
-|             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf)|
-| Feb 7, Fri | [Lab 4: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
-| Feb 10, Mon | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf)|
-|             | [QQ Plots](https://rstudio.cloud/spaces/41255/project/929867) |
-| Feb 12, Wed | **Quiz 4** in class |
-|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) |
-| Feb 14, Fri | [Lab 5: Sampling Distributions](post/labs/sampling_distributions.html) |
-|             | [Eberly Center Early Course Feedback Form](https://forms.gle/uyy9YDaKuESWduXg8) |
+| Feb 17, Wed | **Quiz 2** in class |
+|             | [Lesson 2.1: Randomization and Sampling](#) |
+| Feb 19, Fri | [Lab 3: Intro to the Tidyverse and Functions](#)  |
+| Feb 22, Mon | [Lesson 2.2: Hypothesis Testing](#) |
+| Feb 24, Wed | **Quiz 3** in class |
+|             | [Lesson 2.3: The Central Limit Theorem](#)|
+| Feb 26, Fri | [Lab 4: Testing the Hot Hands Hypothesis](#) |
+| Mar 1, Mon  | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](#)|
+| Mar 3, Wed  | **Quiz 4** in class |
+|             | [Lesson 2.5: Confidence Intervals](#) |
+| Mar 5, Fri  | [Lab 5: Sampling Distributions](#) |
 
 ##### Due dates
 
-* Lab 3: Feb 7, Fri, at 1:30pm
-* Lab 4: Feb 14, Fri, at 1:30pm
-* Lab 5: Feb 21, Fri, at 1:30pm
-* PS 2: Feb 17, Mon, at 1:30 PM
+* Lab 3: Feb 26, Fri, at 2:10pm
+* Lab 4: Mar 5, Fri, at 2:10pm
+* Lab 5: Mar 12, Fri, at 2:10pm
+* PS 2: Mar 8, Mon, at 2:10 PM
   * End of chapter exercises from **Chp 2**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Canvas.
@@ -86,31 +81,28 @@ title: Schedule
 
 ##### Resources
 
-| Learning objectives: [L0 3]({{site.baseurl}}/los/#unit3)| Textbook: [Chp 3 and Chp 4]({{ site.openintro}}) |
+| Textbook: [Chp 3 and Chp 4]({{ site.openintro}}) | Videos: [Videos 3a](https://www.youtube.com/watch?v=_iFAZgpWsx0&list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW) and [3b](https://www.youtube.com/watch?v=uVEj2uBJfq0&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD) |
 
 ##### Class / lab
 
-| Feb 17, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
-|             | [Scientific Literacy](https://rstudio.cloud/spaces/41255/project/949984)
-| Feb 19, Wed | **Quiz 5** in class |
-|            | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
-| Feb 21, Fri  | [Lab 6: Confidence Intervals](post/labs/confidence_intervals.html) |
-| Feb 24, Mon | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
-|             | [t-tests](https://rstudio.cloud/spaces/41255/project/974547) |
-| Feb 26, Wed | **Quiz 6** in class |
-|             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
-| Feb 28, Fri | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
-| Mar 2, Mon  | [3.5: Difference of many means](post/slides/anova.pdf) |
-|             | [Dictator game](https://rstudio.cloud/spaces/41255/project/1000370)
-| Mar 4, Wed  | **Quiz 7** in class  |
-|             | [Mid-semester Review](post/slides/midsemester.pdf) |
-|             | [ANOVA example](https://rstudio.cloud/spaces/41255/project/1010110) |
+| Mar 8, Mon | [Lesson 3.1: Inference for a Single Proportion](#) |
+| Mar 10, Wed| **Quiz 5** in class |
+|           | [Lesson 3.2: Inference for the difference of two proportions](#) |
+| Mar 12, Fri | [Lab 6: Confidence Intervals](#) |
+| Mar 15, Mon | [Lesson 3.3: The t-distribution](#) |
+| Mar 17, Wed | **Quiz 6** in class |
+|             | [Lesson 3.4: Difference of two means](#) |
+| Mar 19, Fri | **Mid Semester Break - No class** |
+| Mar 22, Mon  | [3.5: Difference of many means](#) |
+| Mar 24, Wed  | **Quiz 7** in class  |
+|             | [Mid-semester Review](#) |
+| Mar 26, Fri | [Lab 7: Inference for Categorical Data](#) |
 
 ##### Due dates
 
-* Lab 6: Feb 28, Fri, at 1:30 PM
-* Lab 7: Mar 6, Fri, at 1:30 PM
-* PS 3: Mar 23, Mon, at 1:30 PM
+* Lab 6: Mar 26, Fri, at 2:10 PM
+* Lab 7: Apr 2, Fri, at 2:10 PM
+* PS 3: Mar 29, Mon, at 2:10 PM
   * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 3.2, 3.12, 3.24, 4.6, 4.10, 4.14, 4.18
   * Practice questions:
@@ -122,36 +114,26 @@ title: Schedule
 
 * * *
 
-## Spring Break
-
-| Mar 6, Fri | *Mid-Semester Break - no class* |
-| Mar 9, Mon | *Spring Break - no class* |
-| Mar 11, Wed | *Spring Break - no class* |
-| Mar 13, Fri | *Spring Break - no class* |
-
-* * *
-
 ### <a name="unit4"></a> Unit 4 - Simple Regression
 
 ##### Resources
 
-| Learning objectives: LO 4| Textbook: [Chp 5 ]({{ site.openintro}}) |
+| Textbook: [Chp 5 ]({{ site.openintro}}) | Videos: [Videos 4](https://www.youtube.com/watch?v=mPvtZhdPBhQ&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM) |
 
 ##### Class / lab
 
-| Mar 16, Mon | *Class Canceled* |
-| Mar 18, Wed | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
-|             | [Correlation](https://rstudio.cloud/spaces/41255/project/1048165) |
-| Mar 20, Fri | [Lab 8: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
-| Mar 23, Mon | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
-| Mar 25, Wed | **Quiz 8** in class |
-|             | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
-| Mar 27, Fri | [Lab 9: Introduction to Linear Regression](post/labs/simple_regression.html) |
+| Mar 29, Mon | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
+| Mar 31, Wed | **Quiz 8** in class |
+|             | [Lesson 4.2: Residuals and Least Squares](#) |
+| Apr 2, Fri | [Lab 8: Inference for Numerical Data](#) |
+| Apr 5, Mon | **Break Day - No class** |
+| Apr 7, Wed | [Lesson 4.3: Inference for linear regression](#) |
+| Apr 9, Fri | [Lab 9: Introduction to Linear Regression](post/labs/simple_regression.html) |
 
 ##### Due dates
-* Lab 8: Mar 27, Fri, at 1:30 PM
-* Lab 9: Apr 3, Fri, at 1:30 PM
-* PS 4: Apr 1 Wed, at 1:30 PM
+* Lab 8: Apr 9, Fri, at 2:10 PM
+* Lab 9: Apr 23, Fri, at 2:10 PM
+* PS 4: Apr 12 Mon, at 2:10 PM
    * End of chapter exercises from **Chp 5** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 5.4, 5.10, 5.20, 5.22, 5.28, 5.34
   * Practice questions:
@@ -164,29 +146,28 @@ title: Schedule
 
 ##### Resources
 
-| Learning objectives: LO 5| Textbook: [Chp 6 ]({{ site.openintro}}) |
+| Textbook: [Chp 6 ]({{ site.openintro}}) | Videos: [Videos 5](https://www.youtube.com/watch?v=sQpAuyfEYZg&list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I) |
 
 ##### Class / lab
 
-| Mar 30, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
-| April 1, Wed  | **Quiz 9** in class |
-| April 3, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
-| April 6, Mon  | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
-|               | [Stepwise Regression](https://rstudio.cloud/spaces/41255/project/1116831)|
-| April 8, Wed  | **Quiz 10** in class |
-|               | [Lesson 5.3 Transformations](post/slides/transformations.pdf)|
-|               | [Transformations](https://rstudio.cloud/spaces/41255/project/1127058) |
-| April 10, Fri | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
-| April 13, Mon | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
-|               | [Logistic Regression](https://rstudio.cloud/spaces/41255/project/1147633) |
-| April 15, Wed | **Quiz 11** in class |
-|               | [Lesson 5.5 Hierarchical Models and Mixed effects](post/slides/mixed_effects.pdf) |
-| April 17, Fri | **Optional Review** |
+| Apr 12, Mon   | [Lesson 5.1: Multiple Regression](#) |
+| April 14, Wed  | **Quiz 9** in class |
+|                | [Lesson 5.2: Model Selection](#) |
+| April 16, Fri  | **Carnival - No Class** |
+| April 19, Mon  | [Lesson 5.3 Transformations](#)|
+| April 21, Wed  | **Quiz 10** in class |
+|                | [Lesson 5.4 The Generalized Linear Model](#) |
+| April 23, Fri  | [Lab 10: Multiple Linear Regression](#) |
+| April 26, Mon | [Lesson 5.5 Hierarchical Models and Mixed effects](#) |
+| April 28, Wed | **Quiz 11** in class |
+|               | [Review]()           |
+| April 30, Fri | [Lab 11: Choosing the right model](#) |
+
 
 ##### Due dates
-* Lab 10: Apr 10, Fri, at 1:30 PM
-* Lab 11: Apr 24, Fri, at 1:30 PM
-* PS 4: Apr 20 Mon, at 1:30 PM
+* Lab 10: Apr 30, Fri, at 2:10 PM
+* Lab 11: May 7, Fri, at 2:10 PM
+* PS 4: May 3 Mon, at 2:10 PM
    * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
    * **Graded questions:**  6.2, 6.4, 6.8, 6.12, 6.14
    * Practice questions:
@@ -199,18 +180,14 @@ title: Schedule
 
 ##### Resources
 
-| Learning objectives: LO 6|
+| Book: [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/)| Videos: [Videos 6](https://youtu.be/_NEMHM1wDfI) |
 
 ##### Class / lab
 
-| April 20, Mon | [What is Probability?](post/slides/what_is_prob.html) |
-| April 22, Wed | [Bayesian inference](post/slides/bayesian_inference.html)  |
-| April 24, Fri | [Introducing the final project](post/labs/project.html) |
-| April 27, Mon | [Graphical models](post/slides/graphical_models.html) |
-|               | [Bayesian linear regression](https://rstudio.cloud/spaces/41255/project/1206956) |
-| April 29, Wed | [Language learning as Bayesian inference |(post/slides/bayesian_learning.html)
-| May 1, Fri | **Work on final projects--optional** |
+| May 3, Mon | [What is Probability?](#) |
+| May 5, Wed | [Bayesian inference](#)  |
+| May 7, Fri | [Language learning as Bayesian inference |(#) |
 
 ##### Due dates
-* [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): May 1 11:55PM
-* [Final Project](post/labs/project.html) : May 8 11:55PM
+* [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): May 7 11:55PM
+* [Final Project](#) : May 17 11:55PM
