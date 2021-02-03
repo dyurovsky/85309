@@ -15,8 +15,8 @@ title: Schedule
 
 ##### Class / lab
 
-| Feb 1, Mon   | [Introduction to 85-309](#) |
-| Feb 3, Wed   | [Lesson 1.1: Data--where it comes from and why it matters](#) |
+| Feb 1, Mon   | [Introduction to 85-309](post/slides/intro.pdf) |
+| Feb 3, Wed   | [Lesson 1.1: Data--where it comes from and why it matters](post/slides/sampling.pdf) |
 | Feb 5, Fri   | [Lab 1: Intro to R and RStudio](#) |
 | Feb 8, Mon   | [Lesson 1.2: Exploratory Data Analysis](#) |
 | Feb 10, Wed  | **Quiz 1** in class |
