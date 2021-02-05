@@ -21,7 +21,7 @@ library(tidyverse)
 
 **Load Arbuthnot data**
 ```{r}
-arbuthnot <- read_csv("https://dyurovsky.github.io/psyc201/data/lab1/arbuthnot.csv")
+arbuthnot <- read_csv("https://dyurovsky.github.io/85309/data/lab1/arbuthnot.csv")
 ```
 
 #### Exercise 1: 
@@ -51,7 +51,7 @@ arbuthnot$girls
 
 **Load present day data**
 ```{r}
-present <- read_csv("https://dyurovsky.github.io/psyc201/data/lab1/present.csv")
+present <- read_csv("https://dyurovsky.github.io/85309/data/lab1/present.csv")
 ```
 
 #### 4:
