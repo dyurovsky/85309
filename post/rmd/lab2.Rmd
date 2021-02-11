@@ -20,7 +20,7 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data}
-nycflights <- read_csv("data/nycflights.csv")
+nycflights <- read_csv("https://dyurovsky.github.io/85309/data/lab2/nycflights.csv")
 ```
 
 #### Exercise 1: 
@@ -61,7 +61,7 @@ nycflights <- read_csv("data/nycflights.csv")
 
 * * *
 
-### On your own:
+### More practice:
 
 #### Exercise 7:
 

@@ -22,7 +22,7 @@ title: Schedule
 |              | [Exploring class data](post/rmd/eda.Rmd) |
 | Feb 10, Wed  | **Quiz 1** in class |
 |              | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf) |
-| Feb 12, Fri  | Lab 2: Intro to Data |
+| Feb 12, Fri  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
 | Feb 15, Mon  | Lesson 1.4 Using the Tidyverse |
 
 ##### Due dates
