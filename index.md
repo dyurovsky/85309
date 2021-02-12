@@ -11,7 +11,7 @@ title: Schedule
 
 ##### Resources
 
-| Textbook: [Chp 1](post/intro-randomization.pdf) | Videos: [Videos 1](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=nEHFF1ADpWE) |
+| Textbook: [Chp 1]({{site.openintro}}) | Videos: [Videos 1](https://www.youtube.com/watch?list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8&v=nEHFF1ADpWE) |
 
 ##### Class / lab
 
@@ -45,7 +45,7 @@ title: Schedule
 
 ##### Resources
 
-| Textbook: [Chp 2 ](post/intro-randomization.pdf) | Videos: [Videos 2](https://www.youtube.com/watch?v=DNIauUrRIEM&list=PLkIselvEzpM7Pjo94m1e7J5jkIZkbQAl4) |
+| Textbook: [Chp 2 ]({{site.openintro}}) | Videos: [Videos 2](https://www.youtube.com/watch?v=DNIauUrRIEM&list=PLkIselvEzpM7Pjo94m1e7J5jkIZkbQAl4) |
 
 ##### Class / lab
 
@@ -82,7 +82,7 @@ title: Schedule
 
 ##### Resources
 
-| Textbook: [Chp 3 and Chp 4](post/intro-randomization.pdf) | Videos: [Videos 3a](https://www.youtube.com/watch?v=_iFAZgpWsx0&list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW) and [3b](https://www.youtube.com/watch?v=uVEj2uBJfq0&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD) |
+| Textbook: [Chp 3 and Chp 4]({{site.openintro}}) | Videos: [Videos 3a](https://www.youtube.com/watch?v=_iFAZgpWsx0&list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW) and [3b](https://www.youtube.com/watch?v=uVEj2uBJfq0&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD) |
 
 ##### Class / lab
 
@@ -119,7 +119,7 @@ title: Schedule
 
 ##### Resources
 
-| Textbook: [Chp 5 ](post/intro-randomization.pdf) | Videos: [Videos 4](https://www.youtube.com/watch?v=mPvtZhdPBhQ&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM) |
+| Textbook: [Chp 5 ]({{site.penintro}}) | Videos: [Videos 4](https://www.youtube.com/watch?v=mPvtZhdPBhQ&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM) |
 
 ##### Class / lab
 
@@ -147,7 +147,7 @@ title: Schedule
 
 ##### Resources
 
-| Textbook: [Chp 6 ](post/intro-randomization.pdf) | Videos: [Videos 5](https://www.youtube.com/watch?v=sQpAuyfEYZg&list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I) |
+| Textbook: [Chp 6 ]({{site.openintro}}) | Videos: [Videos 5](https://www.youtube.com/watch?v=sQpAuyfEYZg&list=PLkIselvEzpM5f1HYzIjFt52SD4izsJ2_I) |
 
 ##### Class / lab
 
