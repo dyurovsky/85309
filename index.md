@@ -50,8 +50,8 @@ title: Schedule
 ##### Class / lab
 
 | Feb 17, Wed | **Quiz 2** in class |
-|             | [Lesson 2.1: Randomization and Sampling](#) |
-| Feb 19, Fri | [Lab 3: Intro to the Tidyverse and Functions](#)  |
+|             | Lesson 2.1: Randomization and Sampling |
+| Feb 19, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
 | Feb 22, Mon | [Lesson 2.2: Hypothesis Testing](#) |
 | Feb 24, Wed | **Quiz 3** in class |
 |             | [Lesson 2.3: The Central Limit Theorem](#)|
