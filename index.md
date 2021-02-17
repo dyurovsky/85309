@@ -50,16 +50,17 @@ title: Schedule
 ##### Class / lab
 
 | Feb 17, Wed | **Quiz 2** in class |
-|             | Lesson 2.1: Randomization and Sampling |
+|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
+|             | [Bias in hiring](post/rmd/hiring.Rmd) |
 | Feb 19, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
-| Feb 22, Mon | [Lesson 2.2: Hypothesis Testing](#) |
+| Feb 22, Mon | Lesson 2.2: Hypothesis Testing |
 | Feb 24, Wed | **Quiz 3** in class |
-|             | [Lesson 2.3: The Central Limit Theorem](#)|
-| Feb 26, Fri | [Lab 4: Testing the Hot Hands Hypothesis](#) |
-| Mar 1, Mon  | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](#)|
+|             | Lesson 2.3: The Central Limit Theorem|
+| Feb 26, Fri | Lab 4: Testing the Hot Hands Hypothesis |
+| Mar 1, Mon  | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem |
 | Mar 3, Wed  | **Quiz 4** in class |
-|             | [Lesson 2.5: Confidence Intervals](#) |
-| Mar 5, Fri  | [Lab 5: Sampling Distributions](#) |
+|             | Lesson 2.5: Confidence Intervals |
+| Mar 5, Fri  | Lab 5: Sampling Distributions |
 
 ##### Due dates
 
