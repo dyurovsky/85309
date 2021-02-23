@@ -21,19 +21,15 @@ meeting_admitted <- 388
 meeting_died <- 66
 meeting_mortality <- meeting_died / meeting_admitted
 
-
 nonmeeting_admitted <- 2154
 nonmeeting_died <- 535
 nonmeeting_mortality <- nonmeeting_died / nonmeeting_admitted
 
-
 mortality_diff <- meeting_mortality - nonmeeting_mortality
 
-
-# Make a dataframe to show the results
-data_frame(type = c("Nonmeeting", "Meeting", "Difference"), 
-           mortality = c(nonmeeting_mortality, meeting_mortality, 
-                         mortality_diff))
+# Make a tibble to show the results
+tibble(type = c("Nonmeeting", "Meeting", "Difference"), 
+       mortality = c(nonmeeting_mortality, meeting_mortality, mortality_diff))
 ```
 
 Let's simulate it
@@ -61,35 +57,37 @@ day_diff()
 
 Now lets draw samples and pot
 ```{r thousand_samples, fig.height=4, fig.width = 6}
-thousand_diffs <- data_frame(diff = replicate(1000, day_diff()))
+thousand_diffs <- tibble(diff = replicate(1000, day_diff()))
 
 ggplot(thousand_diffs, aes(x = diff)) + 
   geom_histogram(bins = 25) +
-  geom_vline(xintercept = mortality_diff, color = "darkred", size = 2) 
+  geom_vline(xintercept = mortality_diff, color = "#bb0000", size = 2) 
 ```
 
 Sample and plot along with our original result
 ```{r empirical_data, fig.height=4, fig.width = 6}
-thousand_diffs <- data_frame(diff = replicate(1000, day_diff()))
+thousand_diffs <- tibble(diff = replicate(1000, day_diff()))
 
 percentile <- .025
 
+thousand_diffs %>% pull(diff)
+
 # Find top and bottom 2.5% percents
-lower_percentile <- quantile(thousand_diffs$diff, percentile)
-upper_percentile <- quantile(thousand_diffs$diff, 1-percentile)
+lower_percentile <- quantile(thousand_diffs %>% pull(diff), percentile)
+upper_percentile <- quantile(thousand_diffs %>% pull(diff), 1-percentile)
 
 #add a vertical line to the random samples to show the empirical data
 ggplot(thousand_diffs, aes(x = diff)) + 
   geom_histogram(bins = 25) + 
-  geom_vline(xintercept = mortality_diff, color = "darkred", size = 2) +
-  geom_vline(xintercept = lower_percentile, color = "blue", size = 2) + 
-  geom_vline(xintercept = upper_percentile, color = "blue", size = 2)
+  geom_vline(xintercept = mortality_diff, color = "#bb0000", size = 2) +
+  geom_vline(xintercept = lower_percentile, color = "#224477", size = 2) + 
+  geom_vline(xintercept = upper_percentile, color = "#224477", size = 2)
 ```
 
 Where does our difference lie?
 ```{r}
 # Compute the proportion of samples that the actual difference was greater than
-mean(mortality_diff >= thousand_diffs$diff)
+mean(mortality_diff >= thousand_diffs %>% pull(diff))
 ```
 
 What about nonteaching hospitals?
@@ -107,25 +105,24 @@ nonmeeting_mortality <- nonmeeting_died / nonmeeting_admitted
 mortality_diff <- meeting_mortality - nonmeeting_mortality
 
 
-# Make a dataframe to show the results
-data_frame(type = c("Nonmeeting", "Meeting", "Difference"), 
-           mortality = c(nonmeeting_mortality, meeting_mortality, 
-                         mortality_diff))
+# Make a tibble to show the results
+tibble(type = c("Nonmeeting", "Meeting", "Difference"), 
+       mortality = c(nonmeeting_mortality, meeting_mortality, mortality_diff))
 ```
 
 Sample and plot along with our original result
 ```{r nonteaching_empirical_data}
-thousand_diffs <- data_frame(diff = replicate(1000, day_diff()))
+thousand_diffs <- tibble(diff = replicate(1000, day_diff()))
 
 # Find top and bottom 2.5% percents
-lower_percentile <- quantile(thousand_diffs$diff, percentile)
-upper_percentile <- quantile(thousand_diffs$diff, 1-percentile)
+lower_percentile <- quantile(thousand_diffs %>% pull(diff), percentile)
+upper_percentile <- quantile(thousand_diffs %>% pull(diff), 1 - percentile)
 
 #add a vertical line to the random samples to show the empirical data
 ggplot(thousand_diffs, aes(x = diff)) + 
   geom_histogram(bins = 25) + 
-  geom_vline(xintercept = mortality_diff, color = "darkred", size = 2) +
-  geom_vline(xintercept = lower_percentile, color = "blue", size = 2) + 
-  geom_vline(xintercept = upper_percentile, color = "blue", size = 2)
+  geom_vline(xintercept = mortality_diff, color = "#bb0000", size = 2) +
+  geom_vline(xintercept = lower_percentile, color = "#224477", size = 2) + 
+  geom_vline(xintercept = upper_percentile, color = "#224477", size = 2)
 
 ```
