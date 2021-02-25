@@ -56,8 +56,8 @@ title: Schedule
 | Feb 22, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf)|
 |             | [Cardiac arrests](post/rmd/cardiac.Rmd) |
 | Feb 24, Wed | **Quiz 3** in class |
-|             | Lesson 2.3: The Central Limit Theorem|
-| Feb 26, Fri | Lab 4: Testing the Hot Hands Hypothesis |
+|             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf)|
+| Feb 26, Fri | [Lab 4: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 | Mar 1, Mon  | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem |
 | Mar 3, Wed  | **Quiz 4** in class |
 |             | Lesson 2.5: Confidence Intervals |
