@@ -59,7 +59,8 @@ title: Schedule
 |             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf)|
 | Feb 26, Fri | [Lab 4: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 |             | [Curry simulation notes](post/slides/curry_simulation.pdf) |
-| Mar 1, Mon  | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem |
+| Mar 1, Mon  | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf) |
+|             | [QQ Plots](post/rmd/qqplots.Rmd) |
 | Mar 3, Wed  | **Quiz 4** in class |
 |             | Lesson 2.5: Confidence Intervals |
 | Mar 5, Fri  | Lab 5: Sampling Distributions |
