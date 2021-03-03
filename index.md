@@ -62,7 +62,7 @@ title: Schedule
 | Mar 1, Mon  | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf) |
 |             | [QQ Plots](post/rmd/qqplots.Rmd) |
 | Mar 3, Wed  | **Quiz 4** in class |
-|             | Lesson 2.5: Confidence Intervals |
+|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) |
 | Mar 5, Fri  | Lab 5: Sampling Distributions |
 
 ##### Due dates
