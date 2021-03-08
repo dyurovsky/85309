@@ -1,0 +1,170 @@
+
+---
+title: "Inference for a single proportion"
+output:
+  html_document:
+editor_options:
+  chunk_output_type: inline
+---
+
+Load tidyverse package and set plot theme
+```{r load_libraries, message = F}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 16))
+```
+
+Set up data, make sure everything checks out
+```{r data}
+correct <- 571
+incorrect <- 99
+N <- correct + incorrect
+
+
+p <- correct/N
+p
+```
+
+
+Let's build our estimate of what the sampling distribution would be like. If our sample is representative of the population, then we think that if we draw a new random person from a the population, they will have a `r p`% chance of getting the answer right.
+
+We can simulate this with the `rbinom` function which generates random samples from a Binomial distribution--a weighted coin. In this case, we we want to generate `r N` samples where each sample has a `r p`% chance of being correct.
+
+```{r sampling}
+sample_prop <- function(){
+  hypothetical_sample <- rbinom(N, 1, p) 
+  mean(hypothetical_sample)
+}
+
+sample_prop()
+```
+
+What does it's shape look like?
+```{r sample_plots}
+sample_distribution <- tibble(sample = 1:1000,
+                           prop = replicate(1000, sample_prop()))
+
+ggplot(sample_distribution, aes(x = prop)) + 
+  geom_histogram(binwidth = .0075)
+```
+
+We expect from CLT that $\hat{p} \sim Normal\left(p, \sqrt{\frac{(p \left(1-p\right)}{n}}\right)$
+
+What do it's parameters look like?
+```{r estimate_params}
+sample_distribution <- tibble(sample = 1:1000,
+                           prop = replicate(1000, sample_prop()))
+
+pop_prop_estimate <- sample_distribution %>% 
+  pull(prop) %>% 
+  mean()
+pop_prop_estimate
+
+sample_prop_sd <- sample_distribution %>% 
+  pull(prop) %>%
+  sd()
+
+sample_prop_sd
+
+predicted_prop_sd <- sqrt((correct / N) * (incorrect / N) / N)
+predicted_prop_sd
+```
+
+Let's look at confidence intervals
+```{r ci_plot}
+sample_distribution <- tibble(sample = 1:1000,
+                           prop = replicate(1000, sample_prop()))
+
+lower_quantile <- sample_distribution %>%
+  pull(prop) %>%
+  quantile(.025)
+
+upper_quantile <- sample_distribution %>%
+  pull(prop) %>%
+  quantile(.975)
+
+ggplot(sample_distribution, aes(x = prop)) + 
+  geom_histogram(binwidth = .0075) + 
+  geom_vline(aes(xintercept = lower_quantile), 
+             color = "#bb0000", size = 2) +
+  geom_vline(aes(xintercept = upper_quantile), 
+             color = "#bb0000", size = 2)
+```
+
+
+Let's get confidence intervals 
+```{r estimate_cis}
+sample_distribution <- tibble(sample = 1:1000,
+                           prop = replicate(1000, sample_prop()))
+
+sample_prop_quantiles <- sample_distribution %>%
+  pull(prop) %>%
+  quantile(probs = c(.025, .975))
+
+sample_prop_quantiles
+
+
+predicted_mean_quantiles <- c((correct / N) - 1.96 * 
+                                sqrt((correct / N) *(incorrect / N) / N),
+                              (correct / N) + 1.96 *
+                                sqrt((correct / N) *(incorrect / N) / N))
+
+predicted_mean_quantiles
+```
+
+
+Why p_hat = .5 is conservative
+```{r p_hat_check}
+
+
+p_check <- tibble(p = seq(0, 1, .01)) %>%
+  mutate(estimate = p * (1-p))
+
+p_check
+
+ggplot(data = p_check, aes(x = p, y = estimate)) +
+  geom_point()
+
+```
+
+Hypothesis testing with CIs. First use sampling.
+
+```{r flexible_sample_prop}
+sample_prop<- function(prop) {
+  hypothetical_sample <- rbinom(N, 1, prop) 
+  mean(hypothetical_sample)
+}
+sample_prop(.5)
+```
+
+```{r estimate_null_cis}
+null_distribution <- tibble(sample = 1:1000,
+                         prop = replicate(1000, sample_prop(.75)))
+
+ggplot(null_distribution, aes(x = prop)) + 
+  geom_histogram(binwidth = .0075)
+
+
+null_quantiles <- null_distribution %>%
+  pull(prop) %>%
+  quantile(probs = c(.025, .975))
+
+null_quantiles
+```
+
+Now use CLT
+```{r clt_null_cis}
+chance_p <- .75
+
+null_correct <- chance_p * N
+null_incorrect <- (1-chance_p) * N
+
+
+predicted_null_quantiles <- c((null_correct / N) - 1.96 * 
+                                sqrt((null_correct / N) * (null_incorrect / N) / N),
+                              (null_correct / N) + 1.96 * 
+                                sqrt((null_correct / N) * (null_incorrect / N) / N))
+
+predicted_null_quantiles
+
+```

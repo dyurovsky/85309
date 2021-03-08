@@ -90,18 +90,19 @@ title: Schedule
 
 ##### Class / lab
 
-| Mar 8, Mon | [Lesson 3.1: Inference for a Single Proportion](#) |
+| Mar 8, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
+|            | [The Central Limit Theorem for Proportions](post/rmd/proportion_clt.Rmd) |
 | Mar 10, Wed| **Quiz 5** in class |
-|           | [Lesson 3.2: Inference for the difference of two proportions](#) |
-| Mar 12, Fri | [Lab 6: Confidence Intervals](#) |
-| Mar 15, Mon | [Lesson 3.3: The t-distribution](#) |
+|           | Lesson 3.2: Inference for the difference of two proportions|
+| Mar 12, Fri | Lab 6: Confidence Intervals|
+| Mar 15, Mon | Lesson 3.3: The t-distribution |
 | Mar 17, Wed | **Quiz 6** in class |
-|             | [Lesson 3.4: Difference of two means](#) |
+|             | Lesson 3.4: Difference of two means |
 | Mar 19, Fri | **Mid Semester Break - No class** |
-| Mar 22, Mon  | [3.5: Difference of many means](#) |
+| Mar 22, Mon  | 3.5: Difference of many means |
 | Mar 24, Wed  | **Quiz 7** in class  |
-|             | [Mid-semester Review](#) |
-| Mar 26, Fri | [Lab 7: Inference for Categorical Data](#) |
+|             | Mid-semester Review |
+| Mar 26, Fri | Lab 7: Inference for Categorical Data |
 
 ##### Due dates
 

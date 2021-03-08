@@ -30,30 +30,77 @@ set.seed(85309)
 
 #### Exercise 1: 
 ```{r ex1}
-# enter your code for Exercise 1 here
+ggplot(ames, aes(x = area)) + 
+  geom_histogram(binwidth = 250)
 
+ames %>%
+  summarise(pop_med = median(area), 
+            mu = mean(area),
+            pop_iqr = IQR(area))  # third quartile, 75th percentile
 ```
+
+The distribution is unimodal and slightly right-skewed. Because it is non-normal, we can describe it with robust statistics like median and iqr (above).
 
 #### Exercise 2:
 ```{r ex2}
-# enter your code for Exercise 2 here
+samp1 <- ames %>%
+  sample_n(50)
+
+ggplot(samp1, aes(x = area)) + 
+  geom_histogram(binwidth = 250)
 
 ```
+
+Compared to the population distribution, the sample distribution has a similar skewed shape but is noisier. The tails look less smooth.
 
 #### Exercise 3:
 ```{r ex3}
-# enter your code for Exercise 3 here
+samp2 <- ames %>%
+  sample_n(50)
 
+ggplot(samp2, aes(x = area)) + 
+  geom_histogram(binwidth = 250)
 ```
+
+Sample 2 has a lot of the same features as sample 1. It is right-skewed but not too much and unimodal like the population distribution. If we took a sample of size 100 and a sample of size 1000, the sample of size 1000 will look more like the population.
 
 #### Exercise 4:
 ```{r ex4}
-# enter your code for Exercise 4 here
+sample_50 <- function() {
+  ames %>%
+    sample_n(50, replace = TRUE) %>%
+    summarise(x_bar = mean(area)) %>%
+    pull()
+}
+
+sample_means50 <- tibble(sample = 1:1000,
+                         mean = replicate(1000, sample_50()))
+
+ggplot(sample_means50, aes(x = mean)) + 
+  geom_histogram()
+
+
+sampling_distribution_mean <- sample_means50 %>%
+  summarise(mean = mean(mean)) %>%
+  pull()
 ```
+
+The sampling distribution looks approximately normal. It has a mean of `r sampling_distribution_mean`. This is very close to the population mean of 1500. There are 1000 elements of sample_means50 each of which is the sample mean of a sample of size 50.
 
 #### Exercise 5:
 ```{r ex5}
-# enter your code for Exercise 5 here
+sample_10 <- function() {
+  ames %>%
+    sample_n(10, replace = TRUE) %>%
+    summarise(x_bar = mean(area)) %>%
+    pull()
+}
+
+sample_means_small <- tibble(sample = 1:25,
+                         mean = replicate(25, sample_10()))
+
+ggplot(sample_means_small, aes(x = mean)) + 
+  geom_histogram(binwidth = 100)
 ```
 
 #### Exercise 6:
