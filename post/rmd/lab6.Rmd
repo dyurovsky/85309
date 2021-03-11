@@ -1,6 +1,6 @@
 
 ---
-title: "Lab 6 - Inference for categorical data"
+title: "Lab 6 - Foundations for statistical inference - Confidence intervals"
 author: "Your name"
 date: "Date of lab session"
 output: 
@@ -21,91 +21,55 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data}
-atheism <- read_csv("https://dyurovsky.github.io/psyc201/data/lab6/atheism.csv")
+atheism <- read_csv("https://dyurovsky.github.io/85309/data/lab6/atheism.csv")
+```
+
+```{r set_seed}
+set.seed(85309)
 ```
 
 ## Exercises:
 
 #### Exercise 1: 
-
-
-#### Exercise 2: 
-
-
-#### Exercise 3: 
-
-```{r ex3}
+```{r ex1}
+# enter your code for Exercise 1 here
 
 ```
 
-
-#### Exercise 4: 
-
+#### Exercise 2:
 
 
-#### Exercise 5: 
+#### Exercise 3:
 
+
+#### Exercise 4:
+
+
+#### Exercise 5:
 ```{r ex5}
-
+# enter your code for Exercise 5 here
 ```
 
 #### Exercise 6:
 
-```{r ex6}
-
-```
 
 #### Exercise 7:
 
 ```{r ex7}
-
+# enter your code for Exercise 7 here
 ```
 
-#### Exercise 8: 
+### More Practice
+
+#### Exercise 8:
+
 
 ```{r ex8}
-
+# enter your code for Exercise 8 here
 ```
 
 #### Exercise 9:
 
 ```{r ex9}
-
+# enter your code for Exercise 9 here
 ```
-
-#### Exercise 10:
-
-```{r ex10}
-
-```
-
-
-* * *
-
-### On your own:
-
-#### Exercise 11:
-
-```{r ex11}
-# enter your code for Exercise 11 here
-```
-
-#### Exercise 12:
-
-```{r ex12}
-# enter your code for Exercise 12 here
-```
-
-
-#### Exercise 13:
-
-```{r ex13}
-# enter your code for Exercise 13 here
-```
-
-#### Exercise 14:
-
-```{r ex14}
-# enter your code for Exercise 13 here
-```
-

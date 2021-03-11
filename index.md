@@ -93,8 +93,8 @@ title: Schedule
 | Mar 8, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
 |            | [The Central Limit Theorem for Proportions](post/rmd/proportion_clt.Rmd) |
 | Mar 10, Wed| **Quiz 5** in class |
-|           | Lesson 3.2: Inference for the difference of two proportions|
-| Mar 12, Fri | Lab 6: Confidence Intervals|
+|           | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
+| Mar 12, Fri | [Lab 6: Confidence Intervals](post/labs/confidence_intervals.html) |
 | Mar 15, Mon | Lesson 3.3: The t-distribution |
 | Mar 17, Wed | **Quiz 6** in class |
 |             | Lesson 3.4: Difference of two means |
