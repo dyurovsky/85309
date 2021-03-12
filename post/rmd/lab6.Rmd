@@ -21,7 +21,7 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data}
-atheism <- read_csv("https://dyurovsky.github.io/85309/data/lab6/atheism.csv")
+atheism <- read_csv("https://dyurovsky.github.io/85309/data/lab5/ames.csv")
 ```
 
 ```{r set_seed}
