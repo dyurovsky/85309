@@ -1,0 +1,217 @@
+
+---
+title: "one sample t-tests"
+output:
+  html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r load_libraries, message = FALSE, warn = FALSE}
+library(tidyverse)
+theme_set(theme_classic(base_size = 16))
+```
+
+Why do we use the t-distribution? Our estimates of the standard deviation of a sample--and thus the width of a sampling distribution--are more variable with small sample sizes.
+
+Let's compare the standard deviations of samples from the Normal distribution as we increase the sample size
+```{r normal-size2}
+rnorm(n = 2, mean = 0, sd = 1) %>% 
+  sd()
+```
+
+```{r normal-size10}
+rnorm(10) %>% sd()
+```
+
+```{r normal-size100}
+rnorm(100) %>% sd()
+```
+
+```{r normal-size1000}
+rnorm(1000) %>% sd()
+```
+
+
+```{r replications}
+
+samples_2 <- tibble(sample = 1:1000, 
+                    sd = replicate(1000, rnorm(2) %>% sd()),
+                    size = 2) 
+
+samples_10 <- tibble(sample = 1:1000, 
+                    sd = replicate(1000, rnorm(10) %>% sd()),
+                    size = 10) 
+
+samples_100 <- tibble(sample = 1:1000, 
+                    sd = replicate(1000, rnorm(100) %>% sd()),
+                    size = 100) 
+samples_1000 <- tibble(sample = 1:1000, 
+                    sd = replicate(1000, rnorm(1000) %>% sd()),
+                    size = 1000) 
+
+
+all_samples <- bind_rows(samples_2, samples_10, samples_100, samples_1000)
+```
+
+```{r plot-sds}
+ggplot(all_samples, aes(x = sd)) + 
+  facet_grid(size ~ .) +
+  geom_histogram(binwidth = .1)
+```
+
+Let's look at the Segall et al. data to see why we should use the t-distribution
+```{r read-segall-data, message = FALSE, warn = FALSE}
+segall_data <- read_csv(
+  "https://dyurovsky.github.io/85309/data/demos/segall_data.csv")
+
+segall_data
+
+```
+
+Let's look at some basic descriptives
+```{r descriptives}
+# filter out the US data
+non_us_data <- segall_data %>%
+  filter(society != "Evanston")
+
+#get the us PSE
+us_pse <- segall_data %>%
+  filter(society == "Evanston") %>%
+  pull()
+
+#Plot a histogram
+ggplot(non_us_data, aes(x = pse)) + 
+  geom_histogram(binwidth = 1)
+
+# Descriptive statistics
+descriptives <- non_us_data %>%
+  summarise(mean = mean(pse),
+            sd = sd(pse),
+            n = n())
+
+descriptives
+```
+
+Ok let's compute t-test statistics by hand
+```{r test-statistics}
+# Get the components I need for the T-statistic formula
+test_statistics <- descriptives %>%
+  mutate(df = n - 1,
+         se = sd/sqrt(n),
+         t = (mean - us_pse)/se)
+
+test_statistics
+
+# Find the p-value using position in the t-distribution with the appropriate degrees of freedom
+p_val_t <- 2 * pt(test_statistics %>% pull(t), test_statistics %>% pull(df))
+p_val_t
+```
+
+Ok now let's skip all of that and use the built-in R function
+```{r t-test}
+# Use the t.test function to compute the probability of observing data this extreme
+t.test(non_us_data %>% pull(pse), mu = us_pse, alternative = "two.sided")
+```
+
+Make a plot of our empirical data on the Null Hypothesis distribution
+```{r t-dist}
+t_14 <- tibble(x = seq(-16, 16, .01), #Range of t-values to look at
+               y = dt(seq(-16, 16, .01), 
+                      df = nrow(non_us_data))) #Density of the   
+                                               #t-distribution with 14 df
+
+
+ggplot(data = t_14, aes(x = x, y = y)) +
+  geom_point(size = .25) + #plot the null distribution
+  geom_vline(aes(xintercept = test_statistics %>% pull(t)), 
+             size = 2, color = "#bb0000") + #empirical data
+  geom_vline(aes(xintercept = qt(.0275, 8)), color = "#e0e0e0", 
+             size = 2) + #2.5th percentile
+  geom_vline(aes(xintercept = qt(.975, 8)), color = "#e0e0e0", 
+             size = 2) +  #97.5th percentile
+  labs(x = "t-value", y = "density") +
+  scale_x_continuous(breaks = seq(-16, 16, 2))
+```
+
+What if we assume the normal?
+```{r normal-p}
+p_val_norm <- 2 * pnorm(test_statistics %>% pull(t))
+p_val_norm
+```
+
+```{r normal_plot}
+normal <- tibble(x = seq(-16, 16, .01), #Range of z-values to look at
+                 y = dnorm(seq(-16, 16, .01))) #Density of the normal distribution
+
+ggplot(normal, aes(x = x, y = y)) +
+  geom_point(size = .25) + #plot the null distribution
+  geom_vline(aes(xintercept = test_statistics %>% pull(t)), 
+             size = 2, color = "#bb0000") + #empirical data
+  geom_vline(aes(xintercept = qnorm(.0275)), color = "#e0e0e0", 
+             size = 2) + #2.5th percentile
+  geom_vline(aes(xintercept = qnorm(.975)), color = "#e0e0e0", 
+             size = 2) +  #97.5th percentile
+  labs(x = "t-value", y = "density") +
+  scale_x_continuous(breaks = seq(-16, 16, 2))
+```
+
+Now let's look at paired data
+```{r hsb2-data, message = FALSE, warn = FALSE}
+hsb2 <-  read_csv("https://dyurovsky.github.io/85309/data/demos/hsb2.csv")%>%
+  select(id, read, write) %>%
+  mutate(diff = read - write)
+
+hsb2
+```
+
+
+```{r plot-hsb2-read}
+ggplot(hsb2, aes(x = read)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show-hsb2-read}
+hsb2 %>%
+  summarise(mean = mean(read),
+            sd = sd(read))
+```
+
+```{r plot-hsb2-write}
+ggplot(hsb2, aes(x = write)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show-hsb2-write}
+hsb2 %>%
+  summarise(mean = mean(write),
+            sd = sd(write))
+```
+
+
+```{r plot-hsb2-diff}
+ggplot(hsb2, aes(x = diff)) +
+  geom_histogram(binwidth = 10)
+```
+
+```{r show-hsb2-diff}
+hsb2 %>%
+  summarise(mean = mean(diff),
+            sd = sd(diff))
+```
+
+```{r comparing-t-tests}
+# Test if the reading scores's mean is drawn from a population who's mean 
+# is the mean of the writing scores samples
+t.test(hsb2 %>% pull(read), mu = mean(hsb2 %>% pull(write)))
+
+# Test if the difference between reading and writing scores is drawn from 
+# a population with a mean of 0
+t.test(hsb2 %>% pull(read) - hsb2 %>% pull(write), mu = 0)
+
+# Test if the reading scores's mean is drawn from the 
+# same poupulation as the writing scores mean
+t.test(hsb2 %>% pull(read) - sample(hsb2 %>% pull(write)), mu = 0)
+```
+
+
