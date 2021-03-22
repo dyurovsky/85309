@@ -98,11 +98,11 @@ title: Schedule
 | Mar 15, Mon | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
 |             | [One sample t-tests](post/rmd/ttests.Rmd) |
 | Mar 17, Wed | **Quiz 6** in class |
-|             | Lesson 3.4: Difference of two means |
+|             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Mar 19, Fri | **Mid Semester Break - No class** |
-| Mar 22, Mon  | 3.5: Difference of many means |
+| Mar 22, Mon  | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Mar 24, Wed  | **Quiz 7** in class  |
-|             | Mid-semester Review |
+|             | Lesson 3.5: Difference of many means |
 | Mar 26, Fri | Lab 7: Inference for Categorical Data |
 
 ##### Due dates
