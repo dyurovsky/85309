@@ -102,7 +102,8 @@ title: Schedule
 | Mar 19, Fri | **Mid Semester Break - No class** |
 | Mar 22, Mon  | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Mar 24, Wed  | **Quiz 7** in class  |
-|             | Lesson 3.5: Difference of many means |
+|             | [Lesson 3.5: Difference of many means](post/slides/anova.pdf) |
+|             | [Dictator game](post/rmd/dictator.rmd) |
 | Mar 26, Fri | Lab 7: Inference for Categorical Data |
 
 ##### Due dates

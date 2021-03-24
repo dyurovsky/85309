@@ -1,0 +1,188 @@
+
+---
+title: "ANOVA and the Dictator game"
+output:
+  html_document
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r load-libraries, warning = FALSE, message = FALSE}
+library(tidyverse)
+
+library(ggridges) # for geom_density_ridge
+library(broom) # for tidy models
+
+theme_set(theme_classic(base_size = 12) + 
+            theme(legend.position = "none")) 
+```
+
+```{r load-data, warning = FALSE, message = FALSE}
+dictator_data <- read_csv(
+  "https://dyurovsky.github.io/85309/data/demos/tidy_dictator_data.csv")
+
+dictator_data
+```
+
+I want to look at the offers made in each culture. I want a histogram for each one. The standard ggplot way to do this is with facets, but that has a ton of white space and is hard to process. I'll use a `geom_density_ridges` instead.
+
+```{r density-plot, fig.width = 4, fig.height = 8}
+order <- dictator_data %>%
+  group_by(culture) %>%
+  summarise(offer = mean(offer)) %>%
+  arrange(offer)
+
+order
+
+# I want to arrange the cultures on my plot by their mean offer. To do this, I need to make a factor. A factor is like a string but it can have non-alphabetical orders.
+ordered_data <- dictator_data %>%
+  mutate(culture = factor(culture, levels = pull(order, culture)))
+
+ordered_data
+
+# Make a ggridges plot so we can see all of the cultures
+ggplot(ordered_data, aes(x = offer, y = culture, 
+                      fill = culture, color = culture)) + 
+  geom_density_ridges(stat = "binline", binwidth = 1, draw_baseline = FALSE) + 
+  scale_x_continuous(breaks =seq(0, 100, 20)) +
+  labs(y = "") + 
+  theme_ridges(grid = FALSE, font_size = 14) +
+  theme(legend.position = "none") # don't display the color legend. it's redundant
+```
+
+Let's look at just 3 cultures to understand what ANOVA is doing
+
+```{r three-cultures, warning = FALSE, message = FALSE}
+three_cultures <- ordered_data %>%
+  filter(culture %in% c("Tsimane", "Accra", "Isanga"))
+
+grand_mean <- three_cultures %>%
+  summarise(offer = mean(offer)) %>%
+  pull()
+
+group_means <- three_cultures %>%
+  group_by(culture) %>%
+  summarise(offer = mean(offer)) 
+
+
+ggplot(three_cultures, aes(x = offer, fill = culture, color = culture)) + 
+  facet_wrap(~ culture) +
+  geom_dotplot() + 
+  coord_flip() + 
+  scale_fill_brewer(palette = "Set1") + 
+  scale_color_brewer(palette = "Set1") + 
+  geom_vline(aes(xintercept = grand_mean), linetype = "dashed", size = 1.2) +
+  geom_vline(aes(xintercept = offer, color = culture), size = 1.2,
+             data = group_means)
+```
+
+Plot the F-distribution we'll use
+```{r fdist, fig.width = 6, fig.height = 3.5}
+df1 <- dictator_data %>% 
+  distinct(culture) %>%
+  nrow() - 1
+
+df2 <- nrow(dictator_data) - df1 -1 
+
+fdist <- tibble(score = seq(0,5,.01),
+                density = df(seq(0,5,.01), df1, df2))
+
+ggplot(fdist, aes(x = score, y = density)) +
+  geom_line()
+```
+
+Use ANOVA to determine if offers vary across culture 
+```{r culture-anova}
+culture_anova <- aov(offer ~ culture, dictator_data)
+
+summary(culture_anova)
+```
+
+Let's pull the f-value out of this analysis. I'll use the `tidy` function from the `broom` package which will give me back a tibble version of that same output
+```{r f-value}
+tidy_culture_anova <- culture_anova %>%
+  tidy()
+
+tidy_culture_anova
+
+f_val <- tidy_culture_anova %>% 
+  filter(term == "culture") %>% 
+  pull(statistic)
+```
+
+Let's see where our data fall on the f-distribution
+```{r fval-on-dist}
+ggplot(fdist, aes(x = score, y = density)) +
+  geom_line() +
+  geom_vline(aes(xintercept = f_val), color = "#bb0000") + 
+  geom_vline(aes(xintercept = qf(.975, 15, 459)), color = "#666666") +
+  geom_vline(aes(xintercept = qf(.025, 15, 459)), color = "#666666")
+```
+
+Finally, let's do this in simulation
+
+```{r var-ratio}
+# Compute MSG/MSE for dictator data
+var_ratio <- function(data) {
+  
+  grand_mean <- data %>%
+    summarise(offer = mean(offer)) %>%
+    pull()
+  
+  group_means <- data %>%
+    group_by(culture) %>%
+    summarise(group_offer = mean(offer), n = n())
+  
+  MSG <- group_means %>%
+    mutate(group_diff = (group_offer - grand_mean)^2 * n) %>%
+    summarise(group_diff = mean(group_diff)) %>%
+    pull()
+  
+  MSE <- data %>%
+    left_join(group_means, by = "culture") %>%
+    mutate(diff = (offer - group_offer)^2) %>%
+    summarise(diff = mean(diff)) %>%
+    pull()
+  
+  MSG/MSE
+  
+}
+
+var_ratio(dictator_data)
+```
+
+```{r sample-func}
+# take samples in which cultures are randomly assigned to offers
+one_sample <- function() {
+  shuffled_data <- dictator_data %>%
+    mutate(culture = sample(culture)) 
+  
+  var_ratio(shuffled_data)
+}
+
+one_sample()
+```
+
+```{r simulate-anova}
+samples <- tibble(sample = 1:1000, 
+                  ratio = replicate(1000, one_sample()))
+
+quantile_high <- quantile(samples %>% pull(ratio), .975)
+
+ggplot(samples, aes(x = ratio)) + 
+  geom_histogram() + 
+  scale_x_continuous(limits = c(0, 6), breaks = seq(0, 6, 1)) + 
+  geom_vline(aes(xintercept = quantile_high), color = "#666666") + 
+  geom_vline(aes(xintercept = var_ratio(dictator_data)), color = "#bb0000") 
+```
+
+Compare Accra and Tsimane
+```{r post-hoc}
+three_cultures %>%
+  filter(culture %in% c("Accra", "Tsimane")) %>%
+  ggplot(aes(x = offer, fill = culture)) +
+  geom_histogram(binwidth = 10, position = position_dodge()) +
+  scale_x_continuous(breaks = seq(0, 60, 10)) +
+  theme(legend.position = c(.2, .8)) +
+  scale_fill_brewer(palette = "Set1")
+```
