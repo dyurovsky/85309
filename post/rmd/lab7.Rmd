@@ -1,6 +1,6 @@
 
 ---
-title: "Lab 7 - More inference for numerical data"
+title: "Lab 7 - Inference for categorical data"
 author: "Your name"
 date: "Date of lab session"
 output: 
@@ -20,94 +20,44 @@ library(tidyverse)
 ## Lab report
 
 **Load data**
-
 ```{r load-data}
-acs <- read_csv("https://dyurovsky.github.io/psyc201/data/lab7/acs.csv")
+atheism <- read_csv("https://dyurovsky.github.io/85309/data/lab7/atheism.csv")
 ```
 
-## Exercises:
+#### Set a seed
+```{r set-seed}
+
+```
 
 #### Exercise 1: 
 
-```{r ex1}
-
-```
 
 #### Exercise 2: 
 
 
-```{r ex2}
-
-```
-
-
 #### Exercise 3: 
-
-```{r ex3}
-
-```
 
 
 #### Exercise 4: 
 
 
-
 #### Exercise 5: 
 
-```{r ex5}
-
-```
 
 #### Exercise 6:
 
-```{r ex6}
-
-```
 
 #### Exercise 7:
 
-```{r ex7}
 
-```
-
-#### Exercise 8:
-
-```{r ex8}
-
-```
+#### Exercise 8: 
 
 
-* * *
-
-## On your own:
-
-#### Exercise 9: 
-
-```{r ex9}
-
-```
+#### Exercise 9:
 
 
-#### Exercise 10: 
-
-```{r ex10}
-
-```
+#### Exercise 10:
 
 
 #### Exercise 11:
 
-```{r ex11}
-
-
-```
-
-#### Exercise 12:
-
-
-#### Exercise 13:
-
-```{r ex13}
-
-
-```
