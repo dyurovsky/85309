@@ -1,53 +1,57 @@
 
 ---
-title: "Inference for regression"
+title: "Twin IQ Correlation"
 output:
-  html_notebook:
-    toc: yes
+  html_document
 editor_options: 
   chunk_output_type: inline
 ---
 
-
-Load libraries and set theme
-```{r load_libraries, message=FALSE, warning=FALSE}
+```{r load-libraries, message = FALSE}
 library(tidyverse)
+library(ggpubr) # for stat_cor
 
-theme_set(theme_classic(base_size = 18))
+theme_set(theme_classic(base_size = 12) + 
+            theme(legend.position = "none")) 
 ```
 
-load twin iq data and have a look at the first few rows
-```{r load_data}
-twins <- read_csv("https://dyurovsky.github.io/psyc201/data/demos/twins.csv")
-head(twins)
+```{r load-data, message = FALSE}
+twins <- read_csv("https://dyurovsky.github.io/85309/data/demos/twins.csv")
+
+twins
 ```
 
-find the correlation between the iq of twin a and twin b
-```{r corr}
-twin_cor <- cor(twins$twin_a, twins$twin_b)
+What is the correlation between two twins IQs?
+
+```{r compute-correlation}
+twin_cor <- twins %>%
+  summarise(correlation = cor(twin_a, twin_b)) %>%
+  pull()
 
 twin_cor
 ```
 
-make a scatterplot of the relationship between twin a and b iqs. Also plot a regression line and annotate with the correlation coefficient.
-```{r fig.width = 5, fig.height = 4}
-ggplot(twins, aes(x = twin_a, y = twin_b)) +
+Plot the correlation between twin IQs
+```{r plot-corrs, fig.width = 3, fig.height = 3, message = FALSE}
+ggplot(twins, aes(x = twin_a, y = twin_b)) + 
   geom_point() +
-  geom_smooth(method = "lm", se = FALSE, color = "darkred") + 
-  annotate("text", x = 75, y = 120, size = 6,
-           label = paste0("r = ", round(twin_cor, digits = 2)))
+  geom_smooth(method = "lm", se = FALSE, color = "#bb0000") + 
+  stat_cor()
+
 ```
 
-make a linear regression predicting twin b from twin a
-```{r lm}
+Make a linear regression predicting twin b from twin a
+```{r linear-model}
 twin_lm <- lm(twin_b ~ twin_a, data = twins)
+
 summary(twin_lm)
 ```
 
-the slope of a regression line is equal to the correlation when the independent and dependent variabels are both standardiZed and no intercept is fit
-```{r}
+the slope of a regression line is equal to the correlation when the independent and dependent variables are both standardiZed and no intercept is fit
+```{r scale-twins}
 scale_twins <- twins %>%
   mutate(twin_a = scale(twin_a), twin_b = scale(twin_b))
+
 scale_twins
 
 
@@ -55,48 +59,7 @@ scale_twin_lm <- lm(twin_b ~ twin_a + 0, data = scale_twins)
 
 summary(scale_twin_lm)
 twin_cor
-```
 
-That's because the slope of a regression line is r * sd_x / sd_y
-```{r slope}
-twin_cor * sd(twins$twin_b) / sd(twins$twin_a) 
-
-coef(twin_lm)["twin_a"]
-```
-
-What is r^2? proportion of variance explained
-```{r}
-# Check that variance is the same as the square of standard deviation
-var(twins$twin_b)
-sd(twins$twin_b)^2
-
-# Compute the total sum of squares for twin_b
-SST <- sum((twins$twin_b - mean(twins$twin_b)) ^ 2)
-
-# Plot what this is equivalent to
-ggplot(twins, aes(x = 1, y = twin_b)) + 
-  geom_dotplot(method = "histodot", binwidth = 1, stackdir = "center", binaxis = "y") + 
-  scale_x_continuous(NULL, breaks = NULL) +
-  geom_hline(aes(yintercept = mean(twins$twin_b), color = "darkred")) + 
-  theme(legend.position = "none")
-  
-# This is the same as an intercept-only model!
-twin_intercept <- lm(twin_b ~ 1, data = twins)
-sum(resid(twin_intercept)^2)
-
-# Now look at the linear model again
-ggplot(twins, aes(x = twin_a, y = twin_b)) +
-  geom_point() +
-  geom_hline(aes(yintercept = mean(twins$twin_b), color = "darkred"))  
-
-# Get the residuals from the linear model
-SSE <- sum(resid(twin_lm)^2)
-
-# Compute the proportion of variance explained
-(SST - SSE)/SST
-
-# Same as R^2!
-summary(twin_lm)
-
-SST
+scale_twin_reverse_lm <- lm(twin_a ~ twin_b + 0, data = scale_twins)
+summary(scale_twin_reverse_lm)
 ```
