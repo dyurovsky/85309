@@ -158,18 +158,18 @@ title: Schedule
 
 ##### Class / lab
 
-| Apr 12, Mon   | [Lesson 5.1: Multiple Regression](#) |
+| Apr 12, Mon   | Lesson 5.1: Multiple Regression |
 | April 14, Wed  | **Quiz 9** in class |
-|                | [Lesson 5.2: Model Selection](#) |
+|                | Lesson 5.2: Model Selection |
 | April 16, Fri  | **Carnival - No Class** |
-| April 19, Mon  | [Lesson 5.3 Transformations](#)|
+| April 19, Mon  | Lesson 5.3 Transformations|
 | April 21, Wed  | **Quiz 10** in class |
-|                | [Lesson 5.4 The Generalized Linear Model](#) |
-| April 23, Fri  | [Lab 10: Multiple Linear Regression](#) |
-| April 26, Mon | [Lesson 5.5 Hierarchical Models and Mixed effects](#) |
+|                | Lesson 5.4 The Generalized Linear Model |
+| April 23, Fri  | Lab 10: Multiple Linear Regression |
+| April 26, Mon | Lesson 5.5 Hierarchical Models and Mixed effects |
 | April 28, Wed | **Quiz 11** in class |
-|               | [Review]()           |
-| April 30, Fri | [Lab 11: Choosing the right model](#) |
+|               | Review           |
+| April 30, Fri | Lab 11: Choosing the right model |
 
 
 ##### Due dates
