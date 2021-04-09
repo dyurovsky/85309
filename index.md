@@ -135,8 +135,8 @@ title: Schedule
 |             | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
 | Apr 2, Fri | [Lab 8: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
 | Apr 5, Mon | **Break Day - No class** |
-| Apr 7, Wed | Lesson 4.3: Inference for linear regression |
-| Apr 9, Fri | Lab 9: Introduction to Linear Regression |
+| Apr 7, Wed | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
+| Apr 9, Fri | [Lab 9: Introduction to Linear Regression](post/labs/simple_regression.html) |
 
 ##### Due dates
 * Lab 8: Apr 9, Fri, at 2:10 PM

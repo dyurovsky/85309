@@ -1,0 +1,67 @@
+
+---
+title: "Lab 9 - Introduction to Linear Regression"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load data**
+```{r load-data}
+load(url("https://dyurovsky.github.io/85309/data/lab9/mlb11.RData"))
+```
+
+#### Exercise 1: 
+
+
+#### Exercise 2: 
+
+
+#### Exercise 3: 
+
+
+#### Exercise 4: 
+
+
+#### Exercise 5: 
+
+
+#### Exercise 6:
+
+
+#### Exercise 7:
+
+
+#### Exercise 8: 
+
+
+### More Practice
+
+
+#### Exercise 9:
+
+
+#### Exercise 10:
+
+
+#### Exercise 11:
+
+
+#### Exercise 12:
+
+
+#### Exercise 13:
+
