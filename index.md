@@ -158,7 +158,7 @@ title: Schedule
 
 ##### Class / lab
 
-| Apr 12, Mon   | Lesson 5.1: Multiple Regression |
+| Apr 12, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 14, Wed  | **Quiz 9** in class |
 |                | Lesson 5.2: Model Selection |
 | April 16, Fri  | **Carnival - No Class** |
