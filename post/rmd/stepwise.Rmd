@@ -1,0 +1,52 @@
+
+---
+title: "Stepwise Regression"
+output:
+  html_document:
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r load-libraries, message = FALSE}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 12) + 
+            theme(legend.position = "none"))
+```
+
+Read in  data
+```{r load-data, message = FALSE}
+prof_data <- read_csv("https://dyurovsky.github.io/85309/data/demos/prof_data.csv")
+
+prof_data
+```
+
+Scatter plot of beauty vs. professor evaluation
+```{r plot, fig.width = 4, fig.height= 3}
+ggplot(prof_data, aes(x =  beauty, y = profevaluation)) +
+  geom_point()
+```
+
+Full model
+```{r full_model}
+prof_lm <- lm(profevaluation ~ beauty + gender + age + formal + lower + 
+                native + minority + students + tenure, data = prof_data)
+
+summary(prof_lm)
+```
+
+Stepwise regression
+```{r stepwise}
+lm_null <- lm(profevaluation ~ 1, data = prof_data)
+
+lm_all <- lm(profevaluation ~ ., data = prof_data)
+
+# Backwards stepwise using defaults
+lm_step <- step(lm_all)
+
+# Forward stepwise starting from null model
+lm_forward <- step(lm_null, scope = list(lower = lm_null, upper = lm_all), direction = "forward")
+
+# Backward stepwise without defaults
+lm_backward <- step(lm_all, scope = list(lower = lm_null, upper = lm_all), direction = "backward")
+```

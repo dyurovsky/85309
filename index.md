@@ -160,7 +160,8 @@ title: Schedule
 
 | Apr 12, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 14, Wed  | **Quiz 9** in class |
-|                | Lesson 5.2: Model Selection |
+|                | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
+|                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
 | April 16, Fri  | **Carnival - No Class** |
 | April 19, Mon  | Lesson 5.3 Transformations|
 | April 21, Wed  | **Quiz 10** in class |
