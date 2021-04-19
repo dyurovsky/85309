@@ -163,7 +163,8 @@ title: Schedule
 |                | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
 |                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
 | April 16, Fri  | **Carnival - No Class** |
-| April 19, Mon  | Lesson 5.3 Transformations|
+| April 19, Mon  | [Lesson 5.3 Transformations]([post/slides/transformations.html])|
+|                | [Log Tranforming Data](post/rmd/transformations.Rmd) |
 | April 21, Wed  | **Quiz 10** in class |
 |                | Lesson 5.4 The Generalized Linear Model |
 | April 23, Fri  | Lab 10: Multiple Linear Regression |

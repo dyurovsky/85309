@@ -1,0 +1,86 @@
+
+---
+title: "Transformations"
+output:
+  html_document:
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+```{r load-libraries, message = FALSE, warn = FALSE}
+library(tidyverse)
+
+theme_set(theme_classic(base_size = 14))
+```
+
+Load data
+```{r load-data, message = FALSE}
+pickups <- read_csv("https://dyurovsky.github.io/85309/data/demos/pickup.csv")
+
+pickups
+```
+
+Plot data
+```{r first-plot, fig.width = 5, fig.height = 3}
+ggplot(pickups, aes(x = year, y = price)) + 
+  geom_point()
+```
+
+Remove old truck
+```{r first-plot, fig.width = 5, fig.height = 3}
+newer_pickups <- pickups %>%
+  filter(year >= 1992)
+
+ggplot(newer_pickups, aes(x = year, y = price)) + 
+  geom_point()
+```
+
+Linear model
+```{r lm, message = FALSE, fig.width = 5, fig.height = 3}
+lm1 <- lm(price ~ year, data = newer_pickups)
+
+ggplot(newer_pickups, aes(x = year, y = price)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+Residuals from the linear model
+```{r lm1-residuals, fig.width = 5, fig.height = 3}
+lm1_residuals <- newer_pickups %>%
+  mutate(residual = residuals(lm1),
+         fitted = fitted(lm2))
+
+ggplot(lm1_residuals, aes(x = fitted, y = residual)) +
+  geom_point() + 
+  geom_hline(aes(yintercept = 0), linetype = "dashed")
+```
+
+Log-transforming price
+```{r lm, message = FALSE, fig.width = 5, fig.height = 3}
+transformed_pickups <- newer_pickups %>%
+  mutate(log_price = log(price))
+
+lm2 <- lm(log_price ~ year, data = transformed_pickups)
+
+ggplot(transformed_pickups, aes(x = year, y = log_price)) + 
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) + 
+  labs(y = "log(price)")
+```
+
+Residuals from the linear model
+```{r lm1-residuals, fig.width = 5, fig.height = 3}
+lm2_residuals <- transformed_pickups %>%
+  mutate(residual = residuals(lm2),
+         fitted = fitted(lm2))
+
+ggplot(lm2_residuals, aes(x = fitted, y = residual)) +
+  geom_point() + 
+  geom_hline(aes(yintercept = 0), linetype = "dashed")
+```
+
+Summary of model2
+```{r summary-model2}
+summary(lm2)
+```

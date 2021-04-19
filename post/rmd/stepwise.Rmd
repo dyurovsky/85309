@@ -16,7 +16,8 @@ theme_set(theme_classic(base_size = 12) +
 
 Read in  data
 ```{r load-data, message = FALSE}
-prof_data <- read_csv("https://dyurovsky.github.io/85309/data/demos/prof_data.csv")
+prof_data <- read_csv("https://dyurovsky.github.io/85309/data/demos/prof_data.csv") %>%
+  select(-X1)
 
 prof_data
 ```
