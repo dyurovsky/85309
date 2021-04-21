@@ -1,0 +1,81 @@
+
+---
+title: "Predicting survival in the Donner Party"
+output:
+  html_document
+---
+
+```{r load-libraries, message = FALSE}
+library(tidyverse)
+library(boot) # for inverse logit
+
+theme_set(theme_classic(base_size = 14) + 
+            theme(legend.position = "none"))
+```
+
+Read in  data
+```{r load-data, message = FALSE}
+donner_data <- read_csv("https://dyurovsky.github.io/85309/data/demos/donner.csv") %>%
+  mutate(status = factor(status, levels = c("died", "survived")))
+
+donner_data
+```
+
+Explore the Donner data - gender
+```{r gender-plot, fig.width = 4, fig.height= 4}
+donner_data %>%
+  group_by(gender, status) %>%
+  summarise(count = n()) %>%
+  ggplot(aes(x = status, fill = gender, y = count)) +
+  geom_col(position = "dodge") + 
+  theme(legend.position = "bottom")
+```
+
+Explore the Donner data - age
+```{r age-plot, fig.width = 4, fig.height= 3}
+ggplot(donner_data, aes(x = status, y = age)) +
+  geom_boxplot()
+```
+
+Model the donner party data as logistic regression. Let's try age first
+```{r age-model}
+age_model <- glm(status ~ age, family = "binomial", data = donner_data)
+
+summary(age_model)
+```
+Predict survival for a newborn, a 25-year-old, and a 50-year-old
+```{r age-0-prediction}
+ages <- tibble(age = c(0, 25, 50))
+
+predicted_ages <- ages %>%
+  mutate(log_odds = predict(age_model, newdata = .)) %>%
+  mutate(probability = inv.logit(log_odds))
+
+predicted_ages
+```
+
+```{r plot-age-model, message = FALSE, fig.width = 4.5, fig.height = 3}
+ggplot(donner_data, aes(x = age, y = as.numeric(status)-1, color = gender,
+                        shape = gender, group = 1)) +
+  geom_jitter(width = .01, height = .01) + 
+  geom_smooth(method = "glm", method.args = list(family = "binomial"), se = FALSE) +
+  ylab("survival probability") + 
+  theme(legend.position = c(.8,.6), legend.title = element_blank())
+```
+Model both age and gender
+```{r full-model, message = FALSE}
+full_model <- glm(status ~ age + gender, family = "binomial", 
+                  data = donner_data)
+
+summary(full_model)
+```
+
+Let's plot the full model
+```{r plot-full-model, message = FALSE, fig.width = 4.5, fig.height = 3}
+ggplot(donner_data, aes(x = age, y = as.numeric(status)-1, color = gender,
+                        shape = gender)) +
+  geom_jitter(width = .01, height = .01) + 
+  geom_smooth(method = "glm", method.args = list(family = "binomial"), se = FALSE) +
+  ylab("survival probability") + 
+  theme(legend.position = c(.8,.7), legend.title = element_blank())
+```
