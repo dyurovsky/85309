@@ -168,7 +168,7 @@ title: Schedule
 | April 21, Wed  | **Quiz 10** in class |
 |                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |                | [The Donner Party](post/rmd/donner.Rmd) |
-| April 23, Fri  | Lab 10: Multiple Linear Regression |
+| April 23, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
 | April 26, Mon | Lesson 5.5 Hierarchical Models and Mixed effects |
 | April 28, Wed | **Quiz 11** in class |
 |               | Review           |
