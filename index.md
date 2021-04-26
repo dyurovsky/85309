@@ -169,7 +169,7 @@ title: Schedule
 |                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |                | [The Donner Party](post/rmd/donner.Rmd) |
 | April 23, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
-| April 26, Mon | Lesson 5.5 Hierarchical Models and Mixed effects |
+| April 26, Mon | [Lesson 5.5 Mixed effects models](post/slides/mixed_effects.pdf)|
 | April 28, Wed | **Quiz 11** in class |
 |               | Review           |
 | April 30, Fri | Lab 11: Choosing the right model |
