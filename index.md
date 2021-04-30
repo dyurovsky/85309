@@ -171,8 +171,8 @@ title: Schedule
 | April 23, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
 | April 26, Mon | [Lesson 5.5 Mixed effects models](post/slides/mixed_effects.pdf)|
 | April 28, Wed | **Quiz 11** in class |
-|               | Review           |
-| April 30, Fri | Lab 11: Choosing the right model |
+|               | [Review](post/slides/review.pdf)           |
+| April 30, Fri | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
 
 
 ##### Due dates

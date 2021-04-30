@@ -1,0 +1,66 @@
+
+---
+title: "Lab 11 - Choosing a Model"
+author: "Your name"
+date: "Date of lab session"
+output: 
+  html_document: 
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+# DO NOT ALTER CODE IN THIS CHUNK
+library(tidyverse)
+```
+
+* * *
+
+## Lab report
+
+**Load data**
+```{r load-data}
+data <- read_csv("https://dyurovsky.github.io/85309/data/lab11/animal_game.csv")
+```
+
+#### Exercise 1: 
+
+
+#### Exercise 2: 
+
+
+#### Exercise 3: 
+
+
+#### Exercise 4: 
+
+
+#### Exercise 5: 
+
+
+#### Exercise 6:
+
+
+#### Exercise 7:
+
+
+#### Exercise 8: 
+
+
+#### Exercise 9:
+
+
+#### Exercise 10:
+
+
+### More Practice
+
+
+#### Exercise 11: 
+
+
+#### Exercise 12:
+
+
+#### Exercise 13:
+
