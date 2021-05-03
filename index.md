@@ -195,7 +195,7 @@ title: Schedule
 
 ##### Class / lab
 
-| May 3, Mon | What is Probability? |
+| May 3, Mon | [What is Probability?](post/slides/what_is_prob.pdf) |
 | May 5, Wed | Bayesian inference  |
 | May 7, Fri | Language learning as Bayesian inference |
 
