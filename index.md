@@ -15,7 +15,7 @@ title: Schedule
 
 ##### Class / lab
 
-| Jan 19, Wed   | Introduction to 85-309 |
+| Jan 19, Wed   | [Introduction to 85-309](post/slides/intro.pdf) |
 | Jan 21, Fri   | Lesson 1.1: Data--where it comes from and why it matters |
 | Jan 24, Mon   | Lesson 1.2: Exploratory Data Analysis |
 |              | Exploring class data |
@@ -27,7 +27,7 @@ title: Schedule
 
 ##### Due dates
 
-* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Jan 24 1:25PM
+* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Jan 24 1:25pm
 * Lab 1: Feb 2, Wed, at 1:25pm
 * Lab 2: Feb 9, Wed, at 1:25pm
 * Problem Set 1: Feb 4, Fri, at 1:25pm
@@ -86,6 +86,7 @@ title: Schedule
 | Textbook: [Chp 3 and Chp 4]({{site.openintro}}) | Videos: [Videos 3a](https://www.youtube.com/watch?v=_iFAZgpWsx0&list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW) and [3b](https://www.youtube.com/watch?v=uVEj2uBJfq0&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD) |
 
 ##### Class / lab
+
 | Feb 21, Mon | Lesson 3.1: Inference for a Single Proportion |
 |            | The Central Limit Theorem for Proportions |
 | Feb 23, Wed | Lab 5: Testing the Hot Hands Hypothesis |
