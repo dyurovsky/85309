@@ -7,15 +7,15 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Daniel Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|**TAs**       | [Hugh Cheon](http://www.cnbc.cmu.edu/cnbc-directory/name/roderick-seow/)         | [hcheon@andrew.cmu.edu](hcheon@andrew.cmu.edu) | [Zoom Office](#) |
+|**Professor** | [Dan Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
+|**TA**       | [Fiona Horner](https://www.cmu.edu/dietrich/psychology/gender-relationships-health/lab-group/fiona-horner.html)         | [fhorner@andrew.cmu.edu](fhorner@andrew.cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/94604439214?pwd=LzNmVE1xbzh3UERKVlYvZDNqVENmQT09) |
 
 
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Wednesdays, 2:10pm - 3:00pm, [Zoom Classroom](https://cmu.zoom.us/j/97612665543?pwd=WHJsVUEyaUI5b3EwUVZzODMrVVE0QT09)
-* Labs: Friday, 2:10pm - 3:00pm, [Zoom Classroom](https://cmu.zoom.us/j/97612665543?pwd=WHJsVUEyaUI5b3EwUVZzODMrVVE0QT09)
+* Lectures: Mondays and Fridays, 1:25pm - 2:15pm, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09&sa=D&source=calendar&usd=2&usg=AOvVaw1k6fsbuG3grlet1LCbOLJM)
+* Labs: Wednesdays, 1:25pm - 2:15pm, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09&sa=D&source=calendar&usd=2&usg=AOvVaw1k6fsbuG3grlet1LCbOLJM)
 
 * * *
 
@@ -25,8 +25,8 @@ title: Course Information
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
-|Professor Yurovsky   | Thursday 4:30 - 6:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|Hugh Cheon        | Tuesday 2:00 - 3:00             | [Zoom Office](https://cmu.zoom.us/j/91681053618?pwd=RGZwZGY4NmcyZGFQbVhVMG1Yb3UwUT09)  |
+|Professor Yurovsky   | Thursday 9:00 - 10:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
+|Fiona Horner        | Monday 2:30 - 3:30             | [Zoom Office](https://cmu.zoom.us/j/94604439214?pwd=LzNmVE1xbzh3UERKVlYvZDNqVENmQT09)  |
 
 
 * * *
@@ -44,9 +44,9 @@ The textbook is freely [available online](../post/intro-randomization.pdf). You'
 
 ### Holidays:
 
-* March 19, Fri: Mid-Semester Break
-* April 5, Mon: Break Day
-* April 16, Fri: Carnival
+* March 4, Fri: Mid-Semester Break
+* April 7-11, Mon-Fri: Spring Break
+* April 8, Fri: Carnival
 
 ***
 

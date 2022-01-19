@@ -33,7 +33,7 @@ The primary goal of this class is to teach you how to apply the ideas and tools 
 
 You will however be asked to complete the [Comprehensive Assessment of Outcomes in a first Statistics class (CAOS)](https://apps3.cehd.umn.edu/artist/caos.html) twice: At the start of the course and again at the end. Your responses at the beginning of the class will help us to know what to focus on, and your answers at the end of the quarter will help us to revise the class for the next cohort of students. These assessments will be graded for *completion* and not for *correctness*; you will receive full credit independent of your score.
 
-### Attendance and participation
+### Attendance and participation:
 
 Lecture and lab attendance is mandatory unless you have talked to me about logistical issues that make attendance impossible for you. Slides and lecture recordings will be posted after class each day, but even watching these recordings is only a partial substitute for attendance – you'll get much more out of the class if you engage actively with the material and ask lots of questions! Similarly, lab assignments will be posted at the start of lab, but your TA and I will present additional useful information for successfully completing the assignments.
 
@@ -55,11 +55,11 @@ The objective of the labs is to give you hands on experience with data analysis 
 
 In class, your TA and I will give a brief overview of the lab and learning goals, and guide you through some of the exercises. You will start working on the lab during the class session, but note that the labs are designed to take more than just the class time, so you will probably need to continue working on them in order to submit labs before the due date (which will generally be the following week).
 
-**Submission instructions:** Always submit the .Rmd and .HTML files via Canvas.
+**Submission instructions:** Always submit the .Rmd and .HxL files via Canvas.
 
 ### Quizzes:
 
-Each week on Wednesday we will have a short (~15 min) quiz at the beginning of lecture. You will do these at the start of class on canvas. Quizzes are designed to give both you and your instructors rapid feedback about your understanding of the theoretical ideas covered the previous week. We understand that sometimes things come up and you will be late or absent. For this reason, *your lowest score will be dropped.* If you believe you will need extra time for quizzes please let me know! They are not designed to make you feel pressured for time, and I want you to have the time you need to complete them.
+Each week on Friday we will have a short (~15 min) quiz at the beginning of lecture. You will do these at the start of class on canvas. Quizzes are designed to give both you and your instructors rapid feedback about your understanding of the theoretical ideas covered the previous week. We understand that sometimes things come up and you will be late or absent. For this reason, *your lowest score will be dropped.* If you believe you will need extra time for quizzes please let me know! They are not designed to make you feel pressured for time, and I want you to have the time you need to complete them.
 
 
 ### Project:
@@ -96,7 +96,7 @@ Final grades will be determined as: [90,100] = A, [80,89] = B, [70,79] = C, [60,
 
 I will regularly send announcements through Canvas. You should get an email for these by default, so please make sure to check your email daily to make sure that you don not miss them.
 
-Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our [Piazza](piazza.com/cmu/spring2021/85309/home). Before posting a new question please make sure to check if your question has already been answered. Your TA and I will be answering questions in Piazza daily and all students are expected to answer questions as well. Please use informative titles for your posts.
+Any non-personal questions related to the material covered in class, problem sets, labs, project, etc. should be posted to our [Piazza](piazza.com/cmu/spring2022/85309/home). Before posting a new question please make sure to check if your question has already been answered. Your TA and I will be answering questions in Piazza daily and all students are expected to answer questions as well. Please use informative titles for your posts.
 
 Note that it is more efficient to answer most statistical questions "in person" so make use of [Office Hours]({{site.baseurl}}/info/#oh).
 

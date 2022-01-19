@@ -15,22 +15,22 @@ title: Schedule
 
 ##### Class / lab
 
-| Feb 1, Mon   | [Introduction to 85-309](post/slides/intro.pdf) |
-| Feb 3, Wed   | [Lesson 1.1: Data--where it comes from and why it matters](post/slides/sampling.pdf) |
-| Feb 5, Fri   | [Lab 1: Intro to R and RStudio](post/labs/intro_to_r.html) |
-| Feb 8, Mon   | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
-|              | [Exploring class data](post/rmd/eda.Rmd) |
-| Feb 10, Wed  | **Quiz 1** in class |
-|              | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf) |
-| Feb 12, Fri  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
-| Feb 15, Mon  | [Lesson 1.4 Using the Tidyverse](post/slides/tidyverse.pdf) |
+| Jan 19, Wed   | Introduction to 85-309 |
+| Jan 21, Fri   | Lesson 1.1: Data--where it comes from and why it matters |
+| Jan 24, Mon   | Lesson 1.2: Exploratory Data Analysis |
+|              | Exploring class data |
+| Jan 26, Wed   | Lab 1: Intro to R and RStudio |
+| Jan 28, Fri  | **Quiz 1** in class |
+|              | Lesson 1.3: More Exploratory Data Analysis |
+| Jan 31, Mon  | Lesson 1.4 Using the Tidyverse|
+| Feb 2, Wed  | Lab 2: Intro to Data |
 
 ##### Due dates
 
-* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Feb 5 11:55PM
-* Lab 1: Feb 12, Fri, at 2:10pm
-* Lab 2: Feb 19, Fri, at 2:10pm
-* Problem Set 1: Feb 17, Wed, at 2:10pm
+* [CAOS PreTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Jan 24 1:25PM
+* Lab 1: Feb 2, Wed, at 1:25pm
+* Lab 2: Feb 9, Wed, at 1:25pm
+* Problem Set 1: Feb 4, Fri, at 1:25pm
   * End of chapter exercises from **Chp 1**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Canvas.
@@ -49,28 +49,25 @@ title: Schedule
 
 ##### Class / lab
 
-| Feb 17, Wed | **Quiz 2** in class |
-|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
-|             | [Bias in hiring](post/rmd/hiring.Rmd) |
-| Feb 19, Fri | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html)  |
-| Feb 22, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf)|
-|             | [Cardiac arrests](post/rmd/cardiac.Rmd) |
-| Feb 24, Wed | **Quiz 3** in class |
-|             | [Lesson 2.3: The Central Limit Theorem](post/slides/clt.pdf)|
-| Feb 26, Fri | [Lab 4: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
-|             | [Curry simulation notes](post/slides/curry_simulation.pdf) |
-| Mar 1, Mon  | [Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem](post/slides/normal.pdf) |
-|             | [QQ Plots](post/rmd/qqplots.Rmd) |
-| Mar 3, Wed  | **Quiz 4** in class |
-|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) |
-| Mar 5, Fri  | [Lab 5: Sampling Distributions](post/labs/sampling_distributions.html) |
+| Feb 4, Fri | **Quiz 2** in class |
+|             | Lesson 2.1: Randomization and Sampling |
+|             | Bias in hiring |
+| Feb 7, Mon | Lesson 2.2: Hypothesis Testing |
+|             | Cardiac arrests |
+| Feb 9, Wed | Lab 3: Intro to the Tidyverse and Functions |
+| Feb 11, Fri | **Quiz 3** in class |
+|             | Lesson 2.3: The Central Limit Theorem|
+| Feb 14, Mon  | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem |
+|             | QQ Plots |
+| Feb 16, Wed  | Lab 4: Sampling Distributions |
+| Feb 18, Fri  | **Quiz 4** in class |
+|             | Lesson 2.5: Confidence Intervals |
 
 ##### Due dates
 
-* Lab 3: Feb 26, Fri, at 2:10pm
-* Lab 4: Mar 5, Fri, at 2:10pm
-* Lab 5: Mar 12, Fri, at 2:10pm
-* PS 2: Mar 8, Mon, at 2:10 PM
+* Lab 3: Feb 16, Wed, at 1:25pm
+* Lab 4: Feb 23, Wed, at 1:25pm
+* PS 2: Feb 21, Mon, at 1:25pm
   * End of chapter exercises from **Chp 2**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Canvas.
@@ -89,28 +86,31 @@ title: Schedule
 | Textbook: [Chp 3 and Chp 4]({{site.openintro}}) | Videos: [Videos 3a](https://www.youtube.com/watch?v=_iFAZgpWsx0&list=PLkIselvEzpM5Gn-sHTw1NF0e8IvMxwHDW) and [3b](https://www.youtube.com/watch?v=uVEj2uBJfq0&list=PLkIselvEzpM5G3IO1tzQ-DUThsJKQzQCD) |
 
 ##### Class / lab
-
-| Mar 8, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
-|            | [The Central Limit Theorem for Proportions](post/rmd/proportion_clt.Rmd) |
-| Mar 10, Wed| **Quiz 5** in class |
-|           | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
-| Mar 12, Fri | [Lab 6: Confidence Intervals](post/labs/confidence_intervals.html) |
-| Mar 15, Mon | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
-|             | [One sample t-tests](post/rmd/ttests.Rmd) |
-| Mar 17, Wed | **Quiz 6** in class |
-|             | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
-| Mar 19, Fri | **Mid Semester Break - No class** |
-| Mar 22, Mon  | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
-| Mar 24, Wed  | **Quiz 7** in class  |
-|             | [Lesson 3.5: Difference of many means](post/slides/anova.pdf) |
-|             | [Dictator game](post/rmd/dictator.Rmd) |
-| Mar 26, Fri | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
+| Feb 21, Mon | Lesson 3.1: Inference for a Single Proportion |
+|            | The Central Limit Theorem for Proportions |
+| Feb 23, Wed | Lab 5: Testing the Hot Hands Hypothesis |
+|             | Curry simulation notes |
+| Feb 25, Fri | **Quiz 5** in class |
+|             | Lesson 3.2: Inference for the difference of two proportions |
+| Feb 28, Mon | Lesson 3.3: The t-distribution |
+|             | One sample t-tests |
+| Mar 2, Wed | Lab 6: Confidence Intervals |
+| Mar 4, Fri | **Mid Semester Break - No class** |
+| Mar 7, Mon | **Spring Break - No class** |
+| Mar 9, Wed | **Spring Break - No class** |
+| Mar 11, Fri | **Spring Break - No class** |
+| Mar 14, Mon | Lesson 3.4: Difference of two means |
+| Mar 16, Wed | Lab 7: Inference for Categorical Data |
+| Mar 18, Fri | **Quiz 6** in class |
+|             | Lesson 3.5: Difference of many means |
+|             | Dictator game |
 
 ##### Due dates
 
-* Lab 6: Mar 26, Fri, at 2:10 PM
-* Lab 7: Apr 2, Fri, at 2:10 PM
-* PS 3: Mar 29, Mon, at 2:10 PM
+* Lab 5: Mar 2, Wed, at 1:25pm
+* Lab 6: Mar 16, Wed, at 1:25pm
+* Lab 7: Mar 23, Wed, at 1:25pm
+* PS 3: Mar 21, Mon, at 1:25pm
   * End of chapter exercises from **Chp 3 and 4** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 3.2, 3.12, 3.24, 4.6, 4.10, 4.14, 4.18
   * Practice questions:
@@ -130,18 +130,17 @@ title: Schedule
 
 ##### Class / lab
 
-| Mar 29, Mon | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
-| Mar 31, Wed | **Quiz 8** in class |
-|             | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
-| Apr 2, Fri | [Lab 8: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
-| Apr 5, Mon | **Break Day - No class** |
-| Apr 7, Wed | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
-| Apr 9, Fri | [Lab 9: Introduction to Linear Regression](post/labs/simple_regression.html) |
+| Mar 21, Mon | Lesson 4.1: Linear Regression |
+| Mar 23, Wed | Lab 8: Inference for Numerical Data |
+| Mar 25, Fri | **Quiz 8** in class |
+|             | Lesson 4.2: Residuals and Least Squares |
+| Mar 28, Mon | Lesson 4.3: Inference for linear regression |
+| Mar 30, Wed | Lab 9: Introduction to Linear Regression |
 
 ##### Due dates
-* Lab 8: Apr 9, Fri, at 2:10 PM
-* Lab 9: Apr 23, Fri, at 2:10 PM
-* PS 4: Apr 12 Mon, at 2:10 PM
+* Lab 8: Mar 30, Wed, at 1:25pm
+* Lab 9: Apr 6, Wed, at 1:25pm
+* PS 4: Apr 1 Fri, at 1:25pm
    * End of chapter exercises from **Chp 5** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
   * **Graded questions:** 5.4, 5.10, 5.20, 5.22, 5.28, 5.34
   * Practice questions:
@@ -158,27 +157,26 @@ title: Schedule
 
 ##### Class / lab
 
-| Apr 12, Mon   | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
-| April 14, Wed  | **Quiz 9** in class |
-|                | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
-|                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
-| April 16, Fri  | **Carnival - No Class** |
-| April 19, Mon  | [Lesson 5.3 Transformations](post/slides/transformations.pdf)|
-|                | [Log Tranforming Data](post/rmd/transformations.Rmd) |
-| April 21, Wed  | **Quiz 10** in class |
-|                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
-|                | [The Donner Party](post/rmd/donner.Rmd) |
-| April 23, Fri  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
-| April 26, Mon | [Lesson 5.5 Mixed effects models](post/slides/mixed_effects.pdf)|
-| April 28, Wed | **Quiz 11** in class |
-|               | [Review](post/slides/review.pdf)           |
-| April 30, Fri | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
+| Apr 1, Fri   | **Quiz 9** in class |
+|              | Lesson 5.1: Multiple Regression |
+| April 4, Mon  | Lesson 5.2: Model Selection |
+|                | Stepwise Regression |
+| April 6, Wed  | Lab 10: Multiple Linear Regression |
+| April 8, Fri  | **Carnival - No Class** |
+| April 11, Mon  | Lesson 5.3 Transformations |
+|                | Log Tranforming Data |
+| April 13, Wed  | Lab 11: Choosing the right model |
+| April 15, Fri  |  **Quiz 10** in class |
+|                | Lesson 5.4 The Generalized Linear Model |
+|                | The Donner Party |
+| April 18, Mon  | Lesson 5.5 Mixed effects models |
+| April 20, Wed | Review  |
 
 
 ##### Due dates
-* Lab 10: Apr 30, Fri, at 2:10 PM
-* Lab 11: May 7, Fri, at 2:10 PM
-* PS 4: May 3 Mon, at 2:10 PM
+* Lab 10: Apr 13, Wed, at 1:25pm
+* Lab 11: Apr 20, Wed, at 1:25pm
+* PS 4: Apr 22 Fri, at 1:25pm
    * End of chapter exercises from **Chp 6** of Intro to Stats with Randomization and Simulation. Only turn in answers to graded questions, use the back of the book to check your work on the practice questions. Must show **all** work to get credit. Submit homework through Canvas.
    * **Graded questions:**  6.2, 6.4, 6.8, 6.12, 6.14
    * Practice questions:
@@ -195,10 +193,11 @@ title: Schedule
 
 ##### Class / lab
 
-| May 3, Mon | [What is Probability?](post/slides/what_is_prob.pdf) |
-| May 5, Wed | [Bayesian inference](post/slides/bayesian_inference.pdf)  |
-| May 7, Fri | [Language learning as Bayesian inference](post/slides/bayesian_learning.pdf) |
+| April 22, Fri | What is Probability? |
+| April 25, Mon | Bayesian inference |
+| April 27, Wed | Work on Labs | |
+| April 29, Fri | Language learning as Bayesian inference|
 
 ##### Due dates
-* [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): May 7 11:55PM
-* [Final Project](post/labs/project.html) : May 17 11:55PM
+* [CAOS PostTest](https://apps3.cehd.umn.edu/artist/user/scale_select.html): Apr 29 1:25PM
+* [Final Project](post/labs/project.html) : May 9 11:55PM

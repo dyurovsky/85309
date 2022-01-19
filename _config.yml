@@ -7,7 +7,7 @@ markdown_ext: "md"
 
 layouts_dir: ./_noita
 baseurl: /85309
-piazza: https://piazza.com/cmu/spring2021/85309/home
+piazza: https://piazza.com/cmu/spring2022/85309/home
 openintro: post/intro-randomization.pdf
 teams:
 
@@ -19,7 +19,7 @@ noita:
   description: 85-309 - Statistical Methods and Concepts
   author:
     name: Dan Yurovsky
-    url: http://callab.github.io
+    url: http://danyurovsky.com
     absolute: true
   lang: en
   topbar:
@@ -32,5 +32,5 @@ noita:
       - name: Syllabus
         url: /syllabus/
       - name: Piazza
-        url: https://piazza.com/cmu/spring2021/85309/home
+        url: https://piazza.com/cmu/spring2022/85309/home
         absolute: true
