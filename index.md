@@ -17,7 +17,7 @@ title: Schedule
 
 | Jan 19, Wed   | [Introduction to 85-309](post/slides/intro.pdf) |
 | Jan 21, Fri   | [Lesson 1.1: Data--where it comes from and why it matters](post/slides/sampling.pdf) |
-| Jan 24, Mon   | Lesson 1.2: Exploratory Data Analysis |
+| Jan 24, Mon   | [Lesson 1.2: Exploratory Data Analysis](post/slides/eda.pdf) |
 |              | Exploring class data |
 | Jan 26, Wed   | Lab 1: Intro to R and RStudio |
 | Jan 28, Fri  | **Quiz 1** in class |
