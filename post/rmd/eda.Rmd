@@ -1,12 +1,10 @@
 
 ---
-title: "Explororing Class Data"
+title: "Exploring Class Data"
 output: 
   html_document: 
     highlight: tango
     theme: spacelab
-editor_options: 
-  chunk_output_type: inline
 ---
 
 ```{r load-libraries, message = F}
@@ -18,8 +16,8 @@ Read in the data
 class_data <- read_csv("https://dyurovsky.github.io/85309/data/demos/85309_data.csv")
 ```
 
+Let's look at the first few rows
 ```{r head_data}
-# show the first few rows of the data
 class_data
 ```
 
@@ -30,7 +28,7 @@ theme_set(theme_classic(base_size = 16))
 
 # plot height
 ggplot(class_data, aes(x = height)) + 
-  geom_histogram(binwidth = 3) 
+  geom_histogram(binwidth = 2) 
   
 # plot month
 ggplot(class_data, aes(x = birth_month)) + 
@@ -43,17 +41,16 @@ ggplot(class_data, aes(x = siblings)) +
 ```
 
 
-The current `class_data` data frame is in what's called *wide format* -- each row has multiple observations for a single person. To analyze it, I want it in *long format*, where each row has only a single data point.
+The current `class_data` tibble is in what's called *wide format* -- each row has multiple observations for a single person. To analyze it, I want it in *long format*, where each row has only a single data point.
 
-Munge the data (process it to get it into a tidy format). I'm going to use the `pivot_wider` function from the `tidyverse` package. Right now, a single row has a value for `siblings`, `height`, and `birth_month`. I want it to only have a single `value` column and another column `measurement` that indicates which of three variables the value corresponds to. 
+Munge the data (process it to get it into a tidy format). I'm going to use the `pivot_longer` function from the `tidyverse` package. Right now, a single row has a value for `siblings`, `height`, and `birth_month` as well as an identifier `andrew_id`. I want it to only have a single `value` column and another column `measurement` that indicates which of three variables the value corresponds to. 
 
-So what I do is I make a new column called `person` which just gives a unique number to each row of the dataset (from 1 to the number of rows in the dataframe). Then I used `pivot_longer` to take all of the columns *except* for `person` and put them in a new column called `value` with a column called `measure` that identifies what that value corresponds to (heigh, siblings, or birth months).
+So what I'll do is to use the `pivot_longer` to take all of the columns *except* for `andrew_id` and put them in a new column called `value` with a column called `measure` that identifies what that value corresponds to (height, siblings, or birth months).
 
 ```{r munge_data}
 class_data_long <- class_data %>%
-  mutate(person = 1:n()) %>% #make a unique identifier for each row
-  pivot_longer(-person, names_to = "measure", values_to = "value")
-# take all of the columns except for person and put them under one column
+  pivot_longer(-andrew_id, names_to = "measure", values_to = "value")
+# take all of the columns except for email and put them under one column
 
 class_data_long
 ```
@@ -82,7 +79,7 @@ ggplot(class_data_long, aes(x = value)) +
 ```
 
 
-Now lets make boxplots so we can see how they compare to the histograms. They still show a lot of the same information--skew, variability, center--but they also compress a lot of data about exactly how many people had exactly what height.
+Now lets make box plots so we can see how they compare to the histograms. They still show a lot of the same information--skew, variability, center--but they also compress a lot of data about exactly how many people had exactly what height.
 
 ```{r boxplot, fig.width = 6, fig.height = 4}
 ggplot(class_data_long, aes(x = measure, y = value)) +
