@@ -7,15 +7,15 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Dan Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
+|**Professor** | [Dan Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | Baker Hall 335C |
 |**TA**       | [Fiona Horner](https://www.cmu.edu/dietrich/psychology/gender-relationships-health/lab-group/fiona-horner.html)         | [fhorner@andrew.cmu.edu](fhorner@andrew.cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/94604439214?pwd=LzNmVE1xbzh3UERKVlYvZDNqVENmQT09) |
 
 
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Fridays, 1:25pm - 2:15pm, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09&sa=D&source=calendar&usd=2&usg=AOvVaw1k6fsbuG3grlet1LCbOLJM)
-* Labs: Wednesdays, 1:25pm - 2:15pm, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09&sa=D&source=calendar&usd=2&usg=AOvVaw1k6fsbuG3grlet1LCbOLJM)
+* Lectures: Mondays and Fridays, 1:25pm - 2:15pm, Baker Hall 336B
+* Labs: Wednesdays, 1:25pm - 2:15pm, Baker Hall 336B
 
 * * *
 
@@ -25,8 +25,8 @@ title: Course Information
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
-|Professor Yurovsky   | Thursday 9:00 - 10:30            | [Zoom Office](https://cmu.zoom.us/j/8407296466) |
-|Fiona Horner        | Monday 2:30 - 3:30             | [Zoom Office](https://cmu.zoom.us/j/94604439214?pwd=LzNmVE1xbzh3UERKVlYvZDNqVENmQT09)  |
+|Professor Yurovsky   | Thursday 9:00 - 10:30            | Baker Hall 335C |
+|Fiona Horner        | Monday 2:30 - 3:30             | Psychology Lounge  |
 
 
 * * *
