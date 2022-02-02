@@ -23,7 +23,7 @@ title: Schedule
 | Jan 28, Fri  | **Quiz 1** in class |
 |              | [Lesson 1.3: More Exploratory Data Analysis](post/slides/more_eda.pdf) |
 | Jan 31, Mon  | [Lesson 1.4 Using the Tidyverse](post/slides/tidyverse.pdf)|
-| Feb 2, Wed  | Lab 2: Intro to Data |
+| Feb 2, Wed  | [Lab 2: Intro to Data](post/labs/intro_to_data.html) |
 
 ##### Due dates
 
