@@ -7,7 +7,7 @@ title: Course Information
 
 |--------------+-------------------------------------------------------+-------------------------------------------------------+-----------|
 |:-------------|:------------------------------------------------------|:------------------------------------------------------|:----------|
-|**Professor** | [Dan Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | Baker Hall 335C |
+|**Professor** | [Dan Yurovsky](https://www.danyurovsky.com)      | [yurovsky@cmu.edu](mailto:yurovsky@cmu.edu) | Baker Hall 335C, [Zoom office](https://cmu.zoom.us/j/93963793492?pwd=cDBYOWJEeVZHYlhKUlZGZ3VscHA1Zz09) |
 |**TA**       | [Fiona Horner](https://www.cmu.edu/dietrich/psychology/gender-relationships-health/lab-group/fiona-horner.html)         | [fhorner@andrew.cmu.edu](fhorner@andrew.cmu.edu) | [Zoom Office](https://cmu.zoom.us/j/94604439214?pwd=LzNmVE1xbzh3UERKVlYvZDNqVENmQT09) |
 
 
@@ -25,7 +25,7 @@ title: Course Information
 |---------------------+----------------------------------+---------------|
 | Instructor          | Day / time                       | Location      |
 |:--------------------|:---------------------------------|:--------------|
-|Professor Yurovsky   | Thursday 9:00 - 10:30            | Baker Hall 335C |
+|Professor Yurovsky   | Thursday 9:00 - 10:30            | [Zoom office](https://cmu.zoom.us/j/93963793492?pwd=cDBYOWJEeVZHYlhKUlZGZ3VscHA1Zz09) |
 |Fiona Horner        | Monday 2:30 - 3:30             | Psychology Lounge  |
 
 
