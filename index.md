@@ -50,8 +50,8 @@ title: Schedule
 ##### Class / lab
 
 | Feb 4, Fri | **Quiz 2** in class |
-|             | Lesson 2.1: Randomization and Sampling |
-|             | Bias in hiring |
+|             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
+|             | [Bias in hiring](post/rmd/hiring.Rmd) |
 | Feb 7, Mon | Lesson 2.2: Hypothesis Testing |
 |             | Cardiac arrests |
 | Feb 9, Wed | Lab 3: Intro to the Tidyverse and Functions |
