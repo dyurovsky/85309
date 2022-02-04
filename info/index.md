@@ -14,8 +14,8 @@ title: Course Information
 * * *
 
 ### Class meetings:
-* Lectures: Mondays and Fridays, 1:25pm - 2:15pm, Baker Hall 336B
-* Labs: Wednesdays, 1:25pm - 2:15pm, Baker Hall 336B
+* Lectures: Mondays and Fridays, 1:25pm - 2:15pm, Baker Hall 336B, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09﻿)
+* Labs: Wednesdays, 1:25pm - 2:15pm, Baker Hall 336B, [Zoom Room](https://www.google.com/url?q=https://cmu.zoom.us/j/92352298230?pwd%3DakJSc2NUYVZ0RDBhTlBtb3NBbngwZz09﻿)
 
 * * *
 
