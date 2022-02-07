@@ -54,7 +54,7 @@ title: Schedule
 |             | [Bias in hiring](post/rmd/hiring.Rmd) |
 | Feb 7, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf) |
 |             | [Cardiac arrests](post/rmd/cardiac.Rmd) |
-| Feb 9, Wed | Lab 3: Intro to the Tidyverse and Functions |
+| Feb 9, Wed | [Lab 3: Intro to the Tidyverse and Functions](post/labs/intro_to_tidyverse.html) |
 | Feb 11, Fri | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem|
 | Feb 14, Mon  | Lesson 2.4: The Normal Distribution and more on the Central Limit Theorem |
