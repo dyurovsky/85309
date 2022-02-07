@@ -52,8 +52,8 @@ title: Schedule
 | Feb 4, Fri | **Quiz 2** in class |
 |             | [Lesson 2.1: Randomization and Sampling](post/slides/randomization.pdf) |
 |             | [Bias in hiring](post/rmd/hiring.Rmd) |
-| Feb 7, Mon | Lesson 2.2: Hypothesis Testing |
-|             | Cardiac arrests |
+| Feb 7, Mon | [Lesson 2.2: Hypothesis Testing](post/slides/hypothesis_testing.pdf) |
+|             | [Cardiac arrests](post/rmd/cardiac.Rmd) |
 | Feb 9, Wed | Lab 3: Intro to the Tidyverse and Functions |
 | Feb 11, Fri | **Quiz 3** in class |
 |             | Lesson 2.3: The Central Limit Theorem|
