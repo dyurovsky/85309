@@ -5,8 +5,6 @@ output:
   html_document:
     df_print: paged
     toc: yes
-  html_notebook:
-    toc: yes
 editor_options:
   chunk_output_type: inline
 ---
@@ -19,21 +17,21 @@ theme_set(theme_classic(base_size = 16))
 
 Draw samples from the Beta distribution to create four types of distributions
 
-```{r make_distributions}
+```{r make-distributions}
 
-right_skewed <- data_frame(sample = 1:1000,
+right_skewed <- tibble(sample = 1:1000,
                            value = rbeta(1000, 1, 10),
                            type = "right skewed")
 
-left_skewed <- data_frame(sample = 1:1000,
+left_skewed <- tibble(sample = 1:1000,
                           value = rbeta(1000, 10, 1),
                           type = "left_skewed")
 
-symmetric <- data_frame(sample = 1:1000,
+symmetric <- tibble(sample = 1:1000,
                         value = rbeta(1000, 10, 10),
                         type = "symmetric")
 
-uniform <- data_frame(sample = 1:1000,
+uniform <- tibble(sample = 1:1000,
                       value = rbeta(1000, 1, 1),
                       type = "uniform")
 
@@ -50,7 +48,7 @@ ggplot(distributions, aes(x = value, fill = type)) +
 ```
 
 Now let's look at qq plots
-```{r histograms, fig.width=10, fig.height=4}
+```{r qq-plots, fig.width=10, fig.height=4}
 ggplot(distributions, aes(sample = value, fill = type)) + 
   facet_grid(~type, scales = "free") + 
   geom_qq() + 

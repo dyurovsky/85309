@@ -1,6 +1,6 @@
 
 ---
-title: "Lab 4 - Hypothesis Testing"
+title: "Lab 4 - Foundations for statistical inference - Sampling distributions"
 author: "Your name"
 date: "Date of lab session"
 output: 
@@ -9,7 +9,7 @@ output:
     theme: spacelab
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include=FALSE}
 # DO NOT ALTER CODE IN THIS CHUNK
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
@@ -20,50 +20,68 @@ library(tidyverse)
 ## Lab report
 
 **Load data**
-```{r load_data, message = FALSE}
-curry_data <- read_csv("https://dyurovsky.github.io/85309/data/lab4/curry_data.csv")
+```{r load_data}
+ames <- read_csv("https://dyurovsky.github.io/85309/data/lab4/ames.csv")
 ```
 
+```{r set_seed}
+set.seed(85309)
+```
 
 #### Exercise 1: 
-```{r}
+```{r ex1}
 # enter your code for Exercise 1 here
-
 ```
 
 #### Exercise 2:
-
+```{r ex2}
+# enter your code for Exercise 2 here
+```
 
 #### Exercise 3:
-
+```{r ex3}
+# enter your code for Exercise 3 here
+```
 
 #### Exercise 4:
-```{r}
+```{r ex4}
 # enter your code for Exercise 4 here
 ```
 
-### More practice:
-
 #### Exercise 5:
-```{r}
+```{r ex5}
 # enter your code for Exercise 5 here
 ```
 
 #### Exercise 6:
-```{r}
+
+```{r ex6}
 # enter your code for Exercise 6 here
 ```
 
+### More Practice:
+
 #### Exercise 7:
 
-```{r}
+```{r ex7}
 # enter your code for Exercise 7 here
 ```
 
 #### Exercise 8:
 
-```{r}
+
+```{r ex8}
 # enter your code for Exercise 8 here
 ```
 
 #### Exercise 9:
+
+```{r ex9}
+# enter your code for Exercise 9 here
+```
+
+#### Exercise 10:
+
+```{r ex10}
+# enter your code for Exercise 10 here
+```

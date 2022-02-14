@@ -1,6 +1,6 @@
 
 ---
-title: "Lab 5 - Foundations for statistical inference - Confidence intervals"
+title: "Lab 4 - Hypothesis Testing"
 author: "Your name"
 date: "Date of lab session"
 output: 
@@ -9,7 +9,7 @@ output:
     theme: spacelab
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 # DO NOT ALTER CODE IN THIS CHUNK
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
@@ -20,118 +20,50 @@ library(tidyverse)
 ## Lab report
 
 **Load data**
-```{r load_data}
-ames <- read_csv("https://dyurovsky.github.io/85309/data/lab5/ames.csv")
+```{r load_data, message = FALSE}
+curry_data <- read_csv("https://dyurovsky.github.io/85309/data/lab4/curry_data.csv")
 ```
 
-```{r set_seed}
-set.seed(85309)
-```
 
 #### Exercise 1: 
-```{r ex1}
-ggplot(ames, aes(x = area)) + 
-  geom_histogram(binwidth = 250)
+```{r}
+# enter your code for Exercise 1 here
 
-ames %>%
-  summarise(pop_med = median(area), 
-            mu = mean(area),
-            pop_iqr = IQR(area))  # third quartile, 75th percentile
 ```
-
-The distribution is unimodal and slightly right-skewed. Because it is non-normal, we can describe it with robust statistics like median and iqr (above).
 
 #### Exercise 2:
-```{r ex2}
-samp1 <- ames %>%
-  sample_n(50)
 
-ggplot(samp1, aes(x = area)) + 
-  geom_histogram(binwidth = 250)
-
-```
-
-Compared to the population distribution, the sample distribution has a similar skewed shape but is noisier. The tails look less smooth.
 
 #### Exercise 3:
-```{r ex3}
-samp2 <- ames %>%
-  sample_n(50)
 
-ggplot(samp2, aes(x = area)) + 
-  geom_histogram(binwidth = 250)
-```
-
-Sample 2 has a lot of the same features as sample 1. It is right-skewed but not too much and unimodal like the population distribution. If we took a sample of size 100 and a sample of size 1000, the sample of size 1000 will look more like the population.
 
 #### Exercise 4:
-```{r ex4}
-sample_50 <- function() {
-  ames %>%
-    sample_n(50, replace = TRUE) %>%
-    summarise(x_bar = mean(area)) %>%
-    pull()
-}
-
-sample_means50 <- tibble(sample = 1:1000,
-                         mean = replicate(1000, sample_50()))
-
-ggplot(sample_means50, aes(x = mean)) + 
-  geom_histogram()
-
-
-sampling_distribution_mean <- sample_means50 %>%
-  summarise(mean = mean(mean)) %>%
-  pull()
+```{r}
+# enter your code for Exercise 4 here
 ```
 
-The sampling distribution looks approximately normal. It has a mean of `r sampling_distribution_mean`. This is very close to the population mean of 1500. There are 1000 elements of sample_means50 each of which is the sample mean of a sample of size 50.
+### More practice:
 
 #### Exercise 5:
-```{r ex5}
-sample_10 <- function() {
-  ames %>%
-    sample_n(10, replace = TRUE) %>%
-    summarise(x_bar = mean(area)) %>%
-    pull()
-}
-
-sample_means_small <- tibble(sample = 1:25,
-                         mean = replicate(25, sample_10()))
-
-ggplot(sample_means_small, aes(x = mean)) + 
-  geom_histogram(binwidth = 100)
+```{r}
+# enter your code for Exercise 5 here
 ```
 
 #### Exercise 6:
-
-```{r ex6}
+```{r}
 # enter your code for Exercise 6 here
 ```
 
-### More Practice:
-
 #### Exercise 7:
 
-```{r ex7}
+```{r}
 # enter your code for Exercise 7 here
 ```
 
 #### Exercise 8:
 
-
-```{r ex8}
+```{r}
 # enter your code for Exercise 8 here
 ```
 
 #### Exercise 9:
-
-```{r ex9}
-# enter your code for Exercise 9 here
-```
-
-#### Exercise 10:
-
-```{r ex10}
-# enter your code for Exercise 10 here
-```
