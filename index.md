@@ -87,8 +87,8 @@ title: Schedule
 
 ##### Class / lab
 
-| Feb 21, Mon | Lesson 3.1: Inference for a Single Proportion |
-|            | The Central Limit Theorem for Proportions |
+| Feb 21, Mon | [Lesson 3.1: Inference for a Single Proportion](post/slides/inference_proportion.pdf) |
+|            | [The Central Limit Theorem for Proportions](post/rmd/one_prop_clt.Rmd) |
 | Feb 23, Wed | [Lab 5: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 |             | [Curry simulation notes](https://docs.google.com/presentation/d/1H6aw7iRfNl4dfNjbnqx4v3CmW59_8R9LhIdH_rv0bAE/edit?usp=sharing) |
 | Feb 25, Fri | **Quiz 5** in class |
