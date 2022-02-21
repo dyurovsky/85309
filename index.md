@@ -61,7 +61,7 @@ title: Schedule
 |             | [QQ Plots](post/rmd/qqplots.Rmd) |
 | Feb 16, Wed  | [Lab 4: Sampling Distributions](post/labs/sampling_distributions.html) |
 | Feb 18, Fri  | **Quiz 4** in class |
-|             | Lesson 2.5: Confidence Intervals |
+|             | [Lesson 2.5: Confidence Intervals](post/slides/confidence_intervals.pdf) |
 
 ##### Due dates
 
@@ -89,8 +89,8 @@ title: Schedule
 
 | Feb 21, Mon | Lesson 3.1: Inference for a Single Proportion |
 |            | The Central Limit Theorem for Proportions |
-| Feb 23, Wed | Lab 5: Testing the Hot Hands Hypothesis |
-|             | Curry simulation notes |
+| Feb 23, Wed | [Lab 5: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
+|             | [Curry simulation notes](https://docs.google.com/presentation/d/1H6aw7iRfNl4dfNjbnqx4v3CmW59_8R9LhIdH_rv0bAE/edit?usp=sharing) |
 | Feb 25, Fri | **Quiz 5** in class |
 |             | Lesson 3.2: Inference for the difference of two proportions |
 | Feb 28, Mon | Lesson 3.3: The t-distribution |

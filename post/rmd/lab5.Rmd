@@ -1,6 +1,6 @@
 
 ---
-title: "Lab 4 - Hypothesis Testing"
+title: "Lab 5 - Hypothesis Testing"
 author: "Your name"
 date: "Date of lab session"
 output: 
@@ -21,7 +21,7 @@ library(tidyverse)
 
 **Load data**
 ```{r load_data, message = FALSE}
-curry_data <- read_csv("https://dyurovsky.github.io/85309/data/lab4/curry_data.csv")
+curry_data <- read_csv("https://dyurovsky.github.io/85309/data/lab5/curry_data.csv")
 ```
 
 
