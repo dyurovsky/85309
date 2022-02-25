@@ -92,7 +92,7 @@ title: Schedule
 | Feb 23, Wed | [Lab 5: Testing the Hot Hands Hypothesis](post/labs/hypothesis_testing.html) |
 |             | [Curry simulation notes](https://docs.google.com/presentation/d/1H6aw7iRfNl4dfNjbnqx4v3CmW59_8R9LhIdH_rv0bAE/edit?usp=sharing) |
 | Feb 25, Fri | **Quiz 5** in class |
-|             | Lesson 3.2: Inference for the difference of two proportions |
+|             | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
 | Feb 28, Mon | Lesson 3.3: The t-distribution |
 |             | One sample t-tests |
 | Mar 2, Wed | Lab 6: Confidence Intervals |
