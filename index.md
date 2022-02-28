@@ -93,8 +93,8 @@ title: Schedule
 |             | [Curry simulation notes](https://docs.google.com/presentation/d/1H6aw7iRfNl4dfNjbnqx4v3CmW59_8R9LhIdH_rv0bAE/edit?usp=sharing) |
 | Feb 25, Fri | **Quiz 5** in class |
 |             | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
-| Feb 28, Mon | Lesson 3.3: The t-distribution |
-|             | One sample t-tests |
+| Feb 28, Mon | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
+|             | [One sample t-tests](post/rmd/ttests.Rmd) |
 | Mar 2, Wed | Lab 6: Confidence Intervals |
 | Mar 4, Fri | **Mid Semester Break - No class** |
 | Mar 7, Mon | **Spring Break - No class** |
