@@ -95,7 +95,7 @@ title: Schedule
 |             | [Lesson 3.2: Inference for the difference of two proportions](post/slides/prop_diff.pdf) |
 | Feb 28, Mon | [Lesson 3.3: The t-distribution](post/slides/t.pdf) |
 |             | [One sample t-tests](post/rmd/ttests.Rmd) |
-| Mar 2, Wed | Lab 6: Confidence Intervals |
+| Mar 2, Wed | [Lab 6: Confidence Intervals](post/labs/confidence_intervals.html) |
 | Mar 4, Fri | **Mid Semester Break - No class** |
 | Mar 7, Mon | **Spring Break - No class** |
 | Mar 9, Wed | **Spring Break - No class** |
