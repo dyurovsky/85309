@@ -101,7 +101,7 @@ title: Schedule
 | Mar 9, Wed | **Spring Break - No class** |
 | Mar 11, Fri | **Spring Break - No class** |
 | Mar 14, Mon | Lesson 3.4: Difference of two means |
-| Mar 16, Wed | Lab 7: Inference for Categorical Data |
+| Mar 16, Wed | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Mar 18, Fri | **Quiz 6** in class |
 |             | Lesson 3.5: Difference of many means |
 |             | Dictator game |
