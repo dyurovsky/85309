@@ -100,7 +100,7 @@ title: Schedule
 | Mar 7, Mon | **Spring Break - No class** |
 | Mar 9, Wed | **Spring Break - No class** |
 | Mar 11, Fri | **Spring Break - No class** |
-| Mar 14, Mon | Lesson 3.4: Difference of two means |
+| Mar 14, Mon | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Mar 16, Wed | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Mar 18, Fri | **Quiz 6** in class |
 |             | Lesson 3.5: Difference of many means |
