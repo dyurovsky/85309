@@ -103,8 +103,8 @@ title: Schedule
 | Mar 14, Mon | [Lesson 3.4: Difference of two means](post/slides/diff_means.pdf) |
 | Mar 16, Wed | [Lab 7: Inference for Categorical Data](post/labs/inf_for_categorical_data.html) |
 | Mar 18, Fri | **Quiz 6** in class |
-|             | Lesson 3.5: Difference of many means |
-|             | Dictator game |
+|             | [Lesson 3.5: Difference of many means](post/slides/anova.pdf) |
+|             | [Dictator game](post/rmd/dictator.Rmd) |
 
 ##### Due dates
 
