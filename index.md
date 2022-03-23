@@ -67,7 +67,7 @@ title: Schedule
 
 * Lab 3: Feb 16, Wed, at 1:25pm
 * Lab 4: Feb 23, Wed, at 1:25pm
-* PS 2: Feb 21, Mon, at 1:25pm
+* PS 2: Feb 21, Mon, at 11:59pm
   * End of chapter exercises from **Chp 2**. Only turn in answers to graded questions,
   use the back of the book to check your work on the practice questions. Must show
   **all** work to get credit. Submit homework through Canvas.
