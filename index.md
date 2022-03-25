@@ -134,7 +134,7 @@ title: Schedule
 | Mar 21, Mon | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
 | Mar 23, Wed | [Lab 8: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
 | Mar 25, Fri | **Quiz 8** in class |
-|             | Lesson 4.2: Residuals and Least Squares |
+|             | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
 | Mar 28, Mon | Lesson 4.3: Inference for linear regression |
 | Mar 30, Wed | Lab 9: Introduction to Linear Regression |
 
