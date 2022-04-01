@@ -160,7 +160,7 @@ title: Schedule
 ##### Class / lab
 
 | Apr 1, Fri   | **Quiz 9** in class |
-|              | Lesson 5.1: Multiple Regression |
+|              | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 4, Mon  | Lesson 5.2: Model Selection |
 |                | Stepwise Regression |
 | April 6, Wed  | Lab 10: Multiple Linear Regression |
