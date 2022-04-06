@@ -163,7 +163,7 @@ title: Schedule
 |              | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 4, Mon  | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
 |                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
-| April 6, Wed  | Lab 10: Multiple Linear Regression |
+| April 6, Wed  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
 | April 8, Fri  | **Carnival - No Class** |
 | April 11, Mon  | Lesson 5.3 Transformations |
 |                | Log Tranforming Data |
