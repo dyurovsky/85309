@@ -167,7 +167,7 @@ title: Schedule
 | April 8, Fri  | **Carnival - No Class** |
 | April 11, Mon  | Lesson 5.3 Transformations |
 |                | Log Tranforming Data |
-| April 13, Wed  | Lab 11: Choosing the right model |
+| April 13, Wed  | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
 | April 15, Fri  |  **Quiz 10** in class |
 |                | Lesson 5.4 The Generalized Linear Model |
 |                | The Donner Party |
