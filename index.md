@@ -165,12 +165,12 @@ title: Schedule
 |                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
 | April 6, Wed  | [Lab 10: Multiple Linear Regression](post/labs/multiple_regression.html) |
 | April 8, Fri  | **Carnival - No Class** |
-| April 11, Mon  | Lesson 5.3 Transformations |
-|                | Log Tranforming Data |
+| April 11, Mon  | [Lesson 5.3 Transformations](post/slides/transformations.pdf)  |
+|                | [Log Tranforming Data](post/rmd/transformations.Rmd)|
 | April 13, Wed  | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
 | April 15, Fri  |  **Quiz 10** in class |
-|                | Lesson 5.4 The Generalized Linear Model |
-|                | The Donner Party |
+|                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
+|                | [The Donner Party](post/rmd/donner.Rmd) |
 | April 18, Mon  | Lesson 5.5 Mixed effects models |
 | April 20, Wed | Review  |
 
