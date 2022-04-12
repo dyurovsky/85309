@@ -133,7 +133,7 @@ title: Schedule
 
 | Mar 21, Mon | [Lesson 4.1: Linear Regression](post/slides/regression.pdf) |
 | Mar 23, Wed | [Lab 8: Inference for Numerical Data](post/labs/inf_for_numerical_data.html) |
-| Mar 25, Fri | **Quiz 8** in class |
+| Mar 25, Fri | **Quiz 7** in class |
 |             | [Lesson 4.2: Residuals and Least Squares](post/slides/residuals.pdf) |
 | Mar 28, Mon | [Lesson 4.3: Inference for linear regression](post/slides/inf_regression.pdf) |
 |             | [Twin IQ correlation](post/rmd/twins.Rmd) |
@@ -159,7 +159,7 @@ title: Schedule
 
 ##### Class / lab
 
-| Apr 1, Fri   | **Quiz 9** in class |
+| Apr 1, Fri   | **Quiz 8** in class |
 |              | [Lesson 5.1: Multiple Regression](post/slides/multiple_regression.pdf) |
 | April 4, Mon  | [Lesson 5.2: Model Selection](post/slides/model_selection.pdf) |
 |                | [Stepwise Regression](post/rmd/stepwise.Rmd) |
@@ -168,7 +168,7 @@ title: Schedule
 | April 11, Mon  | [Lesson 5.3 Transformations](post/slides/transformations.pdf)  |
 |                | [Log Tranforming Data](post/rmd/transformations.Rmd)|
 | April 13, Wed  | [Lab 11: Choosing the right model](post/labs/choosing_model.html) |
-| April 15, Fri  |  **Quiz 10** in class |
+| April 15, Fri  |  **Quiz 9** in class |
 |                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |                | [The Donner Party](post/rmd/donner.Rmd) |
 | April 18, Mon  | Lesson 5.5 Mixed effects models |
