@@ -171,7 +171,7 @@ title: Schedule
 | April 15, Fri  |  **Quiz 9** in class |
 |                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |                | [The Donner Party](post/rmd/donner.Rmd) |
-| April 18, Mon  | Lesson 5.5 Mixed effects models |
+| April 18, Mon  | [Lesson 5.5 Mixed effects models](post/slides/mixed_effects.pdf) |
 | April 20, Wed | Review  |
 
 
