@@ -172,7 +172,7 @@ title: Schedule
 |                | [Lesson 5.4 The Generalized Linear Model](post/slides/glm.pdf) |
 |                | [The Donner Party](post/rmd/donner.Rmd) |
 | April 18, Mon  | [Lesson 5.5 Mixed effects models](post/slides/mixed_effects.pdf) |
-| April 20, Wed | Review  |
+| April 20, Wed | Work on labs |
 
 
 ##### Due dates
@@ -195,7 +195,7 @@ title: Schedule
 
 ##### Class / lab
 
-| April 22, Fri | What is Probability? |
+| April 22, Fri | [What is Probability?](post/slides/what_is_prob.pdf) |
 | April 25, Mon | Bayesian inference |
 | April 27, Wed | Work on Labs | |
 | April 29, Fri | Language learning as Bayesian inference|
