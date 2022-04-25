@@ -196,7 +196,7 @@ title: Schedule
 ##### Class / lab
 
 | April 22, Fri | [What is Probability?](post/slides/what_is_prob.pdf) |
-| April 25, Mon | Bayesian inference |
+| April 25, Mon | [Bayesian inference](post/slides/bayesian_inference.pdf) |
 | April 27, Wed | Work on Labs | |
 | April 29, Fri | Language learning as Bayesian inference|
 
